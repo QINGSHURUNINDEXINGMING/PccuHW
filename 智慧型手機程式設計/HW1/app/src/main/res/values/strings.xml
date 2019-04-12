@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">My Application</string>
-    <string name="title">樂透服務</string>
-    <string name="daletou">大樂透</string>
-    <string name="weilicai">威力彩</string>
-    <string name="times">組數: </string>
-    <string name="button">執行</string>
-</resources>

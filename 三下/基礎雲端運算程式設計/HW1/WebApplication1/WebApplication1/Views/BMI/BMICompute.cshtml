@@ -1,0 +1,54 @@
+﻿
+@model WebApplication1.ViewModels.BMIViewModel
+
+@{
+    ViewBag.Title = "BMI服務";
+}
+
+
+
+<div align="center">
+    <br />
+    <b class="label label-danger" style="font-size:x-large">BMI運算</b>
+    <br />
+    <br />
+    @*建立BMI服務表單*@
+    @using (Html.BeginForm("BMICompute", "BMI"))
+    {
+        <table>
+            <tr>
+                <td>
+                    @Html.LabelFor(model => model.Num1, new { @class = "label label-warning label-sm" })
+                </td>
+                <td>
+                    @Html.TextBoxFor(model => model.Num1)
+                    @Html.ValidationMessageFor(model => model.Num1, "", new { @class = "text-danger" })
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(model => model.Num2, new { @class = "label label-warning label-sm" })
+                </td>
+                <td>
+                    @Html.TextBoxFor(model => model.Num2)
+                    @Html.ValidationMessageFor(model => model.Num2, "", new { @class = "text-danger" })
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(model => model.Result, new { @class = "label label-warning label-sm" })
+                </td>
+                <td>
+                    @Html.TextBoxFor(model => model.Result)
+                </td>
+            </tr>
+        </table>
+        <input type="submit" name="btnCompute" value="運算" class="btn btn-success">
+    }
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+

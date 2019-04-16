@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">HW2</string>
+    <string name="button_name">First Button</string>
 </resources>

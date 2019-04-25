@@ -1,13 +1,12 @@
 
-FDegree_To_CDegree   <- function(x)
+recursive.factorial   <- function(x)
 {
+  testSeq             <- c(0)
 
-  CDegree            <- round(((x-32)*5/9), 2)
-  CDegree_Final      <- paste(CDegree, sep="", "F")
-  
-  print(FDegree_Final)
-  
+
+  if     (x <= 2) return (append(testSeq, recursive.factorial(x-1)))
+  else            return (append(testSeq, (recursive.factorial(x-1)+testSeq[x-1])))
+
 }
 
-Fahrenheit.Degree    <- seq(from=98, to=100.5, by=0.5)
-FDegree_To_CDegree(Fahrenheit.Degree)
+print(recursive.factorial(3))

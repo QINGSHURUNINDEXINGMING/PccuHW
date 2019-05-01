@@ -15,7 +15,6 @@
         android:layout_marginTop="94dp"
         android:layout_marginBottom="52dp"
         android:text="今日步數："
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toStartOf="@+id/editText1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,66 +29,37 @@
         app:layout_constraintBottom_toBottomOf="@+id/textView1"
         app:layout_constraintStart_toEndOf="@+id/textView1"
         app:layout_constraintTop_toTopOf="@+id/textView1"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.576" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
-        android:layout_marginLeft="72dp"
-        android:layout_marginTop="52dp"
-        android:text="走路型態："
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView1" />
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <Button
+        android:id="@+id/chooseTypeOfExercise"
+        android:layout_width="121dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="類型：慢走、快走、慢跑、快跑…"
-        app:layout_constraintBottom_toBottomOf="@+id/textView2"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.307" />
+        android:onClick="ChooseExercise"
+        android:text="選擇運動型態"
+        app:layout_constraintEnd_toStartOf="@+id/chooseDateButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText1" />
 
     <Button
         android:id="@+id/chooseDateButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="162dp"
-        android:layout_marginLeft="162dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="162dp"
-        android:layout_marginRight="162dp"
-        android:layout_marginBottom="8dp"
-        android:text="選擇日期"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.368"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
         android:onClick="ChooseDate"
-
-        />
-
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="98dp"
-        android:layout_marginLeft="98dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginRight="100dp"
-        android:ems="10"
-        android:inputType="date"
+        android:text="選擇日期"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chooseDateButton" />
+        app:layout_constraintStart_toEndOf="@+id/chooseTypeOfExercise"
+        app:layout_constraintTop_toBottomOf="@+id/editText1" />
 
     <Button
         android:id="@+id/button2"
@@ -97,19 +67,21 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="96dp"
         android:layout_marginLeft="96dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="62dp"
         android:text="儲存步數紀錄"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintTop_toBottomOf="@+id/chooseTypeOfExercise" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="62dp"
         android:layout_marginEnd="100dp"
         android:layout_marginRight="100dp"
         android:text="查詢步數紀錄"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/chooseTypeOfExercise" />
 </android.support.constraint.ConstraintLayout>

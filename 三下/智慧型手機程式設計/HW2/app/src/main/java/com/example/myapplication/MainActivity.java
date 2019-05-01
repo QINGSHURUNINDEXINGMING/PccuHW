@@ -1,7 +1,9 @@
 package com.example.myapplication;
 
+import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.DatePickerDialog.OnDateSetListener;
+import android.content.DialogInterface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,14 +15,20 @@ import java.util.Calendar;
 public class MainActivity extends AppCompatActivity {
 
     private Button chooseDateButton;
+    private Button chooseTypeOfExercise;
     private int year, month, day;
+
+    private String chooseTypeOfExercise_items[] = {"慢走", "慢跑", "快走", "快跑"};
+
+    private int chooseTypeOfExercise_choice = -1;
 
     private void processViews()
     {
-        chooseDateButton=(Button)findViewById(R.id.chooseDateButton);
+        chooseDateButton = (Button)findViewById(R.id.chooseDateButton);
+        chooseTypeOfExercise = (Button)findViewById(R.id.chooseTypeOfExercise);
     }
 
-    public void ChooseDate(View view)          //選擇日期
+    public void ChooseDate(View view)          //選擇日期按鈕
     {
         OnDateSetListener listener = new OnDateSetListener()
         {
@@ -38,6 +46,45 @@ public class MainActivity extends AppCompatActivity {
         d.show();
 
     }
+
+    public void ChooseExercise(View view)         //選擇運動類型按鈕
+    {
+        AlertDialog.Builder d = new AlertDialog.Builder(MainActivity.this);         //建立對話框物件
+
+        d.setTitle("Select...");          //設定標題
+
+        d.setSingleChoiceItems          //設定單選項目
+                (chooseTypeOfExercise_items, chooseTypeOfExercise_choice,
+                        new DialogInterface.OnClickListener()
+                        {
+                            public void onClick(DialogInterface dialog, int which)
+                            {
+                                chooseTypeOfExercise_choice = which;
+                            }
+                        }
+                );
+        d.setPositiveButton          //確認選擇
+                ("OK", new DialogInterface.OnClickListener()
+                    {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which)
+                        {
+                            if(chooseTypeOfExercise_choice != -1)
+                            {
+                                chooseTypeOfExercise.setText(chooseTypeOfExercise_items[chooseTypeOfExercise_choice]);
+                            }
+                        }
+                    }
+                );
+
+        d.setNegativeButton("Cancel", null);
+        d.show();
+    }
+
+
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

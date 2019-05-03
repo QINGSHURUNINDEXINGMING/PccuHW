@@ -24,11 +24,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:text="請輸入步數"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="@+id/textView1"
         app:layout_constraintStart_toEndOf="@+id/textView1"
         app:layout_constraintTop_toTopOf="@+id/textView1"
+        android:onClick="editText"
         app:layout_constraintVertical_bias="0.576" />
 
 
@@ -41,7 +43,7 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:onClick="ChooseExercise"
+        android:onClick="chooseExercise"
         android:text="選擇運動型態"
         app:layout_constraintEnd_toStartOf="@+id/chooseDateButton"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,20 +57,21 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="52dp"
         android:layout_marginRight="52dp"
-        android:onClick="ChooseDate"
+        android:onClick="chooseDate"
         android:text="選擇日期"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/chooseTypeOfExercise"
         app:layout_constraintTop_toBottomOf="@+id/editText1" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/saveData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="96dp"
         android:layout_marginLeft="96dp"
         android:layout_marginTop="62dp"
         android:text="儲存步數紀錄"
+        android:onClick="saveData"
         app:layout_constraintEnd_toStartOf="@+id/button3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/chooseTypeOfExercise" />
@@ -82,6 +85,6 @@
         android:layout_marginRight="100dp"
         android:text="查詢步數紀錄"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintStart_toEndOf="@+id/saveData"
         app:layout_constraintTop_toBottomOf="@+id/chooseTypeOfExercise" />
 </android.support.constraint.ConstraintLayout>

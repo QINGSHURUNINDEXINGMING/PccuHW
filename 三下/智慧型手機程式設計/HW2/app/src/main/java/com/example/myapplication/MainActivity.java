@@ -4,11 +4,14 @@ import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.DatePickerDialog.OnDateSetListener;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import java.util.Calendar;
 
@@ -16,6 +19,10 @@ public class MainActivity extends AppCompatActivity {
 
     private Button chooseDateButton;
     private Button chooseTypeOfExercise;
+    private Button saveData;
+
+    private EditText editText;
+
     private int year, month, day;
 
     private String chooseTypeOfExercise_items[] = {"慢走", "慢跑", "快走", "快跑"};
@@ -24,11 +31,14 @@ public class MainActivity extends AppCompatActivity {
 
     private void processViews()
     {
+        //saveData = (Button)findViewById(R.id.saveData);
         chooseDateButton = (Button)findViewById(R.id.chooseDateButton);
         chooseTypeOfExercise = (Button)findViewById(R.id.chooseTypeOfExercise);
+        editText=(EditText)findViewById(R.id.editText1);
+
     }
 
-    public void ChooseDate(View view)          //選擇日期按鈕
+    public void chooseDate(View view)          //選擇日期按鈕
     {
         OnDateSetListener listener = new OnDateSetListener()
         {
@@ -47,7 +57,12 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void ChooseExercise(View view)         //選擇運動類型按鈕
+    public void editText(View view)          //清除文字
+    {
+        editText.setText("");
+    }
+
+    public void chooseExercise(View view)         //選擇運動類型按鈕
     {
         AlertDialog.Builder d = new AlertDialog.Builder(MainActivity.this);         //建立對話框物件
 
@@ -81,10 +96,33 @@ public class MainActivity extends AppCompatActivity {
         d.show();
     }
 
+    public void saveData(View view)
+    {
+        String date = chooseDateButton.getText().toString();
+        String exercise = chooseTypeOfExercise.getText().toString();
+        String number = editText.getText().toString();
 
+        int num = 0;
 
+        num=Integer.parseInt(number);          //輸入的步數轉為int
 
+        Intent intent = new Intent(this, SecondActivity.class);
 
+        Bundle bundle = new Bundle();
+
+        bundle.putString("date", date);;
+        bundle.putString("exercise", exercise);
+        bundle.putInt("num", num);
+
+        intent.putExtras(bundle);
+
+        intent.putExtra("date", date);
+        intent.putExtra("exercise", exercise);
+        intent.putExtra("num", num);
+
+        startActivity(intent);
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

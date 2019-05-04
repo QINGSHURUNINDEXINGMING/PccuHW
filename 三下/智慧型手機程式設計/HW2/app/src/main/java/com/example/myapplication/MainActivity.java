@@ -5,6 +5,8 @@ import android.app.DatePickerDialog;
 import android.app.DatePickerDialog.OnDateSetListener;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,11 +19,29 @@ import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button chooseDateButton;
-    private Button chooseTypeOfExercise;
-    private Button saveData;
+    private static String DATABASE = "MyDB";
+    private SQLiteDatabase db;
+    private MyDBHelper dbHelper;
+
 
     private EditText editText;
+    private Button chooseDateButton;
+    private Button chooseTypeOfExercise;
+    private Button saveData, queryData;
+
+
+    Cursor cursor;
+    int n;
+
+
+    String ExerciseType = "";
+    String Date = "";
+    String saveTypeOfExercise [];
+
+
+
+
+
 
     private int year, month, day;
 
@@ -29,13 +49,57 @@ public class MainActivity extends AppCompatActivity {
 
     private int chooseTypeOfExercise_choice = -1;
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        processViews();
+
+        dbHelper = new MyDBHelper(this);
+        db = dbHelper.getWritableDatabase();
+
+        cursor = db.rawQuery(
+                "select DISTINCT tbName sqlite_master where tbName = '" + DATABASE + "'", null );
+        if(cursor != null)
+        {
+            if(cursor.getCount() == 0)
+            {
+                db.execSQL("CREATE TABLE myDB (_id interge primary key autoincrement, wallkNumber int not null, exerciseType nvarchar(15) not null, exerciseDate date not null)");
+            }
+        }
+
+        Calendar cal = Calendar.getInstance();          //取得目前日期與時間
+
+        year= cal.get(Calendar.YEAR);
+        month=cal.get(Calendar.MONTH);
+        day=cal.get(Calendar.DAY_OF_MONTH);
+
+    }
+
+
+    @Override
+    protected void onStop()          // 當Activity停止時關閉database
+    {
+        super.onStop();
+        db.close(); // 關閉資料庫
+    }
+
+
+
+
+
+
+
+
+
     private void processViews()
     {
-        //saveData = (Button)findViewById(R.id.saveData);
+        saveData = (Button)findViewById(R.id.saveData);
+        queryData= (Button)findViewById(R.id.queryData);
         chooseDateButton = (Button)findViewById(R.id.chooseDateButton);
         chooseTypeOfExercise = (Button)findViewById(R.id.chooseTypeOfExercise);
         editText=(EditText)findViewById(R.id.editText1);
-
     }
 
     public void chooseDate(View view)          //選擇日期按鈕
@@ -96,47 +160,33 @@ public class MainActivity extends AppCompatActivity {
         d.show();
     }
 
-    public void saveData(View view)
+    public void queryData(View view)          //進入查詢頁面
     {
-        String date = chooseDateButton.getText().toString();
-        String exercise = chooseTypeOfExercise.getText().toString();
-        String number = editText.getText().toString();
-
-        int num = 0;
-
-        num=Integer.parseInt(number);          //輸入的步數轉為int
+//        String date = chooseDateButton.getText().toString();
+//        String exercise = chooseTypeOfExercise.getText().toString();
+//        String number = editText.getText().toString();
+//
+//        int num = 0;
+//
+//        num=Integer.parseInt(number);          //輸入的步數轉為int
+//
+//        Intent intent = new Intent(this, SecondActivity.class);
+//
+//        Bundle bundle = new Bundle();
+//
+//        bundle.putString("date", date);;
+//        bundle.putString("exercise", exercise);
+//        bundle.putInt("num", num);
+//
+//        intent.putExtras(bundle);
+//
+//        intent.putExtra("date", date);
+//        intent.putExtra("exercise", exercise);
+//        intent.putExtra("num", num);
 
         Intent intent = new Intent(this, SecondActivity.class);
-
-        Bundle bundle = new Bundle();
-
-        bundle.putString("date", date);;
-        bundle.putString("exercise", exercise);
-        bundle.putInt("num", num);
-
-        intent.putExtras(bundle);
-
-        intent.putExtra("date", date);
-        intent.putExtra("exercise", exercise);
-        intent.putExtra("num", num);
-
         startActivity(intent);
 
     }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        processViews();
-
-        //取得目前日期與時間
-        Calendar cal = Calendar.getInstance();
-
-        year= cal.get(Calendar.YEAR);
-        month=cal.get(Calendar.MONTH);
-        day=cal.get(Calendar.DAY_OF_MONTH);
-
-    }
 }

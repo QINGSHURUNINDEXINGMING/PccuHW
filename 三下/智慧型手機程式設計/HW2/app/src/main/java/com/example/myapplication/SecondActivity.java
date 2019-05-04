@@ -28,7 +28,7 @@ public class SecondActivity extends AppCompatActivity
         endDate = (Button)findViewById(R.id.endDate);
     }
 
-    public void chooseStartDate(View view)          //選擇日期按鈕
+    public void chooseStartDate(View view)          //選擇開始日期按鈕
     {
         OnDateSetListener listener = new OnDateSetListener()
         {
@@ -45,7 +45,7 @@ public class SecondActivity extends AppCompatActivity
         DatePickerDialog d =new DatePickerDialog(this, listener, year, month, day);          // 顯示日期對話框
         d.show();
     }
-    public void chooseEndDate(View view)          //選擇日期按鈕
+    public void chooseEndDate(View view)          //選擇結束日期按鈕
     {
         OnDateSetListener listener = new OnDateSetListener()
         {

@@ -1,7 +1,0 @@
-1.
-
-Java String.matches
-
-檢查 A 字串 是否存在 B字串 -> a.matches(b) 回傳 T/F
-
-

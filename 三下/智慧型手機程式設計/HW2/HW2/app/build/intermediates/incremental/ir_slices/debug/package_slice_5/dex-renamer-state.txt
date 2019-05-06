@@ -1,0 +1,4 @@
+#Sun May 05 17:58:28 CST 2019
+base.0=C\:\\Users\\E901\\Desktop\\123\\Tallybook1_AlertDialogs\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\5
+path.0=classes.dex
+renamed.0=classes.dex

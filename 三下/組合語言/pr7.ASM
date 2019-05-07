@@ -1,0 +1,42 @@
+.MODEL SMALL
+.STACK
+.DATA
+    NO1 DB 2
+    NO2 DB 3
+.CODE
+    MOV AX,@DATA
+    MOV DS,AX
+
+    MOV AH,1
+    INT 21h
+    SUB AL,'0'
+    MOV NO1,AL
+
+    MOV AH,1
+    INT 21h
+    SUB AL,'0'
+    MOV NO2,AL
+
+    MOV AL,NO1
+    MOV DL,NO2
+
+    MUL DL
+    
+    mov al, cl
+    mov bl,Ah
+    div bl
+    add al, '0'
+    add ah, '0'
+    mov bx, ax
+
+
+    MOV DL,bl
+    MOV AH,02
+    INT 21H
+    mov dl, bh
+    mov ah, 02
+    int 21h
+
+    MOV AH,4CH
+    INT 21H
+END

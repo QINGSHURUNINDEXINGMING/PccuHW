@@ -1,0 +1,14 @@
+.286
+.MODEL tiny
+CR EQU 0DH
+LF EQU 0AH
+.STACK 100H
+.DATA
+  MSG BYTE 'Hello world!$',CR,LF
+.CODE
+       .STARTUP
+       MOV DX,OFFSET MSG
+       MOV AH,09H
+       INT 21H
+       .EXIT
+END

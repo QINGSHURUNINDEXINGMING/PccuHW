@@ -22,19 +22,19 @@
 
     MUL DL
     
-    mov al, cl
-    mov bl,Ah
-    div bl
-    add al, '0'
-    add ah, '0'
+    mov, ah,0h
+    mov cl,Ah
+    div cl
+    add ax, 3030h
     mov bx, ax
-
 
     MOV DL,bl
     MOV AH,02
     INT 21H
-    mov dl, bh
-    mov ah, 02
+
+    mov dl,bh
+
+    mov ah,02
     int 21h
 
     MOV AH,4CH

@@ -19,33 +19,14 @@
 
     MOV AH, 1
     INT 21H
-    
+
+I:
+    cmp al,2Bh
+    JNG E
+
     MOV AL,NO1
     MOV DL,NO2
 
-    cmp al,'+'
-    JE  EQUALADD
-
-    MUL DL
-    mov ah,0h
-    mov cl,0ah
-    div cl
-    add ax, 3030h
-    mov bx, ax
-
-    MOV DL,bl
-    MOV AH,02
-    INT 21H
-
-    mov dl,bh
-    mov ah,02
-    int 21h
-
-    MOV AH,4CH
-    INT 21H
-
-
-EQUALADD:
     ADD AL, DL
     mov ah,0h
     mov cl,0ah
@@ -60,7 +41,29 @@ EQUALADD:
     mov dl,bh
     mov ah,02
     int 21h
+    JMP EN
 
+
+E:
+    MUL DL
+
+    MOV AL,NO1
+    MOV DL,NO2
+
+    mov ah,0h
+    mov cl,0ah
+    div cl
+    add ax, 3030h
+    mov bx, ax
+
+    MOV DL,bl
+    MOV AH,02
+    INT 21H
+
+    mov dl,bh
+    mov ah,02
+    int 21h
+EN:
     MOV AH,4CH
     INT 21H
 

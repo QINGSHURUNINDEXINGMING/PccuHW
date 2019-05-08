@@ -20,8 +20,8 @@
     MOV AH, 1
     INT 21H
 
-I:
-    cmp al,2Bh
+I:  
+    cmp al,2Ah
     JNG E
 
     MOV AL,NO1
@@ -45,10 +45,10 @@ I:
 
 
 E:
-    MUL DL
 
     MOV AL,NO1
     MOV DL,NO2
+    MUL DL
 
     mov ah,0h
     mov cl,0ah

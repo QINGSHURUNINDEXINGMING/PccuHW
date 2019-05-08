@@ -20,7 +20,7 @@
     MOV AL,NO1
     MOV DL,NO2
 
-    MUL DL
+    ADD AL, DL
     
     mov ah,0h
     mov cl,0ah
@@ -39,3 +39,4 @@
     MOV AH,4CH
     INT 21H
 END
+

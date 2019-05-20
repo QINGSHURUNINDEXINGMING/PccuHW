@@ -1,0 +1,24 @@
+.MODEL SMALL
+.STACK 100H
+.DATA
+     MSG1 DB 'I AN A STUDENT$'
+     LEN DW $-MSG1
+     MSG2 DB 'I AM A STUDENT$'
+.CODE
+BEG: MOV AX,@DATA
+     MOV DS,AX
+     MOV ES,AX
+     CLD
+     MOV CX,LEN
+     LEA SI,MSG1
+     LEA DI,MSG2
+     REPE CMPSB
+     JCXZ DOS
+     DEC SI
+     LODS MSG1  ;  AL <- [SI]
+     MOV DL,AL
+     MOV AH,2
+     INT 21H
+DOS: MOV AH,4CH
+     INT 21H
+END  BEG

@@ -19,29 +19,14 @@ import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static String DATABASE = "MyDB";
-    private SQLiteDatabase db;
-    private MyDBHelper dbHelper;
-
-
     private EditText editText;
     private Button chooseDateButton;
     private Button chooseTypeOfExercise;
     private Button saveData, queryData;
 
-
-    Cursor cursor;
-    int n;
-
-
     String ExerciseType = "";
     String Date = "";
     String saveTypeOfExercise [];
-
-
-
-
-
 
     private int year, month, day;
 
@@ -56,19 +41,6 @@ public class MainActivity extends AppCompatActivity {
 
         processViews();
 
-        dbHelper = new MyDBHelper(this);
-        db = dbHelper.getWritableDatabase();
-
-        cursor = db.rawQuery(
-                "select DISTINCT tbName sqlite_master where tbName = '" + DATABASE + "'", null );
-        if(cursor != null)
-        {
-            if(cursor.getCount() == 0)
-            {
-                db.execSQL("CREATE TABLE myDB (_id interge primary key autoincrement, wallkNumber int not null, exerciseType nvarchar(15) not null, exerciseDate date not null)");
-            }
-        }
-
         Calendar cal = Calendar.getInstance();          //取得目前日期與時間
 
         year= cal.get(Calendar.YEAR);
@@ -76,22 +48,6 @@ public class MainActivity extends AppCompatActivity {
         day=cal.get(Calendar.DAY_OF_MONTH);
 
     }
-
-
-    @Override
-    protected void onStop()          // 當Activity停止時關閉database
-    {
-        super.onStop();
-        db.close(); // 關閉資料庫
-    }
-
-
-
-
-
-
-
-
 
     private void processViews()
     {
@@ -162,31 +118,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void queryData(View view)          //進入查詢頁面
     {
-//        String date = chooseDateButton.getText().toString();
-//        String exercise = chooseTypeOfExercise.getText().toString();
-//        String number = editText.getText().toString();
-//
-//        int num = 0;
-//
-//        num=Integer.parseInt(number);          //輸入的步數轉為int
-//
-//        Intent intent = new Intent(this, SecondActivity.class);
-//
-//        Bundle bundle = new Bundle();
-//
-//        bundle.putString("date", date);;
-//        bundle.putString("exercise", exercise);
-//        bundle.putInt("num", num);
-//
-//        intent.putExtras(bundle);
-//
-//        intent.putExtra("date", date);
-//        intent.putExtra("exercise", exercise);
-//        intent.putExtra("num", num);
-
         Intent intent = new Intent(this, SecondActivity.class);
         startActivity(intent);
-
     }
 
 }

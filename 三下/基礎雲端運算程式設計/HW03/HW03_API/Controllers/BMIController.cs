@@ -13,8 +13,12 @@ namespace HW03_API.Controllers
         [HttpGet]
         public IHttpActionResult result(double cm, double kg)
         {
+            // 建立記帳簿服務結果資料物件
+            BMIResultData BMIResultDataOBJ = new BMIResultData();
             return Ok(kg / Math.Pow(Math.Round(cm / 100, 2), 2));
         }
+
+
 
         [Route("api/BMIPost/{cm}/{kg}")]
         [HttpPost]

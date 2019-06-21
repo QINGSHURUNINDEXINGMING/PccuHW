@@ -18,18 +18,19 @@ namespace HW03_MVC.Controllers
         {
             return View();
         }
+
         [HttpPost]
-        public async Task<ActionResult> BMICompute([Bind(Exclude = "Result")] BMIViewModel bmidata)
+        public async Task<ActionResult> BMICompute([Bind(Exclude = "result")] BMIViewModel bmidata)
         {
             string result = "", urlstring = "";
+
             if (!ModelState.IsValid)
             {
                 return View(bmidata);
             }
             try
             {
-                int type = (bmidata.Type == "大樂透") ? 0 : 1;
-                urlstring = "http://140.137.41.136:5558/a1234567/MathLotteryWebAPIs/api/lottery/" + type + "/" + bmidata.Sets;
+                urlstring = "http://140.137.41.136:5558/A6409001/HW03/api/BMI/" + bmidata.cm + " / "+ bmidata.kg;
                 //建立HttClient物件
                 client = new HttpClient();
                 // 以非同步GET方式呼叫樂透服務之API

@@ -11,13 +11,13 @@ namespace HW03_MVC.ViewModels
     {
         [DisplayName("身高：")]
         [Required(ErrorMessage = "請輸入身高")]
-        public double CM { get; set; }
+        public double cm { get; set; }
 
         [DisplayName("體重：")]
         [Required(ErrorMessage = "請輸入體重")]
-        public double KG { get; set; }
+        public double kg { get; set; }
 
         [DisplayName("結果：")]
-        public string Result { get; set; }
+        public string result { get; set; }
     }
 }

@@ -14,6 +14,6 @@ namespace HW03_MVC.ViewModels
         public double num { get; set; }
 
         [DisplayName("結果：")]
-        public string Result { get; set; }
+        public string result { get; set; }
     }
 }

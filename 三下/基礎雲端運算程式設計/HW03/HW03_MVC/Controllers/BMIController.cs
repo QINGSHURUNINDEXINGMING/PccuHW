@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
@@ -10,23 +11,25 @@ namespace HW03_MVC.Controllers
 {
     public class BMIController : Controller
     {
+        private HttpClient client;
+
         // GET: BMI
         public ActionResult BMICompute()
         {
             return View();
         }
         [HttpPost]
-        public async Task<ActionResult> LotteryGen([Bind(Exclude = "Result")] BMIViewModel lotterydata)
+        public async Task<ActionResult> BMICompute([Bind(Exclude = "Result")] BMIViewModel bmidata)
         {
             string result = "", urlstring = "";
             if (!ModelState.IsValid)
             {
-                return View(lotterydata);
+                return View(bmidata);
             }
             try
             {
-                int type = (lotterydata.Type == "大樂透") ? 0 : 1;
-                urlstring = "http://140.137.41.136:5558/a1234567/MathLotteryWebAPIs/api/lottery/" + type + "/" + lotterydata.Sets;
+                int type = (bmidata.Type == "大樂透") ? 0 : 1;
+                urlstring = "http://140.137.41.136:5558/a1234567/MathLotteryWebAPIs/api/lottery/" + type + "/" + bmidata.Sets;
                 //建立HttClient物件
                 client = new HttpClient();
                 // 以非同步GET方式呼叫樂透服務之API

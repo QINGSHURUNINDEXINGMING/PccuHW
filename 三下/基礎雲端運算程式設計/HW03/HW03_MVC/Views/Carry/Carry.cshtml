@@ -1,7 +1,43 @@
 ﻿
+@model HW03_MVC.ViewModels.CarryViewModel
+
 @{
     ViewBag.Title = "Carry";
 }
 
-<h2>Carry</h2>
+<div align="center">
+    <br />
+    <b class="label label-danger" style="font-size:large">進位運算服務</b>
+    <br /> <br />
+    @*建立進位服務表單*@
+    @using (Html.BeginForm("Carry", "Carry"))
+    {
+        <table>
+            <tr>
+                <td>
+                    @Html.LabelFor(model => model.num, new { @class = "label label-warning" })
+                </td>
+                <td>
+                    @Html.TextBoxFor(model => model.num)
+                    @Html.ValidationMessageFor(model => model.num, "", new { @class = "text-danger" })
+                </td>
+            </tr>
+       
+            <tr>
+                <td>
+                    @Html.LabelFor(model => model.result, new { @class = "label label-warning" })
+                </td>
+                <td>
+                    @Html.TextBoxFor(model => model.result)
+                </td>
+            </tr>
+        </table>
+        <input type="submit" name="btnCompute" value="Binary" class="btn btn-success">
+        <input type="submit" name="btnCompute" value="Octal" class="btn btn-success">
+        <input type="submit" name="btnCompute" value="Hexadecimal" class="btn btn-success">
+    }
+</div>
 
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

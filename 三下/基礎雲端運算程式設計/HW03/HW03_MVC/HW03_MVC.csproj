@@ -170,12 +170,13 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\BMI\BMICompute.cshtml" />
+    <Content Include="Views\BMI\BMIComputePost.cshtml" />
+    <Content Include="Views\Carry\Carry.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\BMI\" />
-    <Folder Include="Views\Carry\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

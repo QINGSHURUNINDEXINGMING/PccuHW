@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "網站首頁";
+}
+
+<div align="center">
+    <br />
+    <b class="label label-primary" style="font-size:x-large">網站首頁</b>
+    <br /> <br />
+    <h3>
+        @Html.ActionLink("BMI服務(GET)", "BMICompute", "BMI", null, new { @class = "btn btn-success btn-md", style = "font-family:標楷體;" })
+        @Html.ActionLink("BMI服務(Post)", "BMIComputePost", "BMI", null, new { @class = "btn btn-success btn-md", style = "font-family:標楷體;" })
+        @Html.ActionLink("進位服務(GET)", "Carry", "Carry", null, new { @class = "btn btn-success btn-md", style = "font-family:標楷體;" })
+    </h3>
+</div>

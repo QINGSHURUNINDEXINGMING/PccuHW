@@ -16,9 +16,12 @@ namespace HW03_API.Controllers
             // 建立記帳簿服務結果資料物件
             BMIResultData BMIResultDataobj = new BMIResultData();
 
+            string str = "";
+            str += Math.Round(kg / Math.Pow(Math.Round(cm / 100, 2), 2), 2);
+
             //=== 並將BMI服務之運算結果存入BMI服務結果資料物件對應的欄位 ====
             BMIResultDataobj.Status = "OK";
-            BMIResultDataobj.BMIResult = Math.Round(kg / Math.Pow(Math.Round(cm / 100, 2), 2), 2);
+            BMIResultDataobj.BMIResult += str;
 
             // 回傳BMI服務結果資料物件，執行環境會因應Client端的請求(利用application/json或application/xml)
             // 分別自動地將物件序列化(Serialize)成JSON或XML字串
@@ -26,6 +29,7 @@ namespace HW03_API.Controllers
         }
 
         [Route("api/BMIPost/{cm}/{kg}")]
+
         [HttpPost]
         public IHttpActionResult resultPost(double cm, double kg)
         {
@@ -34,7 +38,7 @@ namespace HW03_API.Controllers
 
             //=== 並將BMI服務之運算結果存入BMI服務結果資料物件對應的欄位 ====
             BMIResultDataobj.Status = "OK";
-            BMIResultDataobj.BMIResult = Math.Round(kg / Math.Pow(Math.Round(cm / 100, 2), 2), 2);
+            BMIResultDataobj.BMIResult += Math.Round(kg / Math.Pow(Math.Round(cm / 100, 2), 2), 2);
 
             // 回傳BMI服務結果資料物件，執行環境會因應Client端的請求(利用application/json或application/xml)
             // 分別自動地將物件序列化(Serialize)成JSON或XML字串
@@ -48,7 +52,7 @@ namespace HW03_API.Controllers
             // 儲存BMI服務結果之狀態
             public string Status { get; set; }
             // 儲存BMI服務之運算結果
-            public double BMIResult { get; set; }
+            public string BMIResult { get; set; }
         }
     }
 }

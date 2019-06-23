@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/outterScroller"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="管理運動種類介面"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#184F06"
+            android:gravity="center_horizontal"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/etxtNewExpenseType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="11"
+                android:hint="請輸入新運動種類"
+                android:textSize="14sp"
+                android:inputType="text"
+                android:layout_weight="0.7"/>
+
+            <Button
+                android:id="@+id/btnCreateNewExpenseType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="新增運動種類"
+                android:layout_margin="5dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="#150678"
+                android:onClick="btnCreateNewExpenseType_Click"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/etxtOldExpenseType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:ems="11"
+                android:hint="請輸入擬刪除運動種類的編號"
+                android:textSize="14sp"
+                android:inputType="numberDecimal"/>
+
+            <Button
+                android:id="@+id/btnDeleteExpenseType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="刪除運動種類"
+                android:layout_margin="5dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="#150678"
+                android:onClick="btnDeleteExpenseType_Click"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnDispalyExpenseTypes"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_margin="5dp"
+                android:layout_weight="0.6"
+                android:background="#150678"
+                android:onClick="btnDispalyExpenseTypes_Click"
+                android:text="顯示所有運動種類"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnReturnToMainActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_margin="5dp"
+                android:layout_weight="0.4"
+                android:background="#150678"
+                android:onClick="btnReturnToMainActivity_Click"
+                android:text="返回主操作介面"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/innerScroller"
+            android:layout_width="match_parent"
+            android:layout_height="320dp">
+
+            <TextView
+                android:id="@+id/tvOutput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </ScrollView>
+
+
+    </LinearLayout>
+</ScrollView>

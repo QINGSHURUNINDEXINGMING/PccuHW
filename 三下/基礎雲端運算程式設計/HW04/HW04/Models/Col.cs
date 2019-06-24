@@ -9,8 +9,8 @@ namespace HW04.Models
     {
         public int id { get; set; }
         public int number { get; set; }
-        public string type { get; set; }
+        public string exerciseType { get; set; }
         public string comment { get; set; }
-        public DateTime Date { get; set; }
+        public DateTime payDate { get; set; }
     }
 }

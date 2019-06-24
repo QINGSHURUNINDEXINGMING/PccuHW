@@ -3,6 +3,8 @@ C:\Users\E901\Desktop\HW04\HW04\bin\HW04.dll.config
 C:\Users\E901\Desktop\HW04\HW04\bin\HW04.dll
 C:\Users\E901\Desktop\HW04\HW04\bin\HW04.pdb
 C:\Users\E901\Desktop\HW04\HW04\bin\Antlr3.Runtime.dll
+C:\Users\E901\Desktop\HW04\HW04\bin\EntityFramework.dll
+C:\Users\E901\Desktop\HW04\HW04\bin\EntityFramework.SqlServer.dll
 C:\Users\E901\Desktop\HW04\HW04\bin\Microsoft.AI.Agent.Intercept.dll
 C:\Users\E901\Desktop\HW04\HW04\bin\Microsoft.AI.DependencyCollector.dll
 C:\Users\E901\Desktop\HW04\HW04\bin\Microsoft.AI.PerfCounterCollector.dll
@@ -21,6 +23,8 @@ C:\Users\E901\Desktop\HW04\HW04\bin\System.Web.WebPages.Deployment.dll
 C:\Users\E901\Desktop\HW04\HW04\bin\System.Web.WebPages.dll
 C:\Users\E901\Desktop\HW04\HW04\bin\System.Web.WebPages.Razor.dll
 C:\Users\E901\Desktop\HW04\HW04\bin\WebGrease.dll
+C:\Users\E901\Desktop\HW04\HW04\bin\EntityFramework.xml
+C:\Users\E901\Desktop\HW04\HW04\bin\EntityFramework.SqlServer.xml
 C:\Users\E901\Desktop\HW04\HW04\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\E901\Desktop\HW04\HW04\bin\System.Web.Helpers.xml
 C:\Users\E901\Desktop\HW04\HW04\bin\System.Web.Mvc.xml
@@ -36,6 +40,7 @@ C:\Users\E901\Desktop\HW04\HW04\bin\Microsoft.AI.DependencyCollector.xml
 C:\Users\E901\Desktop\HW04\HW04\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\E901\Desktop\HW04\HW04\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\E901\Desktop\HW04\HW04\bin\Microsoft.AI.Web.xml
+C:\Users\E901\Desktop\HW04\HW04\bin\zh-Hant\EntityFramework.resources.dll
 C:\Users\E901\Desktop\HW04\HW04\bin\zh-Hant\System.Web.Helpers.resources.dll
 C:\Users\E901\Desktop\HW04\HW04\bin\zh-Hant\System.Web.Mvc.resources.dll
 C:\Users\E901\Desktop\HW04\HW04\bin\zh-Hant\System.Web.Optimization.resources.dll
@@ -43,19 +48,9 @@ C:\Users\E901\Desktop\HW04\HW04\bin\zh-Hant\System.Web.Razor.resources.dll
 C:\Users\E901\Desktop\HW04\HW04\bin\zh-Hant\System.Web.WebPages.resources.dll
 C:\Users\E901\Desktop\HW04\HW04\bin\zh-Hant\System.Web.WebPages.Deployment.resources.dll
 C:\Users\E901\Desktop\HW04\HW04\bin\zh-Hant\System.Web.WebPages.Razor.resources.dll
+C:\Users\E901\Desktop\HW04\HW04\obj\Debug\HW04.csprojResolveAssemblyReference.cache
 C:\Users\E901\Desktop\HW04\HW04\obj\Debug\HW04.csproj.CoreCompileInputs.cache
 C:\Users\E901\Desktop\HW04\HW04\obj\Debug\HW04.dll
 C:\Users\E901\Desktop\HW04\HW04\obj\Debug\HW04.pdb
-C:\Users\E901\Desktop\HW04\HW04\bin\EntityFramework.dll
-C:\Users\E901\Desktop\HW04\HW04\bin\EntityFramework.SqlServer.dll
-C:\Users\E901\Desktop\HW04\HW04\bin\System.Net.Http.Formatting.dll
-C:\Users\E901\Desktop\HW04\HW04\bin\System.Web.Http.dll
-C:\Users\E901\Desktop\HW04\HW04\bin\System.Web.Http.WebHost.dll
-C:\Users\E901\Desktop\HW04\HW04\bin\EntityFramework.xml
-C:\Users\E901\Desktop\HW04\HW04\bin\EntityFramework.SqlServer.xml
-C:\Users\E901\Desktop\HW04\HW04\bin\System.Net.Http.Formatting.xml
-C:\Users\E901\Desktop\HW04\HW04\bin\System.Web.Http.xml
-C:\Users\E901\Desktop\HW04\HW04\bin\System.Web.Http.WebHost.xml
-C:\Users\E901\Desktop\HW04\HW04\bin\zh-Hant\EntityFramework.resources.dll
 C:\Users\E901\Desktop\HW04\HW04\obj\Debug\HW04.Migrations.initial.resources
 C:\Users\E901\Desktop\HW04\HW04\obj\Debug\HW04.csproj.GenerateResource.Cache

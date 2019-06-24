@@ -13,7 +13,7 @@ namespace HW04.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201906232257230_initial"; }
+            get { return "201906240256488_initial"; }
         }
         
         string IMigrationMetadata.Source

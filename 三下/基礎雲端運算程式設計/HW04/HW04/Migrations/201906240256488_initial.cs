@@ -8,23 +8,23 @@ namespace HW04.Migrations
         public override void Up()
         {
             CreateTable(
-                "dbo.Col",
+                "dbo.ColsV2",
                 c => new
                     {
                         id = c.Int(nullable: false, identity: true),
                         number = c.Int(nullable: false),
-                        type = c.String(),
+                        exerciseType = c.String(),
                         comment = c.String(),
-                        Date = c.DateTime(nullable: false),
+                        payDate = c.DateTime(nullable: false),
                     })
                 .PrimaryKey(t => t.id);
             
             CreateTable(
-                "dbo.Type",
+                "dbo.KindsV2",
                 c => new
                     {
                         id = c.Int(nullable: false, identity: true),
-                        extype = c.String(),
+                        exerciseKind = c.String(),
                     })
                 .PrimaryKey(t => t.id);
             
@@ -32,8 +32,8 @@ namespace HW04.Migrations
         
         public override void Down()
         {
-            DropTable("dbo.Type");
-            DropTable("dbo.Col");
+            DropTable("dbo.KindsV2");
+            DropTable("dbo.ColsV2");
         }
     }
 }

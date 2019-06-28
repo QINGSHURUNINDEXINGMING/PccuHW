@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第15週之1_雲端記帳簿服務第2版程式範例(含部署與服務呼叫文件)_20190530\TallybookServiceV2CFDB\obj\Release\Package\PackageTmp" />
+  <setAcl path="C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第15週之1_雲端記帳簿服務第2版程式範例(含部署與服務呼叫文件)_20190530\TallybookServiceV2CFDB\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第15週之1_雲端記帳簿服務第2版程式範例(含部署與服務呼叫文件)_20190530\TallybookServiceV2CFDB\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>

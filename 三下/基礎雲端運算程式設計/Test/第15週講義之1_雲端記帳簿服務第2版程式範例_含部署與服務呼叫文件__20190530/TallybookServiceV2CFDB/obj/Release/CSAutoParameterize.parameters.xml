@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="TallybookServiceV2Model-Web.config Connection String" description="TallybookServiceV2Model 應用程式在 web.config 中用來存取資料庫的連接字串。" defaultValue="Data Source=140.137.41.136,5557\SQLEXPRESS;Initial Catalog=A1234567;User ID=A1234567;Password= $A123!4567s;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Dropbox\\00\.Courses\(1072\)\\4\.CC_PG_3A_401-403\\第15週之1_雲端記帳簿服務第2版程式範例\(含部署與服務呼叫文件\)_20190530\\TallybookServiceV2CFDB\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='TallybookServiceV2Model']/@connectionString" />
+  </parameter>
+</parameters>

@@ -11,29 +11,43 @@ namespace HW04.Controllers
     public class APIController : ApiController
     {
         #region
+
         private class ServiceResult
         {
             public string Status { get; set; }
             public string APIResult { get; set; }
-
-            ServiceResult serviceObj;
-            Service db = new Service();
         }
+
+        ServiceResult serviceObj;
+        Service db = new Service();
+
         #endregion
 
         #region
-        public ServiceController()
+        public APIController()
         {
             try
             {
                 string[] initialTypes = { "慢走", "慢跑", "快走", "快跑" };
+
                 AddKind addkind = new AddKind();
-                IEnumerator<AddKind> addKinds = db.AddKinds;
+
+                IEnumerable<AddKind> addKinds = db.AddKinds;
+
+                int rowcount = addKinds.Count<AddKind>();     // 計算資料表資料筆數
+                if (rowcount == 0) //若沒有任何消費種類，則利用迴圈方式，將初始消費種類逐一存到ExpenseTypes資料表中
+                {
+                    for (int i = 0; i < initialTypes.Length; i++)
+                    {
+                        addkind.type = initialTypes[i];
+                        db.AddKinds.Add(addkind);
+                        db.SaveChanges();
+                    }
+                }
             }
-            catch
+            catch (Exception ex)
             {
-
-
+                string str = ex.Message;
             }
         }
         #endregion

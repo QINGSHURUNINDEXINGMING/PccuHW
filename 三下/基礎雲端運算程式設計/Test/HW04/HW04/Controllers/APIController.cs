@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Threading.Tasks;
 using System.Web.Http;
 using HW04.Models;
 
@@ -49,11 +50,43 @@ namespace HW04.Controllers
             {
                 string str = ex.Message;
             }
+
         }
         #endregion
 
+        #region
+        [HttpPost]
+        [Route("api/MainTBs")]
+        public async Task<IHttpActionResult>PostMainTB(MainTB maintb)
+        {
+            serviceObj = new ServiceResult();
+            try
+            {
+                db.MainTBs.Add(maintb);
+                await db.SaveChangesAsync();
+                string result = "儲存一筆資料";
+
+                serviceObj.Status = "OK";
+                serviceObj.APIResult = result;
+
+                return Ok(serviceObj);
+            }
+            catch(Exception ex)
+            {
+                serviceObj.Status = "Exception";
+                serviceObj.APIResult = "儲存資料發生例外,原因如下：";
+
+                return Ok(serviceObj);
+            }
+        }
+        #endregion
+
+        #region
+        
 
 
+
+        #endregion
 
 
 

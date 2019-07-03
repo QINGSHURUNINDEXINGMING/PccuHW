@@ -82,7 +82,12 @@ namespace HW04.Controllers
         #endregion
 
         #region
-        
+        [HttpGet]
+        [Route("api/MainTBs/{startDate}/{endDate}/{queryMode}")]
+        public IHttpActionResult GetMainTBs(string startDate, string endDate, int queryMode)
+        {
+            serviceObj = new ServiceResult();
+        }
 
 
 

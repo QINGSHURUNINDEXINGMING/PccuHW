@@ -87,6 +87,37 @@ namespace HW04.Controllers
         public IHttpActionResult GetMainTBs(string startDate, string endDate, int queryMode)
         {
             serviceObj = new ServiceResult();
+
+            DateTime sDate = Convert.ToDateTime(startDate);
+            DateTime eDate = Convert.ToDateTime(endDate);
+
+            string str;
+            int totalAmount;
+            int count;
+            int typeSum;
+
+            if (queryMode == 0)
+            {
+                try
+                {
+                    str = "";
+                    totalAmount = 0;
+
+                    var result = from a in db.MainTBs
+                                 where ((a.date >= sDate) && (a.date <= eDate))
+                                 orderby a.date
+                                 select a;
+                    count = result.Count();
+                    str="在"+sDate.Date.ToString("yyyy-MM-dd")+"到"+e
+
+                }
+
+
+
+            }
+
+
+
         }
 
 

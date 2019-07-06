@@ -108,8 +108,12 @@ namespace HW04.Controllers
                                  orderby a.date
                                  select a;
                     count = result.Count();
-                    str="在"+sDate.Date.ToString("yyyy-MM-dd")+"到"+e
+                    str = "在" + sDate.Date.ToString("yyyy-MM-dd") + "到" + eDate.Date.ToString("yyyy-MM-dd") + "共有" + count + "紀錄";
 
+                    foreach(var record in result)
+                    {
+                        totalAmount += result.number;
+                    }
                 }
 
 

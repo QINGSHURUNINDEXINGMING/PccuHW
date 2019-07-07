@@ -112,10 +112,27 @@ namespace HW04.Controllers
 
                     foreach(var record in result)
                     {
-                        totalAmount += result.number;
+                        totalAmount += record.number;
                     }
+                    str += "共計步數" + totalAmount + "步\n";
+
+                    string[] titles = { "編號", "步數", "類別", "日期", "說明" };
+                    foreach(var name in titles)
+                    {
+                        str += string.Format("{0}       ", name);
+                    }
+                    str += "\n";
+
+                    int i = 0;
+                    foreach (var record in result)
+                    {
+                        str += string.Format("{0:d4}    ", (i + 1));
+
+                    }
+
                 }
 
+                
 
 
             }

@@ -141,6 +141,15 @@ namespace HW04.Controllers
 
                     return Ok(serviceObj);
                 }
+            }else if (queryMode == 1)
+            {
+                str = "";
+                totalAmount = 0;
+
+                var result = from a in db.MainTBs
+                             where ((a.date >= sDate) && (a.date <= eDate))
+                             group a by a.type into g
+                             select g.FirstOrDefault();
             }
 
 

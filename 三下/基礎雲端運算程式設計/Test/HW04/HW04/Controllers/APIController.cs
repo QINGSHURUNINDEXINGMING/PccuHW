@@ -57,7 +57,7 @@ namespace HW04.Controllers
         #region
         [HttpPost]
         [Route("api/MainTBs")]
-        public async Task<IHttpActionResult>PostMainTB(MainTB maintb)
+        public async Task<IHttpActionResult> PostMainTB(MainTB maintb)
         {
             serviceObj = new ServiceResult();
             try
@@ -71,7 +71,7 @@ namespace HW04.Controllers
 
                 return Ok(serviceObj);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 serviceObj.Status = "Exception";
                 serviceObj.APIResult = "儲存資料發生例外,原因如下：";
@@ -110,31 +110,37 @@ namespace HW04.Controllers
                     count = result.Count();
                     str = "在" + sDate.Date.ToString("yyyy-MM-dd") + "到" + eDate.Date.ToString("yyyy-MM-dd") + "共有" + count + "紀錄";
 
-                    foreach(var record in result)
+                    foreach (var record in result)
                     {
                         totalAmount += record.number;
                     }
                     str += "共計步數" + totalAmount + "步\n";
 
-                    string[] titles = { "編號", "步數", "類別", "日期", "說明" };
-                    foreach(var name in titles)
-                    {
-                        str += string.Format("{0}       ", name);
-                    }
-                    str += "\n";
+
+                    str += string.Format("{0, -5} {1, -9} {2, -12} {3, -20} {4, -32} \n",
+                                         
+                                         "編號", "步數", "類別", "日期", "說明");
 
                     int i = 0;
                     foreach (var record in result)
                     {
-                        str += string.Format("{0:d4}    ", (i + 1));
-
+                        str += string.Format("{0:-d5} {1, -9} {2, -12} {3, -20} {4, -32} \n", 
+                            
+                                              (i + 1), record.number, record.type, record.date.Date.ToString("d"), record.comment);
+                        i++;
                     }
+                    serviceObj.Status = "OK";
+                    serviceObj.APIResult = str;
 
+                    return Ok(serviceObj);
                 }
+                catch(Exception ex)
+                {
+                    serviceObj.Status = "Exception";
+                    serviceObj.APIResult = "發生錯誤";
 
-                
-
-
+                    return Ok(serviceObj);
+                }
             }
 
 

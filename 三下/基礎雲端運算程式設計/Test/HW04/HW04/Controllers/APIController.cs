@@ -150,6 +150,17 @@ namespace HW04.Controllers
                              where ((a.date >= sDate) && (a.date <= eDate))
                              group a by a.type into g
                              select g.FirstOrDefault();
+
+                var records = result.ToArray<MainTB>();
+
+                count = result.Count();
+
+                if (count == 0)
+                {
+
+                }
+
+
             }
 
 

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="Model1-Web.config Connection String" description="Model1 應用程式在 web.config 中用來存取資料庫的連接字串。" defaultValue="data source=140.137.41.136,5557\SQLEXPRESS;initial catalog=A5420876;persist security info=True;user id=A5420876;password=$A542!0876s;MultipleActiveResultSets=True;App=EntityFramework" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\User\\Desktop\\HMHHW\\MyMVCHW004\\MyMVCHW004WebAPIs_with_MVCClien\\MyMVCHW004WebAPIs\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Model1']/@connectionString" />
+  </parameter>
+</parameters>

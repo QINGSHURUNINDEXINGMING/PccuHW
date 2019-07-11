@@ -1,0 +1,15 @@
+﻿@{
+	ViewBag.Title = "網站首頁";
+}
+
+<div align="center">
+	<br />
+	<b class="label label-primary" style="font-size:x-large">網站首頁</b>
+	<br /> <br />
+	<h3>
+		@Html.ActionLink("儲存運動紀錄", "Index", "SaveSportRecord", null, new { @class = "btn btn-info btn-md", style = "font-family:標楷體;" })
+		@Html.ActionLink("查詢運動紀錄", "Index", "SelectSportData", null, new { @class = "btn btn-info btn-md", style = "font-family:標楷體;" })
+		@Html.ActionLink("刪除運動紀錄", "Index", "DeleteSportData", null, new { @class = "btn btn-info btn-md", style = "font-family:標楷體;" })
+		@Html.ActionLink("管理運動種類", "Index", "ManageSportTypes", null, new { @class = "btn btn-info btn-md", style = "font-family:標楷體;" })
+	</h3>
+</div>

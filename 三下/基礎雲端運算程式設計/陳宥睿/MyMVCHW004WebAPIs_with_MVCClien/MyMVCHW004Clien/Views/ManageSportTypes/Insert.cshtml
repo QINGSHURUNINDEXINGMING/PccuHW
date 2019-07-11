@@ -1,0 +1,27 @@
+﻿@model  MyMVCHW004Clien.ViewModels.ManageSportTypesViewModel
+
+<div align="center">
+	@*建立雲端記帳簿表單*@
+	@using (Html.BeginForm("Insert", "ManageSportTypes"))
+	{
+		<table>
+			<tr></tr>
+			<tr>
+				<td>
+					@Html.LabelFor(m => m.newSportType, new { @class = "label label-default", style = "font-size:small" })
+				</td>
+				<td>
+					@Html.EditorFor(m => m.newSportType)
+					@Html.ValidationMessageFor(model => model.newSportType, "", new { @class = "text-danger" })
+				</td>
+				<td>
+					<input type="submit" name="btnSave" value="儲存運動種類" class="btn btn-info">
+				</td>
+			</tr>
+		</table>
+	}
+</div>
+
+@section Scripts {
+	@Scripts.Render("~/bundles/jqueryval")
+}

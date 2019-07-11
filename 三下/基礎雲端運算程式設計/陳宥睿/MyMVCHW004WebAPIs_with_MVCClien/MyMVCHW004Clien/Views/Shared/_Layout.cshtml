@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>@ViewBag.Title</title>
+	@Styles.Render("~/Content/css")
+	@Scripts.Render("~/bundles/modernizr")
+
+	<style>
+		.navbar {
+			background-color: #E0B0FF !important;
+		}
+
+			.navbar .navbar-brand {
+				color: #C34A2C !important;
+				font-size: 21px;
+				font-weight: bold;
+			}
+
+			.navbar li a {
+				color: #F0FFFF !important;
+				font-size: 19px;
+				font-weight: bold;
+			}
+
+		.navbar-nav li a:hover, .navbar-nav li.active a {
+			color: #f4511e !important;
+			background-color: #fff !important;
+		}
+
+		.navbar-default .navbar-toggle {
+			border-color: transparent;
+			color: #fff !important;
+		}
+	</style>
+</head>
+<body style="font-family:標楷體;">
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				@Html.ActionLink("雲端運動紀錄", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li>@Html.ActionLink("儲存運動紀錄", "Index", "SaveSportRecord")</li>
+					<li>@Html.ActionLink("查詢運動紀錄", "Index", "SelectSportData")</li>
+					<li>@Html.ActionLink("刪除運動紀錄", "Index", "DeleteSportData")</li>
+					<li>@Html.ActionLink("管理運動種類", "Index", "ManageSportTypes")</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container body-content">
+		@RenderBody()
+	</div>
+
+	@Scripts.Render("~/bundles/jquery")
+	@Scripts.Render("~/bundles/bootstrap")
+	@RenderSection("scripts", required: false)
+</body>
+</html>

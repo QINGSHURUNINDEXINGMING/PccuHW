@@ -1,0 +1,64 @@
+﻿@model  MyMVCHW004Clien.ViewModels.SaveSportRecordViewModel
+
+@{
+	ViewBag.Title = "雲端運動紀錄簿服務";
+	IEnumerable<SelectListItem> sporttypeList = ViewBag.sportTypeList;
+}
+
+<div align="center">
+	<br />
+	<b class="label label-primary" style="font-size:large">儲存運動紀錄服務操作介面</b>
+	<br /> <br />
+	@*建立雲端運動紀錄簿表單*@
+	@using (Html.BeginForm("Index", "SaveSportRecord"))
+	{
+		<table>
+			<tr>
+				<td>
+					@Html.LabelFor(m => m.sportTime, new { @class = "label label-default", style = "font-size:small" })
+				</td>
+				<td>
+					@Html.EditorFor(m => m.sportTime)
+					@Html.ValidationMessageFor(m => m.sportTime, "", new { @class = "text-danger" })
+				</td>
+			</tr>
+			<tr>
+				<td>
+					@Html.LabelFor(m => m.sportType, new { @class = "label label-default", style = "font-size:small" })
+				</td>
+				<td>
+					@Html.DropDownListFor(m => m.sportType, sporttypeList, new { @class = "form-control" })
+					@Html.ValidationMessageFor(m => m.sportType, "", new { @class = "text-danger" })
+				</td>
+			</tr>
+			<tr>
+				<td>
+					@Html.LabelFor(m => m.location, new { @class = "label label-default", style = "font -size:small" })
+				</td>
+				<td>
+					@Html.EditorFor(m => m.location)
+					@Html.ValidationMessageFor(m => m.location, "", new { @class = "text-danger" })
+				</td>
+			</tr>
+			<tr>
+				<td>
+					@Html.LabelFor(m => m.sportDate, new { @class = "label label-default", style = "font-size:small" })
+				</td>
+				<td>
+					@Html.EditorFor(m => m.sportDate)
+					@Html.ValidationMessageFor(m => m.sportDate, "", new { @class = "text-danger" })
+				</td>
+			</tr>
+		</table>
+
+		<input type="submit" name="btnSave" value="儲存運動紀錄" class="btn btn-info"> <br />
+
+		@Html.TextAreaFor(m => m.result, 10, 80, htmlAttributes: new { style = "width: 50%; max-width: 50%;" }) <br />
+
+		@Html.ActionLink("返回首頁", "Index", "Home", null, new { @class = "btn btn-info btn-md", style = "font-family:標楷體;" })
+	}
+</div>
+
+@section Scripts {
+	@Scripts.Render("~/bundles/jqueryval")
+}

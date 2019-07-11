@@ -1,0 +1,34 @@
+﻿@{
+	ViewBag.Title = "雲端運動服務";
+	var Result = TempData["Result"] as String;
+}
+
+<div align="center">
+	<br />
+	<b class="label label-primary" style="font-size:x-large">管理運動種類服務操作介面</b>
+	<br />
+
+	@Html.AntiForgeryToken()
+
+	@*載入新增運動種類子頁面*@
+	<div id="Insert">
+		@Html.Action("Insert")
+	</div>
+
+	@*載入刪除運動種類子頁面*@
+	<div id="Delete">
+		@Html.Action("Delete")
+	</div>
+
+	@*建立雲端運動紀錄簿表單*@
+	@using (Html.BeginForm("Index", "ManageSportTypes"))
+	{
+		@Html.TextArea("result", @Result, new { @class = "form-control", @rows = 12, @cols = 80 }) <br />
+
+		@Html.ActionLink("返回首頁", "Index", "Home", null, new { @class = "btn btn-info btn-md", style = "font-family:標楷體;" })
+	}
+</div>
+
+@section Scripts {
+	@Scripts.Render("~/bundles/jqueryval")
+}

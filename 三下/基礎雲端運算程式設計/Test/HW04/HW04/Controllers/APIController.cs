@@ -74,7 +74,7 @@ namespace HW04.Controllers
             catch (Exception ex)
             {
                 serviceObj.Status = "Exception";
-                serviceObj.APIResult = "儲存資料發生例外,原因如下：";
+                serviceObj.APIResult = "儲存資料發生例外,原因如下：" + ex.Message;
 
                 return Ok(serviceObj);
             }
@@ -137,7 +137,7 @@ namespace HW04.Controllers
                 catch(Exception ex)
                 {
                     serviceObj.Status = "Exception";
-                    serviceObj.APIResult = "發生錯誤";
+                    serviceObj.APIResult = "發生錯誤" + ex.Message;
 
                     return Ok(serviceObj);
                 }
@@ -157,18 +157,59 @@ namespace HW04.Controllers
 
                 if (count == 0)
                 {
+                    str = "在" + sDate.Date.ToString("yyyy-MM-dd") + "到" + eDate.Date.ToString("yyyy-MM-dd") + "並沒有運動紀錄";
+                    serviceObj.Status = "No Record";
+                    serviceObj.APIResult = str;
+
+                    return Ok(serviceObj);
 
                 }
+                else
+                {
+                    try
+                    {
+                        str = "在" + sDate.Date.ToString("yyyy/MM/dd") + "到" + eDate.Date.ToString("yyyy/MM/dd") + "之步數統計如下：\n";
+                        foreach(var record in records)
+                        {
+                            var result1 = (from b in db.MainTBs
+                                           where ((b.date >= sDate) && (b.date <= eDate) && (b.type == record.type))
+                                           select b
+                                           );
 
+                            typeSum = 0;
+                            foreach(var record1 in result1)
+                            {
+                                typeSum += record1.number;
+                            }
+                            str += string.Format("{0}：{1}\n", record.type, typeSum);
+                            totalAmount += typeSum;
+                        }
+                        str += "步數總計" + totalAmount + "步\n";
 
+                        serviceObj.Status = "OK";
+                        serviceObj.APIResult = str;
+
+                        return Ok(serviceObj);
+
+                    }
+                    catch(Exception ex)
+                    {
+                        serviceObj.Status = "Exception";
+                        serviceObj.APIResult = "查詢結果發生例外" + ex.Message;
+
+                        return Ok(serviceObj);
+                    }
+                }
             }
+            else
+            {
+                str = "無效的查詢";
+                serviceObj.Status = "OK";
+                serviceObj.APIResult = str;
 
-
-
+                return Ok(serviceObj);
+            }
         }
-
-
-
         #endregion
 
 

@@ -1,0 +1,41 @@
+﻿@model MyMVCHW004Clien.ViewModels.DeleteSportDataViewModel
+@{
+	ViewBag.Title = "雲端運動紀錄簿服務";
+}
+
+<div align="center">
+	<br />
+	<b class="label label-primary" style="font-size:large">刪除運動紀錄服務操作介面</b>
+	<br /> <br />
+	@*雲端運動紀錄簿表單*@
+	@using (Html.BeginForm("Index", "DeleteSportData"))
+	{
+		<table>
+			<tr>
+				<td>
+					@Html.LabelFor(m => m.startDate, new { @class = "label label-default", style = "font-size:small" })
+				</td>
+				<td>
+					@Html.EditorFor(m => m.startDate)
+					@Html.ValidationMessageFor(m => m.startDate, "", new { @class = "text-danger" })
+				</td>
+			</tr>
+			<tr>
+				<td>
+					@Html.LabelFor(m => m.endDate, new { @class = "label label-default", style = "font-size:small" })
+				</td>
+				<td>
+					@Html.EditorFor(m => m.endDate)
+					@Html.ValidationMessageFor(model => model.endDate, "", new { @class = "text-danger" })
+				</td>
+			</tr>
+		</table>
+		<input type="submit" name="btnDelete" value="刪除運動紀錄" class="btn btn-info"> <br />
+		@Html.TextAreaFor(m => m.result, 10, 80, htmlAttributes: new { style = "width: 50%; max-width: 50%;" }) <br />
+		@Html.ActionLink("返回首頁", "Index", "Home", null, new { @class = "btn btn-info btn-md" })
+	}
+</div>
+
+@section Scripts {
+	@Scripts.Render("~/bundles/jqueryval")
+}

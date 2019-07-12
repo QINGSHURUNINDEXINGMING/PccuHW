@@ -213,6 +213,15 @@ namespace HW04.Controllers
         #endregion
 
         #region
+        [HttpGet]
+        [Route("api/MainTBs/delete/{startDate}/{endDate}")]
+        public async Task<IHttpActionResult> DeleteMainTBs(string startDate, string endDate)
+        {
+            serviceObj = new ServiceResult();
+
+            DateTime sDate = Convert.ToDateTime(startDate);
+            DateTime eDate = Convert.ToDateTime(endDate);
+        }
 
 
 

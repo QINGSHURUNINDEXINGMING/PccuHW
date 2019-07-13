@@ -269,7 +269,7 @@ namespace HW04.Controllers
 
         #region
         [HttpGet]
-        [Route("api/AddKind")]
+        [Route("api/AddKinds")]
         public IEnumerable<AddKind> GetAddKinds()
         {
             try
@@ -288,6 +288,41 @@ namespace HW04.Controllers
         #endregion
 
         #region
+        [HttpGet]
+        [Route("api/AddKinds/string")]
+        public IHttpActionResult GetAddKindsString()
+        {
+            serviceObj = new ServiceResult();
+            string str = "";
+
+            try
+            {
+                var result = from a in db.AddKinds
+                             orderby a.id
+                             select a;
+                int i = 0;
+                foreach(var record in result)
+                {
+                    str += string.Format("{0:d2}：", (i + 1));
+                    str += string.Format("{0}\n", record.type);
+                    i++;
+                }
+
+                serviceObj.Status = "OK";
+                serviceObj.APIResult = str;
+
+                return Ok(serviceObj);
+            }
+            catch(Exception ex)
+            {
+                serviceObj.Status = "Exception";
+                serviceObj.APIResult = "取出字串發生例外，原因如下：" + ex.Message;
+
+                return Ok(serviceObj);
+            }
+        }
+
+
 
         #endregion
 
@@ -295,7 +330,9 @@ namespace HW04.Controllers
 
         #endregion
 
+        #region
 
+        #endregion
 
     }
 }

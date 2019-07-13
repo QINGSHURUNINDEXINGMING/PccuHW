@@ -327,7 +327,53 @@ namespace HW04.Controllers
         #endregion
 
         #region
+        [HttpPost]
+        [Route("api/AddKinds")]
+        public IHttpActionResult PostAddKind(AddKind addKind)
+        {
+            serviceObj = new ServiceResult();
+            string str = "";
 
+            try
+            {
+                var result = db.AddKinds.Where(x => x.type == addKind.type);
+                int count = result.Count();
+                if (count == 0)
+                {
+                    db.AddKinds.Add(addKind);
+                    db.SaveChanges();
+
+                    var result1 = from a in db.AddKinds
+                                  orderby a.id
+                                  select a;
+                    int i = 0;
+                    foreach(var record in result1)
+                    {
+                        str += string.Format("{0:d2}：", (i + 1));
+                        str += string.Format("{0}", record.type);
+                        i++;
+                    }
+                    serviceObj.Status = "OK";
+                    serviceObj.APIResult = str;
+
+                }
+                else
+                {
+                    str = "運動總類：" + addKind.type + "已經存在";
+
+                    serviceObj.Status = "Exist";
+                    serviceObj.APIResult = str;
+                }
+                return Ok(serviceObj);
+            }
+            catch(Exception ex)
+            {
+                serviceObj.Status = "Exception";
+                serviceObj.APIResult = "儲存發生例外，原因如下：" + ex.Message;
+
+                return Ok(serviceObj);
+            }
+        }
         #endregion
 
         #region

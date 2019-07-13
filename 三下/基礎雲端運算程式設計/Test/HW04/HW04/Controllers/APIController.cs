@@ -377,7 +377,61 @@ namespace HW04.Controllers
         #endregion
 
         #region
+        [HttpGet]
+        [Route("api/AddKinds/delete/{no}")]
+        public IHttpActionResult DeleteAddKind(int no)
+        {
+            serviceObj = new ServiceResult();
 
+            string str = "";
+
+            try
+            {
+                var result = from a in db.AddKinds
+                             orderby a.id
+                             select a;
+                int count = result.Count();
+                if ((no < 1) || no > count)
+                {
+                    str = "無此編號，請重新輸入!";
+
+                    serviceObj.Status = "Out of range";
+                    serviceObj.APIResult = str;
+                }
+                else
+                {
+                    var record = result.ToArray<AddKind>()[no - 1];
+                    db.AddKinds.Remove(record);
+                    db.SaveChanges();
+
+                    var result1 = from a in db.AddKinds
+                                  orderby a.id
+                                  select a;
+
+                    var i = 0;
+                    foreach(var record1 in result1)
+                    {
+                        str += string.Format("{0:d2}：", (i + 1));
+                        str += string.Format("{0}\n", record1.type);
+
+                        i++;
+                    }
+
+                    serviceObj.Status = "OK";
+                    serviceObj.APIResult = str;
+
+                }
+
+                return Ok(serviceObj);
+            }
+            catch(Exception ex)
+            {
+                serviceObj.Status = "Exception";
+                serviceObj.APIResult = "刪除發生例外，原因如下：" + ex.Message;
+
+                return Ok(serviceObj);
+            }
+        }
         #endregion
 
     }

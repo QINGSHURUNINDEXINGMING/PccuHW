@@ -221,6 +221,46 @@ namespace HW04.Controllers
 
             DateTime sDate = Convert.ToDateTime(startDate);
             DateTime eDate = Convert.ToDateTime(endDate);
+
+            string str = "";
+
+            try
+            {
+                var result = from a in db.MainTBs
+                             where ((a.date >= sDate) && (a.date <= eDate))
+                             orderby a.date
+                             select a;
+                int count = result.Count();
+                if (count == 0)
+                {
+                    str = "在" + sDate.Date.ToString("yyyy-MM-dd") + "到" + eDate.Date.ToString("yyyy-MM-dd") + "沒有消費紀錄!";
+
+                    serviceObj.Status = "OK";
+                    serviceObj.APIResult = str;
+
+                    return Ok(serviceObj);
+
+                }
+
+                db.MainTBs.RemoveRange(result);
+                await db.SaveChangesAsync();
+                str = "已成功刪除" + count + "筆記錄!";
+
+                serviceObj.Status = "OK";
+                serviceObj.APIResult = str;
+
+                return Ok(serviceObj);
+
+            }
+            catch (Exception ex)
+            {
+                serviceObj.Status = "Exception";
+                serviceObj.APIResult = "刪除消費紀錄發生例外，原因如下：" + ex.Message;
+
+                return Ok(serviceObj);
+            }
+
+
         }
 
 
@@ -228,6 +268,9 @@ namespace HW04.Controllers
         #endregion
 
         #region
+
+
+
 
         #endregion
 

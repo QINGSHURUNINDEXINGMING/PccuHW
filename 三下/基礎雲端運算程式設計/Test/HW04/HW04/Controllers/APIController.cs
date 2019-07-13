@@ -268,7 +268,20 @@ namespace HW04.Controllers
         #endregion
 
         #region
-
+        [HttpGet]
+        [Route("api/AddKind")]
+        public IEnumerable<AddKind> GetAddKinds()
+        {
+            try
+            {
+                return db.AddKinds;
+            }
+            catch (Exception ex)
+            {
+                string str = ex.Message;
+                return null;
+            }
+        }
 
 
 

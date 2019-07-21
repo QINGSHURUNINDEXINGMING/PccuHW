@@ -1,0 +1,50 @@
+﻿@model MathLotteryMVCClient.ViewModels.LotteryViewModel
+
+@{
+    ViewBag.Title = "樂透服務";
+}
+
+<div align="center">
+    <br />
+    <b class="label label-danger" style="font-size:large">樂透號碼產生器服務</b>
+    <br /> <br />
+    @*建立樂透服務表單*@
+    @using (Html.BeginForm("LotteryGen", "Lottery"))
+    {
+        <table>
+            <tr>
+                <td>
+                    @Html.LabelFor(model => model.Type, new { @class = "label label-warning" })
+                </td>
+                <td>
+                    @Html.RadioButtonFor(model => model.Type, "大樂透", new { Checked = "checked" })  <label class="label label-info">大樂透</label>
+                    @Html.RadioButtonFor(model => model.Type, "威力彩") <label class="label label-info">威力彩</label>
+                    @*@Html.ValidationMessageFor(model => model.Type, "", new { @class = "text-danger" })*@
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(model => model.Sets, new { @class = "label label-warning" })
+                </td>
+                <td>
+                    @Html.TextBoxFor(model => model.Sets)
+                    @Html.ValidationMessageFor(model => model.Sets, "", new { @class = "text-danger" })
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @*@Html.LabelFor(model => model.Result, new { @class = "label label-warning" })*@
+                </td>
+                <td>
+                    @Html.TextAreaFor(model => model.Result, new { @class = "form-control", @rows = 12, @cols = 80 })
+                </td>
+            </tr>
+        </table>
+        <input type="submit" name="btnGen" value="產生號碼" class="btn btn-success">
+    }
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+

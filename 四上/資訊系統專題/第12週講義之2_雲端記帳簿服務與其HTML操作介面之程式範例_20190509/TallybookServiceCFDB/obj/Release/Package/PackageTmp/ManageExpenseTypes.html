@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<!-- !DOCTYPE html是宣告這個網頁是基於HTML5所寫的 -->
+<html>
+<!-- html為網頁的起始標籤，其內包含了表頭head及內容body兩部分 -->
+<!---->
+<!-- head為網頁的表頭，通常將CSS、引用bootstrap、jquery等meta data，以及javascript函數放在表頭內 -->
+<!---->
+<head>
+    <title>雲端記帳簿</title>
+    <!-- 以下這5行是引用bootstrap及jquery CDN (Content Delivery Network)的標準動作 -->
+    <meta charset="utf-8"> <!-- 指定內文的編碼，若要顯示中文，通常用utf-8這個unicode編碼 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<!-- 修正導覽列字形大小與顏色之CSS -->
+    <style>
+		.navbar {
+			background-color: pink !important;
+		}
+		
+		.navbar .navbar-brand {
+			color: green !important;
+			font-size: 24px;
+			font-weight:bold;
+		}
+
+		.navbar li a {
+			color: #0000ff !important;
+					font-size: 20px;
+			font-weight:bold;
+		}
+
+		.navbar-nav li a:hover, .navbar-nav li.active a {
+			color: #f4511e !important;
+			background-color: #fff !important;
+		}
+
+		.navbar-default .navbar-toggle {
+			border-color: transparent;
+			color: #fff !important;
+		} 
+	</style>
+
+    <!-- 以下這個匿名函數是jquery的ready事件處理方法，當網頁Ready好的就會自動執行 -->
+    <!-- 因此，可以把要註冊的所有事件處理函數及需要先執行的命令放在這個函數內 -->
+    <script>
+		$(function(){
+		    // 幫id為btn1的按鈕標籤註冊了點擊事件的處理方法
+		    // 在jquery通常會使用匿名函數作為事件處理方法，比較簡潔
+			$('#btn1').click(function(){
+			    $.post(
+					'api/ExpenseTypes',
+                    { 'expenseType': $('#newExpenseType').val() },
+					function(data){
+					    $('#result').val(data);
+					    $('#newExpenseType').val("")  // 清除newExpenseType欄位
+					    $('#ExpenseTypeNo').val("")  // 清除newExpenseType欄位
+					}
+				);
+			});
+
+		    // 幫id為btn2的按鈕標籤註冊了點擊事件的處理方法
+			$('#btn2').click(function () {
+			    $.get(
+					'api/ExpenseTypes/delete/' + $('#ExpenseTypeNo').val(),
+					function (data) {
+					    $('#result').val(data);
+					    $('#newExpenseType').val("")  // 清除newExpenseType欄位
+					    $('#ExpenseTypeNo').val("")  // 清除newExpenseType欄位
+					}
+				);
+			});
+
+		    // 幫id為btn3的按鈕標籤註冊了點擊事件的處理方法
+			$('#btn3').click(function () {
+			    $.get(
+					'api/ExpenseTypes/string',
+					function (data) {
+					    $('#result').val(data);
+					    $('#newExpenseType').val("")  // 清除newExpenseType欄位
+					    $('#ExpenseTypeNo').val("")  // 清除newExpenseType欄位
+					}
+				);
+			});
+
+		    // 幫id為btn4的按鈕標籤註冊了點擊事件的處理方法
+			$('#btn4').click(function(){
+			    window.location.href = 'index.html';
+			});
+		})
+    </script>
+</head>
+<!---->
+<!-- body為網頁的內容，也就是呈現使用者介面UI的地方 -->
+<!---->
+<body class="bg-warning" style="font-family:標楷體">
+
+<!-- 導覽列 -->
+<nav class="navbar navbar-default" style="font-family:標楷體">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">雲端記帳簿服務</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a id="home">首頁</a></li>
+        <li><a id="queryExpenses">查詢消費統計</a></li>
+		<li><a id="manageExpenseTypes">管理消費種類</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- 導覽列所需javascript -->
+<script>
+	var home_element = document.getElementById("home");
+	home_element.href = 'Index.html';
+	//
+    var math_element = document.getElementById("queryExpenses");
+	math_element.href = 'QueryExpenses.html';
+	//
+    var lottery_element = document.getElementById("manageExpenseTypes");
+	lottery_element.href = 'ManageExpenseTypes.html';
+</script>
+
+<!-- 以下為操作介面HTML設計 -->
+    <center>
+        <div class="container">
+            <h2 class="bg-primary"><b>管理消費種類操作介面</b></h2>
+            <table style="font-size:12pt">
+                <tr>
+                    <td> <b class="text-primary">新增消費種類：</b> </td>
+                    <td> <input type="text" id="newExpenseType" placeholder="輸入擬新增之消費種類"> </td>
+                    <td> <button id="btn1" class="btn btn-success btn-md"><b>新增</b></button> </td>
+                </tr>
+                <tr>
+                    <td> <b class="text-primary">消費種類編號：</b> </td>
+                    <td> <input type="number" id="ExpenseTypeNo" placeholder="輸入消費種類編號"> </td>
+                    <td> <button id="btn2" class="btn btn-success btn-md"><b>刪除</b></button> </td>
+                </tr>
+            </table>
+            <button id="btn3" class="btn btn-success btn-md"><b>顯示所有消費種類</b></button> <br />
+            <textarea id="result" rows="12" cols="60"></textarea> <br />
+
+            <!-- 返回首頁按鈕 -->
+            <button id="btn4" class="btn btn-success btn-md"><b>返回首頁</b></button>
+        </div>
+    </center>
+</body>
+</html>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathLotteryWebAPIs", "MathLotteryWebAPIs\MathLotteryWebAPIs.csproj", "{9F1FBFD5-1288-4E75-AE85-5741EA10FF30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathLotteryMVCClient", "MathLotteryMVCClient\MathLotteryMVCClient.csproj", "{1AAB494D-6073-4194-9032-C180F22832BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F1FBFD5-1288-4E75-AE85-5741EA10FF30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F1FBFD5-1288-4E75-AE85-5741EA10FF30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F1FBFD5-1288-4E75-AE85-5741EA10FF30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F1FBFD5-1288-4E75-AE85-5741EA10FF30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AAB494D-6073-4194-9032-C180F22832BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AAB494D-6073-4194-9032-C180F22832BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AAB494D-6073-4194-9032-C180F22832BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AAB494D-6073-4194-9032-C180F22832BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F60D6A35-3882-42AB-B5E1-45BC102F1CB9}
+	EndGlobalSection
+EndGlobal

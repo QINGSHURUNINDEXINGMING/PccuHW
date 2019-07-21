@@ -1,0 +1,32 @@
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\ProductApi\bin\roslyn\csc.exe
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\ProductApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\ProductApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\ProductApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\ProductApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\ProductApi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\ProductApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\ProductApi\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\ProductApi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\ProductApi\bin\roslyn\vbc.exe
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\ProductApi\bin\roslyn\VBCSCompiler.exe
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\ProductApi\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\ProductApi\bin\ProductApi.dll.config
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\ProductApi\bin\ProductApi.dll
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\ProductApi\bin\ProductApi.pdb
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\ProductApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\ProductApi\bin\Newtonsoft.Json.dll
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\ProductApi\bin\System.Net.Http.Formatting.dll
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\ProductApi\bin\System.Web.Http.dll
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\ProductApi\bin\System.Web.Http.WebHost.dll
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\ProductApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\ProductApi\bin\Newtonsoft.Json.xml
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\ProductApi\bin\System.Net.Http.Formatting.xml
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\ProductApi\bin\System.Web.Http.xml
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\ProductApi\bin\System.Web.Http.WebHost.xml
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\ProductApi\obj\Debug\ProductApi.csprojResolveAssemblyReference.cache
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\ProductApi\obj\Debug\ProductApi.dll
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\ProductApi\obj\Debug\ProductApi.pdb
+C:\Dropbox\00.Courses(1062)\2.CC_PG_3A\第11,12週_雲端服務WebAPI建置與Client程式設計_20180430\4.呼叫RESTful網路服務\HttpClientSampleCode\ProductApi\obj\Debug\ProductApi.csprojResolveAssemblyReference.cache
+C:\Dropbox\00.Courses(1062)\2.CC_PG_3A\第11,12週_雲端服務WebAPI建置與Client程式設計_20180430\4.呼叫RESTful網路服務\HttpClientSampleCode\ProductApi\obj\Debug\ProductApi.csproj.CoreCompileInputs.cache
+C:\Dropbox\00.Courses(1062)\2.CC_PG_3A\第11,12週_雲端服務WebAPI建置與Client程式設計_20180430\4.呼叫RESTful網路服務\HttpClientSampleCode\ProductApi\obj\Debug\ProductApi.dll
+C:\Dropbox\00.Courses(1062)\2.CC_PG_3A\第11,12週_雲端服務WebAPI建置與Client程式設計_20180430\4.呼叫RESTful網路服務\HttpClientSampleCode\ProductApi\obj\Debug\ProductApi.pdb

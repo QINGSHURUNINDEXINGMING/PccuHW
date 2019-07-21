@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="TallybookServiceModel-Web.config Connection String" description="TallybookServiceModel 應用程式在 web.config 中用來存取資料庫的連接字串。" defaultValue="Data Source=140.137.41.136,5557\SQLEXPRESS;Initial Catalog=A1234567;User ID=A1234567;Password= $A123!4567s;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\6\.TallybookServiceUsiungCodeFirstDBWithHTMLClient\(20190509\)\\TallybookServiceCFDB\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='TallybookServiceModel']/@connectionString" />
+  </parameter>
+</parameters>

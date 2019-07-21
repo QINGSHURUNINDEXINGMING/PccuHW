@@ -1,0 +1,14 @@
+C:\Users\mhhung\Dropbox\0.Programming\RESTService_WebAPI_Tutorial文件\4.呼叫RESTful網路服務\1.Code_Calling a Web API From a NET Client_ConsoleApp\HttpClientSample\bin\Debug\HttpClientSample.exe.config
+C:\Users\mhhung\Dropbox\0.Programming\RESTService_WebAPI_Tutorial文件\4.呼叫RESTful網路服務\1.Code_Calling a Web API From a NET Client_ConsoleApp\HttpClientSample\obj\Debug\HttpClientSample.csprojResolveAssemblyReference.cache
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\HttpClientSample\bin\Debug\HttpClientSample.exe.config
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\HttpClientSample\bin\Debug\HttpClientSample.exe
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\HttpClientSample\bin\Debug\HttpClientSample.pdb
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\HttpClientSample\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\HttpClientSample\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\HttpClientSample\bin\Debug\Newtonsoft.Json.xml
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\HttpClientSample\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\HttpClientSample\obj\Debug\HttpClientSample.exe
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\1.Calling a Web API From a NET Console Client\ProjectCode\HttpClientSample\obj\Debug\HttpClientSample.pdb
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\ProjectCode\HttpClientSample\bin\Debug\HttpClientSample.exe.config
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\ProjectCode\HttpClientSample\obj\Debug\HttpClientSample.exe
+C:\Users\mhhung\Dropbox\0.Programming\4.呼叫RESTful網路服務\ProjectCode\HttpClientSample\obj\Debug\HttpClientSample.pdb

@@ -1,0 +1,139 @@
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\roslyn\csc.exe
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\roslyn\vbc.exe
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\roslyn\VBCSCompiler.exe
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\TallybookService.dll.config
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\TallybookService.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\TallybookService.pdb
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\EntityFramework.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\EntityFramework.SqlServer.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\Newtonsoft.Json.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\System.Net.Http.Formatting.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\System.Web.Http.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\System.Web.Http.WebHost.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\EntityFramework.xml
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\EntityFramework.SqlServer.xml
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\Newtonsoft.Json.xml
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\System.Net.Http.Formatting.xml
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\System.Web.Http.xml
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\System.Web.Http.WebHost.xml
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\zh-Hant\System.Net.Http.Formatting.resources.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\zh-Hant\System.Web.Http.resources.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\bin\zh-Hant\System.Web.Http.WebHost.resources.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\obj\Release\TallybookService.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\TallybookService\TallybookService\obj\Release\TallybookService.pdb
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\roslyn\csc.exe
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\roslyn\vbc.exe
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\roslyn\VBCSCompiler.exe
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\TallybookService.dll.config
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\TallybookService.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\TallybookService.pdb
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\EntityFramework.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\EntityFramework.SqlServer.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\Newtonsoft.Json.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\System.Net.Http.Formatting.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\System.Web.Http.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\System.Web.Http.WebHost.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\EntityFramework.xml
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\EntityFramework.SqlServer.xml
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\Newtonsoft.Json.xml
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\System.Net.Http.Formatting.xml
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\System.Web.Http.xml
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\System.Web.Http.WebHost.xml
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\zh-Hant\System.Net.Http.Formatting.resources.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\zh-Hant\System.Web.Http.resources.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\bin\zh-Hant\System.Web.Http.WebHost.resources.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\obj\Release\TallybookService.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170531\TallybookService\obj\Release\TallybookService.pdb
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\roslyn\csc.exe
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\roslyn\vbc.exe
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\roslyn\VBCSCompiler.exe
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\TallybookService.dll.config
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\TallybookService.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\TallybookService.pdb
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\EntityFramework.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\EntityFramework.SqlServer.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\Newtonsoft.Json.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\System.Net.Http.Formatting.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\System.Web.Http.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\System.Web.Http.WebHost.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\EntityFramework.xml
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\EntityFramework.SqlServer.xml
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\Newtonsoft.Json.xml
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\System.Net.Http.Formatting.xml
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\System.Web.Http.xml
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\System.Web.Http.WebHost.xml
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\zh-Hant\System.Net.Http.Formatting.resources.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\zh-Hant\System.Web.Http.resources.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\bin\zh-Hant\System.Web.Http.WebHost.resources.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\obj\Release\TallybookService.dll
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\obj\Release\TallybookService.pdb
+C:\Users\mhhung\Dropbox\0.Programming\TallybookService_v2_20170602\TallybookService\obj\Release\TallybookService.csprojResolveAssemblyReference.cache
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\roslyn\csc.exe
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\roslyn\System.Collections.Immutable.dll
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\roslyn\System.Reflection.Metadata.dll
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\roslyn\vbc.exe
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\roslyn\VBCSCompiler.exe
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\roslyn\VBCSCompiler.exe.config
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\TallybookService.dll.config
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\TallybookService.dll
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\TallybookService.pdb
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\EntityFramework.dll
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\EntityFramework.SqlServer.dll
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\Newtonsoft.Json.dll
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\System.Net.Http.Formatting.dll
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\System.Web.Http.dll
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\System.Web.Http.WebHost.dll
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\EntityFramework.xml
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\EntityFramework.SqlServer.xml
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\Newtonsoft.Json.xml
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\System.Net.Http.Formatting.xml
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\System.Web.Http.xml
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\System.Web.Http.WebHost.xml
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\zh-Hant\System.Net.Http.Formatting.resources.dll
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\zh-Hant\System.Web.Http.resources.dll
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\bin\zh-Hant\System.Web.Http.WebHost.resources.dll
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\obj\Release\TallybookService.csproj.CoreCompileInputs.cache
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\obj\Release\TallybookService.csproj.CopyComplete
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\obj\Release\TallybookService.dll
+C:\00.Courses(1062)\2.CC_PG_3A\0.補充程式範例\TallybookServiceHTMLClient_20180610\TallybookService\obj\Release\TallybookService.pdb

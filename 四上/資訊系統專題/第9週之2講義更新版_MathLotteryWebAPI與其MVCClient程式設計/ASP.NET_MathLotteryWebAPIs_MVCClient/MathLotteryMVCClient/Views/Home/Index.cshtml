@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "網站首頁";
+}
+
+<div align="center">
+    <br />
+    <b class="label label-primary" style="font-size:x-large">網站首頁</b>
+    <br /> <br />
+    <h3>
+        @Html.ActionLink("數學服務", "MathCompute", "Math", null, new { @class = "btn btn-success btn-lg"})
+        @Html.ActionLink("樂透服務", "LotteryGen", "Lottery", null, new { @class = "btn btn-success btn-lg" })
+    </h3>
+</div>

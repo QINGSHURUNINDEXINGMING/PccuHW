@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyMVC\obj\Release\Package\PackageTmp" />
+  <setAcl path="C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyMVC\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyMVC\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>

@@ -1,0 +1,249 @@
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\bin\roslyn\csc.exe
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\bin\roslyn\vbc.exe
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\bin\roslyn\VBCSCompiler.exe
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\bin\MyWebAPI.dll.config
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\bin\MyWebAPI.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\bin\MyWebAPI.pdb
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\bin\Newtonsoft.Json.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\bin\System.Web.Http.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\bin\Newtonsoft.Json.xml
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\bin\System.Web.Http.xml
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\bin\zh-Hant\System.Net.Http.Formatting.resources.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\bin\zh-Hant\System.Web.Http.resources.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\bin\zh-Hant\System.Web.Http.WebHost.resources.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\obj\Debug\MyWebAPI.csprojResolveAssemblyReference.cache
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\obj\Debug\MyWebAPI.dll
+C:\Users\mhhung\Documents\Visual Studio 2015\Projects\MyMVCWebAPI\MyWebAPI\obj\Debug\MyWebAPI.pdb
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170507\MyWebAPI\obj\Debug\MyWebAPI.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170507\MyWebAPI\obj\Debug\MyWebAPI.pdb
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170507\MyWebAPI\bin\roslyn\csc.exe
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170507\MyWebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170507\MyWebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170507\MyWebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170507\MyWebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170507\MyWebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170507\MyWebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170507\MyWebAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170507\MyWebAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170507\MyWebAPI\bin\roslyn\vbc.exe
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170507\MyWebAPI\bin\roslyn\VBCSCompiler.exe
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170507\MyWebAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170507\MyWebAPI\bin\MyWebAPI.dll.config
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170507\MyWebAPI\bin\MyWebAPI.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170507\MyWebAPI\bin\MyWebAPI.pdb
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170507\MyWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170507\MyWebAPI\bin\Newtonsoft.Json.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170507\MyWebAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170507\MyWebAPI\bin\System.Web.Http.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170507\MyWebAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170507\MyWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170507\MyWebAPI\bin\Newtonsoft.Json.xml
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170507\MyWebAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170507\MyWebAPI\bin\System.Web.Http.xml
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170507\MyWebAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170507\MyWebAPI\bin\zh-Hant\System.Net.Http.Formatting.resources.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170507\MyWebAPI\bin\zh-Hant\System.Web.Http.resources.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170507\MyWebAPI\bin\zh-Hant\System.Web.Http.WebHost.resources.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170509\MyWebAPI\bin\roslyn\csc.exe
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170509\MyWebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170509\MyWebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170509\MyWebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170509\MyWebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170509\MyWebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170509\MyWebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170509\MyWebAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170509\MyWebAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170509\MyWebAPI\bin\roslyn\vbc.exe
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170509\MyWebAPI\bin\roslyn\VBCSCompiler.exe
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170509\MyWebAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170509\MyWebAPI\bin\MyWebAPI.dll.config
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170509\MyWebAPI\bin\MyWebAPI.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170509\MyWebAPI\bin\MyWebAPI.pdb
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170509\MyWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170509\MyWebAPI\bin\Newtonsoft.Json.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170509\MyWebAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170509\MyWebAPI\bin\System.Web.Http.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170509\MyWebAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170509\MyWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170509\MyWebAPI\bin\Newtonsoft.Json.xml
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170509\MyWebAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170509\MyWebAPI\bin\System.Web.Http.xml
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170509\MyWebAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170509\MyWebAPI\bin\zh-Hant\System.Net.Http.Formatting.resources.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170509\MyWebAPI\bin\zh-Hant\System.Web.Http.resources.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170509\MyWebAPI\bin\zh-Hant\System.Web.Http.WebHost.resources.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170509\MyWebAPI\obj\Debug\MyWebAPI.dll
+C:\Users\mhhung\Dropbox\0.Programming\MinMVCWebAPI_v1_20170509\MyWebAPI\obj\Debug\MyWebAPI.pdb
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\bin\roslyn\csc.exe
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\bin\roslyn\vbc.exe
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\bin\roslyn\VBCSCompiler.exe
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\bin\MyWebAPI.dll.config
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\bin\MyWebAPI.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\bin\MyWebAPI.pdb
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\bin\Newtonsoft.Json.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\bin\System.Web.Http.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\bin\Newtonsoft.Json.xml
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\bin\System.Web.Http.xml
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\bin\zh-Hant\System.Net.Http.Formatting.resources.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\bin\zh-Hant\System.Web.Http.resources.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\bin\zh-Hant\System.Web.Http.WebHost.resources.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\obj\Debug\MyWebAPI.csprojResolveAssemblyReference.cache
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\obj\Debug\MyWebAPI.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v1_20170509\MyWebAPI\obj\Debug\MyWebAPI.pdb
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\roslyn\csc.exe
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\roslyn\vbc.exe
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\roslyn\VBCSCompiler.exe
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\MyWebAPI.dll.config
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\MyWebAPI.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\MyWebAPI.pdb
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\Newtonsoft.Json.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\System.Web.Http.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\Newtonsoft.Json.xml
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\System.Web.Http.xml
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\zh-Hant\System.Net.Http.Formatting.resources.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\zh-Hant\System.Web.Http.resources.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\zh-Hant\System.Web.Http.WebHost.resources.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\obj\Debug\MyWebAPI.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\obj\Debug\MyWebAPI.pdb
+C:\Users\mhhung\Dropbox\0.Programming\第13週_WebAPI之路由、建立與Client建立\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\obj\Debug\MyWebAPI.csprojResolveAssemblyReference.cache
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\roslyn\csc.exe
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\roslyn\vbc.exe
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\roslyn\VBCSCompiler.exe
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\MyWebAPI.dll.config
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\MyWebAPI.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\MyWebAPI.pdb
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\Newtonsoft.Json.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\System.Web.Http.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\Newtonsoft.Json.xml
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\System.Web.Http.xml
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\zh-Hant\System.Net.Http.Formatting.resources.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\zh-Hant\System.Web.Http.resources.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\bin\zh-Hant\System.Web.Http.WebHost.resources.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\obj\Debug\MyWebAPI.csprojResolveAssemblyReference.cache
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\obj\Debug\MyWebAPI.dll
+C:\Users\mhhung\Dropbox\0.Programming\第13週-5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)_v2_20170511\MyWebAPI\obj\Debug\MyWebAPI.pdb
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\bin\roslyn\csc.exe
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\bin\roslyn\vbc.exe
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\bin\roslyn\VBCSCompiler.exe
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\bin\MyWebAPI.dll.config
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\bin\MyWebAPI.dll
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\bin\MyWebAPI.pdb
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\bin\Newtonsoft.Json.dll
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\bin\System.Web.Http.dll
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\bin\Newtonsoft.Json.xml
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\bin\System.Web.Http.xml
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\bin\zh-Hant\System.Net.Http.Formatting.resources.dll
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\bin\zh-Hant\System.Web.Http.resources.dll
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\bin\zh-Hant\System.Web.Http.WebHost.resources.dll
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\obj\Debug\MyWebAPI.csprojResolveAssemblyReference.cache
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\obj\Debug\MyWebAPI.dll
+C:\Users\mhhung\Dropbox\0.Programming\第14週_MinMVCWebAPI_v2_20170516\MyWebAPI\obj\Debug\MyWebAPI.pdb
+C:\Dropbox\00.Courses(1062)\2.CC_PG_3A\第11,12週_雲端服務WebAPI建置與Client程式設計_20180430\5.MVC網頁呼叫WebAPI服務程式範例(MinMVCWebAPI)\MyWebAPI\obj\Debug\MyWebAPI.csproj.CoreCompileInputs.cache
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\bin\roslyn\csc.exe
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\bin\roslyn\vbc.exe
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\bin\roslyn\VBCSCompiler.exe
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\bin\MyWebAPI.dll.config
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\bin\MyWebAPI.dll
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\bin\MyWebAPI.pdb
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\bin\Newtonsoft.Json.dll
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\bin\System.Net.Http.Formatting.dll
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\bin\System.Web.Http.dll
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\bin\System.Web.Http.WebHost.dll
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\bin\Newtonsoft.Json.xml
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\bin\System.Net.Http.Formatting.xml
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\bin\System.Web.Http.xml
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\bin\System.Web.Http.WebHost.xml
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\bin\zh-Hant\System.Net.Http.Formatting.resources.dll
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\bin\zh-Hant\System.Web.Http.resources.dll
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\bin\zh-Hant\System.Web.Http.WebHost.resources.dll
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\obj\Debug\MyWebAPI.csprojAssemblyReference.cache
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\obj\Debug\MyWebAPI.csproj.CoreCompileInputs.cache
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\obj\Debug\MyWebAPI.csproj.CopyComplete
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\obj\Debug\MyWebAPI.dll
+C:\Dropbox\00.Courses(1072)\4.CC_PG_3A_401-403\第9週之2_WebAPI與其MVCClient程式設計\BasePortal1Services_with_MVCClient\MyWebAPI\obj\Debug\MyWebAPI.pdb

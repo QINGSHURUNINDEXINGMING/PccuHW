@@ -1,0 +1,33 @@
+﻿@model MVCClientForTallybookServiceV2.ViewModels.ManageExpenseTypesViewModel
+
+<div align="center">
+    
+    @*建立雲端記帳簿表單*@
+    @using (Html.BeginForm("Delete", "ManageExpenseTypes"))
+    {
+        <table>
+            
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.no, new { @class = "label label-warning", style = "font-size:small" })
+                </td>
+                <td>
+                    @Html.EditorFor(m => m.no)
+                    @Html.ValidationMessageFor(model => model.no, "", new { @class = "text-danger" })
+                </td>
+                <td>
+                    <input type="submit" name="btnDelete" value="刪除消費種類" class="btn btn-success">
+                </td>
+            </tr>
+        </table>     
+    }
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+
+
+

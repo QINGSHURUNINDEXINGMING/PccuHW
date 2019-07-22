@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "雲端記帳簿服務";
+    var Result = TempData["Result"] as String;
+}
+
+<div align="center">
+    <br />
+    <b class="label label-danger" style="font-size:x-large">管理消費種類服務操作介面</b>
+    <br />
+
+    @Html.AntiForgeryToken()
+
+    @*載入新增消費種類子頁面*@
+    <div id="Insert">
+        @Html.Action("Insert")
+    </div>
+
+    @*載入刪除消費種類子頁面*@
+    <div id="Delete">
+        @Html.Action("Delete")
+    </div>
+
+    @*建立雲端記帳簿表單*@
+    @using (Html.BeginForm("Index", "ManageExpenseTypes"))
+    {
+        @Html.TextArea("result", @Result, new { @class = "form-control", @rows = 12, @cols = 80 }) <br />
+
+        @Html.ActionLink("返回首頁", "Index", "Home", null, new { @class = "btn btn-success btn-md", style = "font-family:標楷體;" })
+    }
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+
+
+

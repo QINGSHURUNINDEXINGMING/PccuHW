@@ -1,0 +1,46 @@
+﻿@model MVCClientForTallybookServiceV2.ViewModels.DeleteExpenseDataViewModel
+@{
+    ViewBag.Title = "雲端記帳簿服務";
+}
+
+<div align="center">
+    <br />
+    <b class="label label-danger" style="font-size:large">刪除消費紀錄服務操作介面</b>
+    <br /> <br />
+    @*建立雲端記帳簿表單*@
+    @using (Html.BeginForm("Index", "DeleteExpenseData"))
+    {
+           <table>
+               <tr>
+                   <td>
+                       @Html.LabelFor(m => m.startDate, new { @class = "label label-warning", style = "font-size:small" })
+                   </td>
+                   <td>
+                       @Html.EditorFor(m => m.startDate)
+                       @Html.ValidationMessageFor(m => m.startDate, "", new { @class = "text-danger" })
+                   </td>
+               </tr>
+               <tr>
+                   <td>
+                       @Html.LabelFor(m => m.endDate, new { @class = "label label-warning", style = "font-size:small" })
+                   </td>
+                   <td>
+                       @Html.EditorFor(m => m.endDate)
+                       @Html.ValidationMessageFor(model => model.endDate, "", new { @class = "text-danger" })
+                   </td>
+               </tr>
+           </table>
+        <input type="submit" name="btnDelete" value="刪除消費紀錄" class="btn btn-success"> <br />
+        @Html.TextAreaFor(m => m.result, 10, 80, htmlAttributes: new { style = "width: 50%; max-width: 50%;" }) <br />
+        @Html.ActionLink("返回首頁", "Index", "Home", null, new { @class = "btn btn-success btn-md" })
+    }
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+
+
+

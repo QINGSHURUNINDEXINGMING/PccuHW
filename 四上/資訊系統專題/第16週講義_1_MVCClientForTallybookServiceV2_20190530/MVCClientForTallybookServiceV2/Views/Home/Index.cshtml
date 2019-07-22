@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "網站首頁";
+}
+
+<div align="center">
+    <br />
+    <b class="label label-danger" style="font-size:x-large">網站首頁</b>
+    <br /> <br />
+           <h3>
+               @Html.ActionLink("儲存消費紀錄", "Index", "SaveExpenseRecord", null, new { @class = "btn btn-success btn-md", style = "font-family:標楷體;" })
+               @Html.ActionLink("查詢消費紀錄", "Index", "QueryExpenseData", null, new { @class = "btn btn-success btn-md", style = "font-family:標楷體;" })
+               @Html.ActionLink("刪除消費紀錄", "Index", "DeleteExpenseData", null, new { @class = "btn btn-success btn-md", style = "font-family:標楷體;" })
+               @Html.ActionLink("管理消費種類", "Index", "ManageExpenseTypes", null, new { @class = "btn btn-success btn-md", style = "font-family:標楷體;" })
+           </h3>
+</div>

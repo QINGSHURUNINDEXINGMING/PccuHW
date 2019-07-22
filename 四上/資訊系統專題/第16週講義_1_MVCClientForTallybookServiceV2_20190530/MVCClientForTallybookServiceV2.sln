@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCClientForTallybookServiceV2", "MVCClientForTallybookServiceV2\MVCClientForTallybookServiceV2.csproj", "{BF781173-CF8F-4679-92AA-3A3DE4C67AD4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF781173-CF8F-4679-92AA-3A3DE4C67AD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF781173-CF8F-4679-92AA-3A3DE4C67AD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF781173-CF8F-4679-92AA-3A3DE4C67AD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF781173-CF8F-4679-92AA-3A3DE4C67AD4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA72D4F8-EF5C-4A5D-9CBD-3884E050C717}
+	EndGlobalSection
+EndGlobal

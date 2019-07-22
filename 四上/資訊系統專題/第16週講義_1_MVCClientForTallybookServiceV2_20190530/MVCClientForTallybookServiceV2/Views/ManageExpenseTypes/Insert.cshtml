@@ -1,0 +1,31 @@
+﻿@model MVCClientForTallybookServiceV2.ViewModels.ManageExpenseTypesViewModel
+
+<div align="center">
+    @*建立雲端記帳簿表單*@
+    @using (Html.BeginForm("Insert", "ManageExpenseTypes"))
+    {
+        <table>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.newExpenseType, new { @class = "label label-warning", style = "font-size:small" })
+                </td>
+                <td>
+                    @Html.EditorFor(m => m.newExpenseType)
+                    @Html.ValidationMessageFor(model => model.newExpenseType, "", new { @class = "text-danger" })
+                </td>
+                <td>
+                    <input type="submit" name="btnSave" value="儲存消費種類" class="btn btn-success">
+                </td>
+            </tr>
+        </table>
+     }
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+
+
+

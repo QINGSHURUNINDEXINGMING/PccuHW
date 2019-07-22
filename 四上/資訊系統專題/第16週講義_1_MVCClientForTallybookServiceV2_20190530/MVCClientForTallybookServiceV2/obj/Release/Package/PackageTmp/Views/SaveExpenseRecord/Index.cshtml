@@ -1,0 +1,69 @@
+﻿@model MVCClientForTallybookServiceV2.ViewModels.SaveExpenseRecordViewModel
+
+@{
+    ViewBag.Title = "雲端記帳簿服務";
+    IEnumerable<SelectListItem> expensetypeList = ViewBag.ExpenseTypeList;
+}
+
+<div align="center">
+    <br />
+    <b class="label label-danger" style="font-size:large">儲存消費紀錄服務操作介面</b>
+    <br /> <br />
+    @*建立雲端記帳簿表單*@
+    @using (Html.BeginForm("Index", "SaveExpenseRecord"))
+    {
+        <table>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.price, new { @class = "label label-warning", style = "font-size:small" })
+                </td>
+                <td>
+                    @Html.EditorFor(m => m.price)
+                    @Html.ValidationMessageFor(m => m.price, "", new { @class = "text-danger" })
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.expenseType, new { @class = "label label-warning", style = "font-size:small" })
+                </td>
+                <td>
+                    @Html.DropDownListFor(m => m.expenseType, expensetypeList, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.expenseType, "", new { @class = "text-danger" })
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.comment, new { @class = "label label-warning", style = "font-size:small" })
+                </td>
+                <td>
+                    @Html.EditorFor(m => m.comment)
+                    @Html.ValidationMessageFor(m => m.comment, "", new { @class = "text-danger" })
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.payDate, new { @class = "label label-warning", style = "font-size:small" })
+                </td>
+                <td>
+                    @Html.EditorFor(m => m.payDate)
+                    @Html.ValidationMessageFor(m => m.payDate, "", new { @class = "text-danger" })
+                </td>
+            </tr>
+        </table>
+
+        <input type="submit" name="btnSave" value="儲存消費紀錄" class="btn btn-success"> <br />
+
+        @Html.TextAreaFor(m => m.result, 10, 80, htmlAttributes: new { style = "width: 50%; max-width: 50%;" }) <br />
+
+        @Html.ActionLink("返回首頁", "Index", "Home", null, new { @class = "btn btn-success btn-md", style = "font-family:標楷體;" })
+    }
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+
+
+

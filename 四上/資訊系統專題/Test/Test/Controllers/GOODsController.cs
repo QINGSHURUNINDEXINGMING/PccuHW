@@ -46,7 +46,7 @@ namespace Test.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id,UID,name,price,discount,discount_price")] GOOD gOOD)
+        public ActionResult Create([Bind(Include = "id,UID,name,price,discount")] GOOD gOOD)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace Test.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "id,UID,name,price,discount,discount_price")] GOOD gOOD)
+        public ActionResult Edit([Bind(Include = "id,UID,name,price,discount")] GOOD gOOD)
         {
             if (ModelState.IsValid)
             {

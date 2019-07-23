@@ -55,6 +55,11 @@ namespace Test.Controllers
                 discount_price = (0.1 * gOOD.discount) * gOOD.price;
                 gOOD.discount_price = (int)discount_price;
 
+
+
+
+
+
                 db.Good1.Add(gOOD);
                 db.SaveChanges();
                 return RedirectToAction("Index");

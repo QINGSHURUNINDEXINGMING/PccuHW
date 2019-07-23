@@ -46,22 +46,19 @@ namespace Test.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id,UID,name,price,discount,discount_price")] GOOD gOOD)
+        public ActionResult Create([Bind(Include = "id,UID,name,price,discount")] GOOD gOOD)
         {
             if (ModelState.IsValid)
             {
-                double discount_price = 0;
-                int price1, discount1;
-                price1 = gOOD.price;
-                discount1 = gOOD.discount;
-                discount_price = (0.1 * discount1) * price1;
+                double discount_price;
+              
+                discount_price = (0.1 * gOOD.discount) * gOOD.price;
                 gOOD.discount_price = (int)discount_price;
 
                 db.Good1.Add(gOOD);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            
             
             return View(gOOD);
         }
@@ -90,6 +87,12 @@ namespace Test.Controllers
         {
             if (ModelState.IsValid)
             {
+                double discount_price;
+
+                discount_price = (0.1 * gOOD.discount) * gOOD.price;
+                gOOD.discount_price = (int)discount_price;
+
+
                 db.Entry(gOOD).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");

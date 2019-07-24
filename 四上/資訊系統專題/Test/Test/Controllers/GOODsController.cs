@@ -76,8 +76,19 @@ namespace Test.Controllers
                 discount_price = (0.1 * gOOD.discount) * gOOD.price;
                 gOOD.discount_price = (int)discount_price;
 
-                db.Good1.Add(gOOD);
-                db.SaveChanges();
+                var result = db.Good1.Where(x => x.UID == gOOD.UID);
+                int count = result.Count();
+                if (count == 0)
+                {
+                    //TempData["創建訊息"] = "儲存成功";
+                    db.Good1.Add(gOOD);
+                    db.SaveChanges();
+                }
+                else
+                {
+                    TempData["創建訊息"] = "已有相同UID名稱";
+                }
+
                 return RedirectToAction("Index");
             }
             

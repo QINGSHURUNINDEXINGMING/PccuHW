@@ -4,6 +4,7 @@ using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using Test.Models;
@@ -15,10 +16,30 @@ namespace Test.Controllers
         private ConnectDB db = new ConnectDB();
 
         // GET: GOODs
-        public ActionResult Index()
+        //public ActionResult Index()
+        //{
+        //    return View(db.Good1.ToList());
+        //}
+
+        
+        public async Task<ActionResult> Index(string searchString)
         {
-            return View(db.Good1.ToList());
+            var text = from m in db.Good1
+                       select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                text = text.Where(s => s.name.Contains(searchString));
+            }
+
+            return View(await text.ToListAsync());
         }
+
+
+
+
+
+
 
         // GET: GOODs/Details/5
         public ActionResult Details(int? id)
@@ -135,17 +156,6 @@ namespace Test.Controllers
             base.Dispose(disposing);
         }
 
-        public ActionResult SearchIndex(string searchString)
-        {
-            var text = from m in db.Good1
-                       select m;
-            if (!String.IsNullOrEmpty(searchString))
-            {
-                text = text.Where(s => s.name.Contains(searchString));
-            }
-
-            return View(text);
-        }
 
 
     }

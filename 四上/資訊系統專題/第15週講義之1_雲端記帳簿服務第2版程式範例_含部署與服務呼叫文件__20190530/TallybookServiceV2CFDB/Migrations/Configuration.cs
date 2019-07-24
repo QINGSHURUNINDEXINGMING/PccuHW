@@ -9,7 +9,7 @@ namespace TallybookServiceV2.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationsEnabled = false;
         }
 
         protected override void Seed(TallybookServiceV2CFDB.Models.TallybookServiceV2Model context)

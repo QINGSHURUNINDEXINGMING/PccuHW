@@ -13,7 +13,7 @@ namespace TallybookServiceV2.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201905121312017_initial"; }
+            get { return "201907240736317_initial"; }
         }
         
         string IMigrationMetadata.Source

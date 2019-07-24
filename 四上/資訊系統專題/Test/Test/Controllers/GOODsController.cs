@@ -11,6 +11,7 @@ using Test.Models;
 
 namespace Test.Controllers
 {
+    [Authorize]
     public class GOODsController : Controller
     {
         private ConnectDB db = new ConnectDB();
@@ -21,7 +22,8 @@ namespace Test.Controllers
         //    return View(db.Good1.ToList());
         //}
 
-        
+        //https://social.msdn.microsoft.com/Forums/zh-TW/394c3de5-8466-4f21-b1a2-1dcbe51a13a5/35531218392459027171214872019738480210461998121516299922514236?forum=236
+
         public async Task<ActionResult> Index(string searchString)
         {
             var text = from m in db.Good1

@@ -37,12 +37,6 @@ namespace Test.Controllers
             return View(await text.ToListAsync());
         }
 
-
-
-
-
-
-
         // GET: GOODs/Details/5
         public ActionResult Details(int? id)
         {

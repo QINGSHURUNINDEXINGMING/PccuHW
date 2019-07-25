@@ -435,9 +435,6 @@ C:\Users\Sasuke\Desktop\PccuHW\四上\資訊系統專題\Test\Test\bin\Microsoft
 C:\Users\Sasuke\Desktop\PccuHW\四上\資訊系統專題\Test\Test\bin\System.Diagnostics.DiagnosticSource.xml
 C:\Users\Sasuke\Desktop\PccuHW\四上\資訊系統專題\Test\Test\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 C:\Users\Sasuke\Desktop\PccuHW\四上\資訊系統專題\Test\Test\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Sasuke\Desktop\PccuHW\四上\資訊系統專題\Test\Test\obj\Debug\Test.csprojAssemblyReference.cache
-C:\Users\Sasuke\Desktop\PccuHW\四上\資訊系統專題\Test\Test\obj\Debug\Test.Migrations.initial.resources
-C:\Users\Sasuke\Desktop\PccuHW\四上\資訊系統專題\Test\Test\obj\Debug\Test.csproj.GenerateResource.cache
 C:\Users\Sasuke\Desktop\PccuHW\四上\資訊系統專題\Test\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
 C:\Users\Sasuke\Desktop\PccuHW\四上\資訊系統專題\Test\Test\obj\Debug\Test.csproj.CopyComplete
 C:\Users\Sasuke\Desktop\PccuHW\四上\資訊系統專題\Test\Test\obj\Debug\Test.dll

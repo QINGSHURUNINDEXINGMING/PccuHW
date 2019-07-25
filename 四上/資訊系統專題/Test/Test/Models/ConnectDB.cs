@@ -20,5 +20,7 @@ namespace Test.Models
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
         }
+
+        public System.Data.Entity.DbSet<Test.Models.RoleViewModel> RoleViewModels { get; set; }
     }
 }

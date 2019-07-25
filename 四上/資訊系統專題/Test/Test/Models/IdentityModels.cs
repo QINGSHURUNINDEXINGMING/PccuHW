@@ -10,14 +10,6 @@ namespace Test.Models
     public class ApplicationUser : IdentityUser
     {
 
-
-
-
-
-
-
-
-
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
@@ -26,6 +18,16 @@ namespace Test.Models
             return userIdentity;
         }
     }
+
+    public class ApplicationRole : IdentityRole
+    {
+        public
+    }
+
+
+
+
+
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {

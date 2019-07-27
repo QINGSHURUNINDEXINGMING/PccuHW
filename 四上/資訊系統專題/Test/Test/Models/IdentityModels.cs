@@ -36,5 +36,6 @@ namespace Test.Models
         {
             return new ApplicationDbContext();
         }
+        public System.Data.Entity.DbSet<Test.Models.RoleViewModel> RoleViewModels { get; set; }
     }
 }

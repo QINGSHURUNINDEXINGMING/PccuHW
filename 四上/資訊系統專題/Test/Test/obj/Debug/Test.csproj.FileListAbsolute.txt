@@ -439,3 +439,7 @@ C:\Users\Sasuke\Desktop\PccuHW\四上\資訊系統專題\Test\Test\obj\Debug\Tes
 C:\Users\Sasuke\Desktop\PccuHW\四上\資訊系統專題\Test\Test\obj\Debug\Test.csproj.CopyComplete
 C:\Users\Sasuke\Desktop\PccuHW\四上\資訊系統專題\Test\Test\obj\Debug\Test.dll
 C:\Users\Sasuke\Desktop\PccuHW\四上\資訊系統專題\Test\Test\obj\Debug\Test.pdb
+C:\Users\Sasuke\Desktop\PccuHW\四上\資訊系統專題\Test\Test\bin\zh-Hant\EntityFramework.resources.dll
+C:\Users\Sasuke\Desktop\PccuHW\四上\資訊系統專題\Test\Test\obj\Debug\Test.Migrations.initial.resources
+C:\Users\Sasuke\Desktop\PccuHW\四上\資訊系統專題\Test\Test\obj\Debug\Test.csproj.GenerateResource.cache
+C:\Users\Sasuke\Desktop\PccuHW\四上\資訊系統專題\Test\Test\obj\Debug\Test.Migrations.role.resources

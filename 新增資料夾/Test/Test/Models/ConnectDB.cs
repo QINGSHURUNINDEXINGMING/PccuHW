@@ -12,9 +12,7 @@ namespace Test.Models
         {
         }
 
-        public DbSet<QR_CODE> QR_code1 { get; set; }
-        public DbSet<GOOD> Good1 { get; set; }
-        public DbSet<HISTORY> History1 { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
         }

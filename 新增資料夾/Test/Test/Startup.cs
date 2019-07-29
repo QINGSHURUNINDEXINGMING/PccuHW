@@ -17,18 +17,15 @@ namespace Test
         public void CreateUserAndRoles()
         {
             ApplicationDbContext context = new ApplicationDbContext();
-            var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>());
-            var userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>());
+            var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(context));
+            var userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
 
             if (!roleManager.RoleExists("SuperAdmin"))
             {
-                var role = new IdentityRole("SuperAdmin");
-                roleManager.Create(role);
 
                 var user = new ApplicationUser();
                 user.UserName = "A5254135@g.pccu.edu.tw";
                 user.Email = "A5254135@g.pccu.edu.tw";
-                user.PasswordHash=
                 string pwd = "A32254748a@";
 
                 var newuser = userManager.Create(user, pwd);
@@ -36,6 +33,8 @@ namespace Test
                 {
                     userManager.AddToRole(user.Id, "SuperAdmin");
                 }
+                var role = new IdentityRole("SuperAdmin");
+                roleManager.Create(role);
             }
 
         }

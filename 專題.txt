@@ -9,3 +9,6 @@ https://benevo.pixnet.net/blog/post/64772716-amazon-go-%E4%B8%89%E5%A4%A7%E6%A0%
 
 https://www.google.com/search?ei=_zs4XdPiFZHVmAX_n4XABQ&q=mvc+5+identity+roles&oq=mvc+Identity&gs_l=psy-ab.1.9.0l2j0i7i30l8.3160.6627..13116...0.0..0.69.353.8......0....1..gws-wiz.......0i67j0i13.nQsjcejir5M
 https://code.msdn.microsoft.com/ASPNET-MVC-5-Security-And-44cbdb97
+
+
+https://stackoverflow.com/questions/25410046/how-to-create-applicationuser-by-usermanager-in-seed-method-of-asp-net-mvc-5-we

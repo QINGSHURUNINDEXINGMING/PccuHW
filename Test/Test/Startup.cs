@@ -23,22 +23,22 @@ namespace Test
             var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(context));
             var userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
 
-            if (!roleManager.RoleExists("Admin12345"))
+            if (!roleManager.RoleExists("Admin"))
             {
 
-                var role = new IdentityRole("Admin12345");
+                var role = new IdentityRole("Admin");
                 roleManager.Create(role);
 
                 var user = new ApplicationUser();
-                user.UserName = "sai@do.com";
-                user.Email = "sai@do.com";
+                user.UserName = "A6409001@g.pccu.edu.tw";
+                user.Email = "A6409001@g.pccu.edu.tw";
                 string pwd = "A32254748a@";
 
                 var newuser = userManager.Create(user, pwd);
 
                 if (newuser.Succeeded)
                 {
-                    userManager.AddToRole(user.Id, "Admin12345");
+                    userManager.AddToRole(user.Id, "Admin");
 
                 }
                 //var store = new UserStore<ApplicationUser>(context);

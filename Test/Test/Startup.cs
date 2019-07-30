@@ -25,8 +25,7 @@ namespace Test
 
             if (!roleManager.RoleExists("Admin"))
             {
-
-                var role = new IdentityRole("Admin");
+                var role = new IdentityRole("Admin");             //create admin role
                 roleManager.Create(role);
 
                 var user = new ApplicationUser();
@@ -41,16 +40,18 @@ namespace Test
                     userManager.AddToRole(user.Id, "Admin");
 
                 }
-                //var store = new UserStore<ApplicationUser>(context);
+            //var store = new UserStore<ApplicationUser>(context);
 
-                //var manager = new ApplicationUserManager(store);
-                //var user = new ApplicationUser()
-                //{
-                //    Email = "adm123@qq.com",
-                //    UserName = "adm123@qq.com"
-                //};
-                //manager.Create(user, "Adm@123");
-                //manager.AddToRole(user.Id, "Admin12345");
+            //var manager = new ApplicationUserManager(store);
+            //var user = new ApplicationUser()
+            //{
+            //    Email = "adm123@qq.com",
+            //    UserName = "adm123@qq.com"
+            //};
+            //manager.Create(user, "Adm@123");
+            //manager.AddToRole(user.Id, "Admin12345");
+            //
+            //https://stackoverflow.com/questions/25410046/how-to-create-applicationuser-by-usermanager-in-seed-method-of-asp-net-mvc-5-we
             }
 
         }

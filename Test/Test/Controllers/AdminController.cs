@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace Test.Controllers
 {
-    [Authorize(Roles = "SuperAdmin")]
+    [Authorize(Roles = "Admin")]
     public class AdminController : Controller
     {
         // GET: Admin
@@ -15,6 +15,11 @@ namespace Test.Controllers
             return View();
         }
         public ActionResult CreateUser()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult CreateResult(FormCollection form)
         {
             return View();
         }

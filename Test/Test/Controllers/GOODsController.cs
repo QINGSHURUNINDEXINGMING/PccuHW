@@ -11,7 +11,7 @@ using Test.Models;
 
 namespace Test.Controllers
 {
-    [Authorize(Roles = "Admin12345")]
+    [Authorize(Roles = "Admin")]
     public class GOODsController : Controller
     {
         private ConnectDB db = new ConnectDB();

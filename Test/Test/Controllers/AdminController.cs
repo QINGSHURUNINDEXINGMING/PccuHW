@@ -23,7 +23,7 @@ namespace Test.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult CreateResult(FormCollection form)
+        public ActionResult CreateUser(FormCollection form)
         {
             var userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
 
@@ -37,8 +37,16 @@ namespace Test.Controllers
 
             var newUser = userManager.Create(user, pwd);
 
-
-
+            return View();
+        }
+        public ActionResult CreateRole()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult CreateRole(FormCollection form)
+        {
+            string roleName = form["roleName"];
             return View();
         }
         public ActionResult AssignRole()

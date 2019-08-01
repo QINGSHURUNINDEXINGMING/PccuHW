@@ -2,8 +2,6 @@
 using Owin;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
-using Microsoft.Owin;
-using Owin;
 using Test.Models;
 
 [assembly: OwinStartupAttribute(typeof(Test.Startup))]

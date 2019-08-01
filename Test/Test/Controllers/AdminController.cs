@@ -46,12 +46,27 @@ namespace Test.Controllers
         [HttpPost]
         public ActionResult CreateRole(FormCollection form)
         {
+            var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(context));
+
             string roleName = form["roleName"];
-            return View();
+
+            if (!roleManager.RoleExists("roleName"))
+            {
+                var role = new IdentityRole("roleName");             //create admin role
+                roleManager.Create(role);
+            }
+
+            return View("Index");
         }
         public ActionResult AssignRole()
         {
+            ViewBag.Roles = context.Roles.Select(r => new SelectListItem { Value = r.Name, Text = r.Name }).ToList();
             return View();
+        }
+        [HttpPost]
+        public ActionResult AssignRole(FormCollection form)
+        {
+            return View("Index");
         }
     }
 }

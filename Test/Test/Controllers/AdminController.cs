@@ -66,6 +66,15 @@ namespace Test.Controllers
         [HttpPost]
         public ActionResult AssignRole(FormCollection form)
         {
+            string userName = form["txtUserName"];
+            string roleName = form["RoleName"];
+
+            ApplicationUser user = context.Users.Where(u => u.UserName.Equals(userName, StringComparison.CurrentCultureIgnoreCase)).FirstOrDefault();
+
+            var userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
+
+            userManager.AddToRole(user.Id, roleName);
+
             return View("Index");
         }
     }

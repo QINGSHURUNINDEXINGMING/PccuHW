@@ -50,9 +50,9 @@ namespace Test.Controllers
 
             string roleName = form["roleName"];
 
-            if (!roleManager.RoleExists("roleName"))
+            if (!roleManager.RoleExists(roleName))
             {
-                var role = new IdentityRole("roleName");             //create admin role
+                var role = new IdentityRole(roleName);             //create admin role
                 roleManager.Create(role);
             }
 

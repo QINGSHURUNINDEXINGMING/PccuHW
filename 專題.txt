@@ -17,3 +17,6 @@ https://stackoverflow.com/questions/25410046/how-to-create-applicationuser-by-us
 add column--ASP.NET
 
 https://stackoverflow.com/questions/33518872/add-column-in-table-with-asp-net-identity
+
+
+https://ithelp.ithome.com.tw/articles/10158459

@@ -65,6 +65,9 @@ namespace TestAll.Models
     public class RegisterViewModel
     {
         [Required]
+        [Display(Name = "全名")]
+        public string FullName { get; set; }
+        [Required]
         [EmailAddress]
         [Display(Name = "電子郵件")]
         public string Email { get; set; }

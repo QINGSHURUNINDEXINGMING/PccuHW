@@ -39,9 +39,45 @@ namespace TestAll.Controllers
 
             return View();
         }
-        public ActionResult AssignRole()
+
+        public ActionResult CreateRole()
         {
             return View();
+        }
+        [HttpPost]
+        public ActionResult CreateRole(FormCollection form)
+        {
+            var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(context));
+
+            string roleName = form["roleName"];
+
+            if (!roleManager.RoleExists(roleName))
+            {
+                var role = new IdentityRole(roleName);             //create admin role
+                roleManager.Create(role);
+            }
+
+            return View("Index");
+        }
+
+        public ActionResult AssignRole()
+        {
+            ViewBag.Roles = context.Roles.Select(r => new SelectListItem { Value = r.Name, Text = r.Name }).ToList();
+            return View();
+        }
+        [HttpPost]
+        public ActionResult AssignRole(FormCollection form)
+        {
+            string userName = form["txtUserName"];
+            string roleName = form["RoleName"];
+
+            ApplicationUser user = context.Users.Where(u => u.UserName.Equals(userName, StringComparison.CurrentCultureIgnoreCase)).FirstOrDefault();
+
+            var userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
+
+            userManager.AddToRole(user.Id, roleName);
+
+            return View("Index");
         }
     }
 }

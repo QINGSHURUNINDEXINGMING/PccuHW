@@ -355,4 +355,3 @@ I:\Downloads\PccuHW\TestAll - 複製 (2)\TestAll\obj\Debug\TestAll.csproj.CopyCo
 I:\Downloads\PccuHW\TestAll - 複製 (2)\TestAll\obj\Debug\TestAll.dll
 I:\Downloads\PccuHW\TestAll - 複製 (2)\TestAll\obj\Debug\TestAll.pdb
 I:\Downloads\PccuHW\TestAll - 複製 (2)\TestAll\obj\Debug\TestAll.Migrations.GOOD.resources
-I:\Downloads\PccuHW\TestAll - 複製 (2)\TestAll\obj\Debug\TestAll.Migrations.GOOD1.resources

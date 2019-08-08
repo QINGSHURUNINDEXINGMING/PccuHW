@@ -14,9 +14,6 @@ https://code.msdn.microsoft.com/ASPNET-MVC-5-Security-And-44cbdb97
 https://stackoverflow.com/questions/25410046/how-to-create-applicationuser-by-usermanager-in-seed-method-of-asp-net-mvc-5-we
 
 
-add column--ASP.NET
-
-https://stackoverflow.com/questions/33518872/add-column-in-table-with-asp-net-identity
-
-
 https://ithelp.ithome.com.tw/articles/10158459
+
+https://docs.microsoft.com/zh-tw/aspnet/core/mvc/views/razor?view=aspnetcore-2.2

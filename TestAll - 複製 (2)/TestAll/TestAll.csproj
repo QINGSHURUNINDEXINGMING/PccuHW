@@ -169,18 +169,15 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\GOODsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201908071013447_FullName.cs" />
-    <Compile Include="Migrations\201908071013447_FullName.Designer.cs">
-      <DependentUpon>201908071013447_FullName.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201908080735562_GOOD.cs" />
-    <Compile Include="Migrations\201908080735562_GOOD.Designer.cs">
-      <DependentUpon>201908080735562_GOOD.cs</DependentUpon>
+    <Compile Include="Migrations\201908080902364_initial.cs" />
+    <Compile Include="Migrations\201908080902364_initial.Designer.cs">
+      <DependentUpon>201908080902364_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -250,6 +247,11 @@
     <Content Include="Views\Admin\CreateUser.cshtml" />
     <Content Include="Views\Admin\AssignRole.cshtml" />
     <Content Include="Views\Admin\CreateRole.cshtml" />
+    <Content Include="Views\GOODs\Create.cshtml" />
+    <Content Include="Views\GOODs\Delete.cshtml" />
+    <Content Include="Views\GOODs\Details.cshtml" />
+    <Content Include="Views\GOODs\Edit.cshtml" />
+    <Content Include="Views\GOODs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -268,11 +270,8 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201908071013447_FullName.resx">
-      <DependentUpon>201908071013447_FullName.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908080735562_GOOD.resx">
-      <DependentUpon>201908080735562_GOOD.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201908080902364_initial.resx">
+      <DependentUpon>201908080902364_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -348,10 +348,9 @@ I:\Downloads\PccuHW\TestAll - 複製 (2)\TestAll\bin\zh-Hant\Microsoft.AspNet.Id
 I:\Downloads\PccuHW\TestAll - 複製 (2)\TestAll\bin\zh-Hant\Microsoft.AspNet.Identity.Owin.resources.dll
 I:\Downloads\PccuHW\TestAll - 複製 (2)\TestAll\bin\zh-Hant\Microsoft.AspNet.Identity.EntityFramework.resources.dll
 I:\Downloads\PccuHW\TestAll - 複製 (2)\TestAll\obj\Debug\TestAll.csprojAssemblyReference.cache
-I:\Downloads\PccuHW\TestAll - 複製 (2)\TestAll\obj\Debug\TestAll.Migrations.FullName.resources
-I:\Downloads\PccuHW\TestAll - 複製 (2)\TestAll\obj\Debug\TestAll.csproj.GenerateResource.cache
 I:\Downloads\PccuHW\TestAll - 複製 (2)\TestAll\obj\Debug\TestAll.csproj.CoreCompileInputs.cache
 I:\Downloads\PccuHW\TestAll - 複製 (2)\TestAll\obj\Debug\TestAll.csproj.CopyComplete
 I:\Downloads\PccuHW\TestAll - 複製 (2)\TestAll\obj\Debug\TestAll.dll
 I:\Downloads\PccuHW\TestAll - 複製 (2)\TestAll\obj\Debug\TestAll.pdb
-I:\Downloads\PccuHW\TestAll - 複製 (2)\TestAll\obj\Debug\TestAll.Migrations.GOOD.resources
+I:\Downloads\PccuHW\TestAll - 複製 (2)\TestAll\obj\Debug\TestAll.Migrations.InitialMigrations.resources
+I:\Downloads\PccuHW\TestAll - 複製 (2)\TestAll\obj\Debug\TestAll.csproj.GenerateResource.cache

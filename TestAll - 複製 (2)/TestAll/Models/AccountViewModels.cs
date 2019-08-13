@@ -49,9 +49,8 @@ namespace TestAll.Models
     public class LoginViewModel
     {
         [Required]
-        [Display(Name = "電子郵件")]
-        [EmailAddress]
-        public string Email { get; set; }
+        [Display(Name = "帳號名稱")]
+        public string UserName { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
@@ -67,6 +66,14 @@ namespace TestAll.Models
         [Required]
         [Display(Name = "全名")]
         public string FullName { get; set; }
+
+        [Required]
+        [Display(Name = "帳號名稱")]
+        public string UserName { get; set; }
+
+        [Display(Name = "地址")]
+        public string Address { get; set; }
+
         [Required]
         [EmailAddress]
         [Display(Name = "電子郵件")]

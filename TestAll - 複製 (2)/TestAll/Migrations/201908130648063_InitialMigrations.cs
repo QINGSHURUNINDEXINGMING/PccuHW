@@ -3,7 +3,7 @@ namespace TestAll.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class GOOD : DbMigration
+    public partial class InitialMigrations : DbMigration
     {
         public override void Up()
         {

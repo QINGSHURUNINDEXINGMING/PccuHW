@@ -114,8 +114,6 @@ C:\Users\Sasuke\Desktop\PccuHW\TestAll\TestAll\obj\Debug\TestAll.csproj.CoreComp
 C:\Users\Sasuke\Desktop\PccuHW\TestAll\TestAll\obj\Debug\TestAll.csproj.CopyComplete
 C:\Users\Sasuke\Desktop\PccuHW\TestAll\TestAll\obj\Debug\TestAll.dll
 C:\Users\Sasuke\Desktop\PccuHW\TestAll\TestAll\obj\Debug\TestAll.pdb
-C:\Users\Sasuke\Desktop\PccuHW\TestAll\TestAll\obj\Debug\TestAll.Migrations.FullName.resources
-C:\Users\Sasuke\Desktop\PccuHW\TestAll\TestAll\obj\Debug\TestAll.csproj.GenerateResource.cache
 C:\Users\first\Desktop\PccuHW\TestAll\TestAll\bin\TestAll.dll.config
 C:\Users\first\Desktop\PccuHW\TestAll\TestAll\bin\TestAll.dll
 C:\Users\first\Desktop\PccuHW\TestAll\TestAll\bin\TestAll.pdb
@@ -355,3 +353,6 @@ I:\Downloads\PccuHW\TestAll\TestAll\obj\Debug\TestAll.csproj.CopyComplete
 I:\Downloads\PccuHW\TestAll\TestAll\obj\Debug\TestAll.dll
 I:\Downloads\PccuHW\TestAll\TestAll\obj\Debug\TestAll.pdb
 I:\Downloads\PccuHW\TestAll\TestAll\obj\Debug\TestAll.Migrations.Aug0813.resources
+C:\Users\Sasuke\Desktop\PccuHW\TestAll\TestAll\obj\Debug\TestAll.csprojAssemblyReference.cache
+C:\Users\Sasuke\Desktop\PccuHW\TestAll\TestAll\obj\Debug\TestAll.Migrations.initial.resources
+C:\Users\Sasuke\Desktop\PccuHW\TestAll\TestAll\obj\Debug\TestAll.csproj.GenerateResource.cache

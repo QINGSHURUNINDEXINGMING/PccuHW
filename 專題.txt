@@ -19,3 +19,5 @@ https://ithelp.ithome.com.tw/articles/10158459
 https://docs.microsoft.com/zh-tw/aspnet/core/mvc/views/razor?view=aspnetcore-2.2
 
 https://stackoverflow.com/questions/50825753/support-login-with-email-or-username-for-same-user-in-asp-net-core
+
+https://docs.microsoft.com/en-us/previous-versions/aspnet/dn253028(v=vs.108)

@@ -10,8 +10,6 @@ namespace TestAll.Models
     // 您可將更多屬性新增至 ApplicationUser 類別，藉此為使用者新增設定檔資料，如需深入了解，請瀏覽 https://go.microsoft.com/fwlink/?LinkID=317594。
     public class ApplicationUser : IdentityUser
     {
-        [Required]
-        [Display(Name = "全名")]
         public string FullName { get; set; }
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {

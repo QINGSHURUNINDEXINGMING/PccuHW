@@ -81,7 +81,7 @@ namespace Test.Controllers
                 int count = result.Count();
                 if (count == 0)
                 {
-                    //TempData["創建訊息"] = "儲存成功";
+                    TempData["創建訊息"] = "儲存成功";
                     db.Good1.Add(gOOD);
                     db.SaveChanges();
                 }

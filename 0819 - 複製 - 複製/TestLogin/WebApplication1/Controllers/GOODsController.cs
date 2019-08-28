@@ -82,7 +82,7 @@ namespace WebApplication1.Controllers
                 int count = result.Count();
                 if (count == 0)
                 {
-                    //TempData["創建訊息"] = "儲存成功";
+                    TempData["創建訊息"] = "儲存成功";
                     db.GOODs.Add(gOOD);
                     db.SaveChanges();
                 }
@@ -91,7 +91,11 @@ namespace WebApplication1.Controllers
                     TempData["創建訊息"] = "已有相同UID名稱";
                 }
 
+                var text = from m in db.GOODs
+                           select m;
+
                 return RedirectToAction("Index");
+
             }
 
             return View(gOOD);

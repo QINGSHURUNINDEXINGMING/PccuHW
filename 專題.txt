@@ -23,3 +23,9 @@ https://stackoverflow.com/questions/50825753/support-login-with-email-or-usernam
 https://docs.microsoft.com/en-us/previous-versions/aspnet/dn253028(v=vs.108)
 
 https://www.tutorialsteacher.com/mvc/model-binding-in-asp.net-mvc
+
+https://blog.miniasp.com/post/2016/03/14/ASPNET-MVC-Developer-Note-Part-28-Understanding-ModelState
+
+https://stackoverflow.com/questions/12936604/how-to-add-modelstate-addmodelerror-message-when-model-item-is-not-binded
+
+https://stackoverflow.com/questions/39801635/mvc-how-to-check-if-username-is-not-already-taken/39801704#39801704

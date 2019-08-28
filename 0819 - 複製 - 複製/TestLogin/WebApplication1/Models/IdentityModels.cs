@@ -34,6 +34,8 @@ namespace WebApplication1.Models
         }
         public DbSet<GOOD> GOODs { get; set; }
 
+        public System.Data.Entity.DbSet<WebApplication1.Models.COSTOMER> COSTOMERs { get; set; }
+
         //public System.Data.Entity.DbSet<WebApplication1.Models.GOOD> GOODs { get; set; }
     }
 }

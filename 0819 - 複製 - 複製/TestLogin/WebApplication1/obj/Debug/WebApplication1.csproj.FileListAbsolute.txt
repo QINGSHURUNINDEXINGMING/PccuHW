@@ -430,3 +430,4 @@ I:\PccuHW\0819 - 複製 - 複製\TestLogin\WebApplication1\obj\Debug\WebApplicat
 I:\PccuHW\0819 - 複製 - 複製\TestLogin\WebApplication1\obj\Debug\WebApplication1.dll
 I:\PccuHW\0819 - 複製 - 複製\TestLogin\WebApplication1\obj\Debug\WebApplication1.pdb
 I:\PccuHW\0819 - 複製 - 複製\TestLogin\WebApplication1\obj\Debug\WebApplication1.Migrations.GOOD_DB.resources
+I:\PccuHW\0819 - 複製 - 複製\TestLogin\WebApplication1\obj\Debug\WebApplication1.Migrations.COSTOMER.resources

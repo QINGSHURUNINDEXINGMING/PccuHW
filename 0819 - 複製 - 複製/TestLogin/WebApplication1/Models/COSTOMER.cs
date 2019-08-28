@@ -8,6 +8,8 @@ namespace WebApplication1.Models
 {
     public class COSTOMER
     {
+        [Key]
+        public int id { get; set; }
         [Required]
         [Display(Name = "UserName")]
         public string UserName { get; set; }

@@ -169,6 +169,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\COSTOMERsController.cs" />
     <Compile Include="Controllers\GOODsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -187,8 +188,13 @@
     <Compile Include="Migrations\201908260744559_GOOD_DB.Designer.cs">
       <DependentUpon>201908260744559_GOOD_DB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201908280745344_COSTOMER.cs" />
+    <Compile Include="Migrations\201908280745344_COSTOMER.Designer.cs">
+      <DependentUpon>201908280745344_COSTOMER.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\COSTOMER.cs" />
     <Compile Include="Models\GOOD.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -260,6 +266,11 @@
     <Content Include="Views\GOODs\Details.cshtml" />
     <Content Include="Views\GOODs\Edit.cshtml" />
     <Content Include="Views\GOODs\Index.cshtml" />
+    <Content Include="Views\COSTOMERs\Create.cshtml" />
+    <Content Include="Views\COSTOMERs\Delete.cshtml" />
+    <Content Include="Views\COSTOMERs\Details.cshtml" />
+    <Content Include="Views\COSTOMERs\Edit.cshtml" />
+    <Content Include="Views\COSTOMERs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -286,6 +297,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201908260744559_GOOD_DB.resx">
       <DependentUpon>201908260744559_GOOD_DB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908280745344_COSTOMER.resx">
+      <DependentUpon>201908280745344_COSTOMER.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

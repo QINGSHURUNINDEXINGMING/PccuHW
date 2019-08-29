@@ -29,16 +29,18 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost]
-        public ActionResult InitialWallet(FormCollection form, COSTOMER cOSTOMER)
+        public ActionResult InitialWallet([Bind(Include ="UserName, UID, Wallet")]COSTOMER cOSTOMER)
         {
             if (ModelState.IsValid)
             {
                 int wallet = 0;
 
-                string userName = form["txtUserName"];
+                string userName = cOSTOMER.UserName;
                 string UID = form["UID"];
 
                 ApplicationUser user = db.Users.Where(u => u.UserName.Equals(userName, StringComparison.CurrentCultureIgnoreCase)).FirstOrDefault();
+
+                var result = db.COSTOMERs.Where(x => x.UserName == cOSTOMER.UserName);
 
                 cOSTOMER.wallet = wallet;
                 cOSTOMER.UserName = userName;

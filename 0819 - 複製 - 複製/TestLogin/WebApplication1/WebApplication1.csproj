@@ -275,6 +275,7 @@
     <Content Include="Views\COSTOMERs\Details.cshtml" />
     <Content Include="Views\COSTOMERs\Edit.cshtml" />
     <Content Include="Views\COSTOMERs\Index.cshtml" />
+    <Content Include="Views\COSTOMERs\InitialWallet.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

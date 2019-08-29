@@ -8,6 +8,8 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using WebApplication1.Models;
+using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.AspNet.Identity;
 
 namespace WebApplication1.Controllers
 {
@@ -21,7 +23,31 @@ namespace WebApplication1.Controllers
             return View(await db.COSTOMERs.ToListAsync());
         }
 
+        public ActionResult InitialWallet()
+        {
+            return View();
+        }
 
+        [HttpPost]
+        public ActionResult InitialWallet(FormCollection form, COSTOMER cOSTOMER)
+        {
+            if (ModelState.IsValid)
+            {
+                int wallet = 0;
+
+                string userName = form["txtUserName"];
+                string UID = form["UID"];
+
+                ApplicationUser user = db.Users.Where(u => u.UserName.Equals(userName, StringComparison.CurrentCultureIgnoreCase)).FirstOrDefault();
+
+                cOSTOMER.wallet = wallet;
+                cOSTOMER.UserName = userName;
+                cOSTOMER.UID = UID;
+
+                return View("Index");
+            }
+            return View("Index");
+        }
 
 
 

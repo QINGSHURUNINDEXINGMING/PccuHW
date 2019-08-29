@@ -19,11 +19,11 @@ namespace WebApplication1.Models
         [Required]
         public int wallet { get; set; }
 
-        [Required]
-        public int deposit { get; set; }
+        //[Required]
+        //public int deposit { get; set; }
 
-        [Required]
-        public int debt { get; set; }
+        //[Required]
+        //public int debt { get; set; }
 
     }
 }

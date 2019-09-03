@@ -29,26 +29,55 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost]
-        public ActionResult InitialWallet([Bind(Include ="UserName, UID, Wallet")]COSTOMER cOSTOMER)
+        public ActionResult InitialWallet([Bind(Include ="UserName, UID")]COSTOMER cOSTOMER)
         {
             if (ModelState.IsValid)
             {
                 int wallet = 0;
 
-                string userName = cOSTOMER.UserName;
-                string UID = form["UID"];
-
-                ApplicationUser user = db.Users.Where(u => u.UserName.Equals(userName, StringComparison.CurrentCultureIgnoreCase)).FirstOrDefault();
-
-                var result = db.COSTOMERs.Where(x => x.UserName == cOSTOMER.UserName);
-
                 cOSTOMER.wallet = wallet;
-                cOSTOMER.UserName = userName;
-                cOSTOMER.UID = UID;
 
-                return View("Index");
+                var result1 = db.Users.Where(u => u.UserName == cOSTOMER.UserName);
+                var result2 = db.COSTOMERs.Where(x => x.UID == cOSTOMER.UID);
+
+
+
+                if (result1.Count() == 0)
+                {
+                    
+                    if (result2.Count() == 0)
+                    {
+                        TempData["創建訊息"] = "錢包初始化成功";
+                        db.COSTOMERs.Add(cOSTOMER);
+                        db.SaveChanges();
+                    }
+                    else
+                    {
+                        TempData["創建訊息"] = "UID已重複";
+                    }
+                }
+                else
+                {
+                    TempData["創建訊息"] = "UserName已重複";
+                }
+
+
+                //ApplicationUser user = db.Users.Where(u => u.UserName.Equals(cOSTOMER.UserName, StringComparison.CurrentCultureIgnoreCase)).FirstOrDefault();
+                //var result = db.COSTOMERs.Where(x => x.UserName == cOSTOMER.UserName);
+
+                //cOSTOMER.UserName = user.UserName;
+                cOSTOMER.wallet = wallet;
+
+                //string userName = cOSTOMER.UserName;
+                //string UID = cOSTOMER.UID;
+
+                //cOSTOMER.wallet = wallet;
+                //cOSTOMER.UserName = userName;
+                //cOSTOMER.UID = UID;
+
+                return View(cOSTOMER);
             }
-            return View("Index");
+            return View(cOSTOMER);
         }
 
 

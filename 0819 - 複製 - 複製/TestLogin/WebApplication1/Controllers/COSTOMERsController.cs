@@ -29,7 +29,8 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost]
-        public ActionResult InitialWallet([Bind(Include ="UserName, UID")]COSTOMER cOSTOMER)
+        [ValidateAntiForgeryToken]
+        public async Task<ActionResult> InitialWallet([Bind(Include = "id, UserName, UID")]COSTOMER cOSTOMER)
         {
             if (ModelState.IsValid)
             {
@@ -42,32 +43,31 @@ namespace WebApplication1.Controllers
 
 
 
-                if (result1.Count() == 0)
+                if (result1.Count() == 1)
                 {
                     
                     if (result2.Count() == 0)
                     {
                         TempData["創建訊息"] = "錢包初始化成功";
                         db.COSTOMERs.Add(cOSTOMER);
-                        db.SaveChanges();
+                        await db.SaveChangesAsync();
+                        return RedirectToAction("Index");
                     }
                     else
                     {
-                        TempData["創建訊息"] = "UID已重複";
+                        TempData["創建訊息"] = "已創立錢包";
                     }
                 }
                 else
                 {
-                    TempData["創建訊息"] = "UserName已重複";
+                    TempData["創建訊息"] = "未創立UserName";
                 }
 
 
-                //ApplicationUser user = db.Users.Where(u => u.UserName.Equals(cOSTOMER.UserName, StringComparison.CurrentCultureIgnoreCase)).FirstOrDefault();
                 //var result = db.COSTOMERs.Where(x => x.UserName == cOSTOMER.UserName);
 
                 //cOSTOMER.UserName = user.UserName;
-                cOSTOMER.wallet = wallet;
-
+              
                 //string userName = cOSTOMER.UserName;
                 //string UID = cOSTOMER.UID;
 
@@ -75,23 +75,10 @@ namespace WebApplication1.Controllers
                 //cOSTOMER.UserName = userName;
                 //cOSTOMER.UID = UID;
 
-                return View(cOSTOMER);
+                return RedirectToAction("Index");
             }
             return View(cOSTOMER);
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         // GET: COSTOMERs/Details/5
         public async Task<ActionResult> Details(int? id)

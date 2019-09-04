@@ -421,7 +421,6 @@ I:\PccuHW\0819 - 複製 - 複製\TestLogin\WebApplication1\bin\Microsoft.Owin.Se
 I:\PccuHW\0819 - 複製 - 複製\TestLogin\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 I:\PccuHW\0819 - 複製 - 複製\TestLogin\WebApplication1\bin\Microsoft.Owin.Security.OAuth.xml
 I:\PccuHW\0819 - 複製 - 複製\TestLogin\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-I:\PccuHW\0819 - 複製 - 複製\TestLogin\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache
 I:\PccuHW\0819 - 複製 - 複製\TestLogin\WebApplication1\obj\Debug\WebApplication1.Migrations.initial.resources
 I:\PccuHW\0819 - 複製 - 複製\TestLogin\WebApplication1\obj\Debug\WebApplication1.Migrations._0821.resources
 I:\PccuHW\0819 - 複製 - 複製\TestLogin\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.cache
@@ -432,3 +431,5 @@ I:\PccuHW\0819 - 複製 - 複製\TestLogin\WebApplication1\obj\Debug\WebApplicat
 I:\PccuHW\0819 - 複製 - 複製\TestLogin\WebApplication1\obj\Debug\WebApplication1.Migrations.GOOD_DB.resources
 I:\PccuHW\0819 - 複製 - 複製\TestLogin\WebApplication1\obj\Debug\WebApplication1.Migrations.COSTOMER.resources
 I:\PccuHW\0819 - 複製 - 複製\TestLogin\WebApplication1\obj\Debug\WebApplication1.Migrations.update_COSTOMER.resources
+I:\PccuHW\0819 - 複製 - 複製\TestLogin\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache
+I:\PccuHW\0819 - 複製 - 複製\TestLogin\WebApplication1\obj\Debug\WebApplication1.Migrations._0903.resources

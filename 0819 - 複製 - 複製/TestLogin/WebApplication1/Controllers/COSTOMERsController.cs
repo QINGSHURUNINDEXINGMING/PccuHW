@@ -64,17 +64,6 @@ namespace WebApplication1.Controllers
                 }
 
 
-                //var result = db.COSTOMERs.Where(x => x.UserName == cOSTOMER.UserName);
-
-                //cOSTOMER.UserName = user.UserName;
-              
-                //string userName = cOSTOMER.UserName;
-                //string UID = cOSTOMER.UID;
-
-                //cOSTOMER.wallet = wallet;
-                //cOSTOMER.UserName = userName;
-                //cOSTOMER.UID = UID;
-
                 return RedirectToAction("Index");
             }
             return View(cOSTOMER);
@@ -92,29 +81,6 @@ namespace WebApplication1.Controllers
             {
                 return HttpNotFound();
             }
-            return View(cOSTOMER);
-        }
-
-        // GET: COSTOMERs/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: COSTOMERs/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "id,UserName,UID,wallet,deposit,debt")] COSTOMER cOSTOMER)
-        {
-            if (ModelState.IsValid)
-            {
-                db.COSTOMERs.Add(cOSTOMER);
-                await db.SaveChangesAsync();
-                return RedirectToAction("Index");
-            }
-
             return View(cOSTOMER);
         }
 
@@ -138,12 +104,36 @@ namespace WebApplication1.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "id,UserName,UID,wallet,deposit,debt")] COSTOMER cOSTOMER)
+        public async Task<ActionResult> Edit([Bind(Include = "id,UserName,UID,wallet")] COSTOMER cOSTOMER)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(cOSTOMER).State = EntityState.Modified;
-                await db.SaveChangesAsync();
+                
+                var result1 = db.Users.Where(u => u.UserName == cOSTOMER.UserName);
+                var result2 = db.COSTOMERs.Where(x => x.UID == cOSTOMER.UID);
+
+
+                if (result1.Count() == 1)
+                {
+
+                    if (result2.Count() == 0)
+                    {
+                        TempData["創建訊息"] = "編輯成功";
+                        db.Entry(cOSTOMER).State = EntityState.Modified;
+                        await db.SaveChangesAsync();
+                        return RedirectToAction("Index");
+                    }
+                    else
+                    {
+                        TempData["創建訊息"] = "已創立錢包";
+                    }
+                }
+                else
+                {
+                    TempData["創建訊息"] = "未創立UserName";
+                }
+
+
                 return RedirectToAction("Index");
             }
             return View(cOSTOMER);

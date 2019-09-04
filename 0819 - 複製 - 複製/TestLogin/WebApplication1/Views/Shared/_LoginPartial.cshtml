@@ -1,19 +1,21 @@
-﻿@using Microsoft.AspNet.Identity
+﻿@model IEnumerable<WebApplication1.Models.COSTOMER>
+@using Microsoft.AspNet.Identity
 @using System.Security.Claims;
+
 
 @if (Request.IsAuthenticated)
 {
     using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
     {
         @Html.AntiForgeryToken()
-
         <ul class="nav navbar-nav navbar-right">
             <li>
-                @Html.ActionLink("Hello ~  " + (((ClaimsIdentity)User.Identity).FindFirst("FullName").Value)+", 您的帳戶名為："+User.Identity.GetUserName()+ " !", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+                @Html.ActionLink("Hello ~  " + (((ClaimsIdentity)User.Identity).FindFirst("FullName").Value) + ", 您的帳戶名為：" + User.Identity.GetUserName() + " !", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
                 @*@Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })*@
             </li>
             <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
         </ul>
+        
     }
 }
 else

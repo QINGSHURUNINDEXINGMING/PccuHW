@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "PassViewData";
+}
+
+<h2>PassViewData</h2>
+
+<h3>ViewData傳來的資料</h3>
+
+<ul>
+    <li>學號 @ViewData["SID"]</li>
+    <li>姓名 @ViewData["Name"]</li>
+    <li>年齡 @((int)ViewData["Age"] + 1)</li>
+    <li>年齡 @ViewData["Age"]</li>
+    <li>單身 @ViewData["Single"]</li>
+
+
+</ul>
+
+<ul>
+    @foreach(var item in ViewData)
+    {
+        <li>@item.Key, @item.Value</li>
+    }
+</ul>
+<ul>
+    @foreach (var item in (List<string>)ViewData["petList"])
+    {
+        <li>@item</li>
+    }
+</ul>
+
+<h4>ViewData.Model傳資料</h4>
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>@item</li>
+    }
+</ul>

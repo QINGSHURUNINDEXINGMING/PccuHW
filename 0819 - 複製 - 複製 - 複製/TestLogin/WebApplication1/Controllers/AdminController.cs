@@ -73,7 +73,18 @@ namespace WebApplication1.Controllers
 
             var userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
 
-            userManager.AddToRole(user.Id, roleName);
+            var query = context.Users.Where(u => u.UserName == userName);
+            int count = query.Count();
+            if (count != 0)
+            {
+                TempData["創建訊息"] = "儲存成功";
+                userManager.AddToRole(user.Id, roleName);
+            }
+            else
+            {
+                TempData["創建訊息"] = "儲存失敗，沒有此UserName";
+            }
+
 
             return View("Index");
         }
@@ -81,19 +92,20 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
-        [HttpPost]
-        public ActionResult AddMoney(FormCollection form)
-        {
-            string userName = form["txtUserName"];
-            string roleName = form["RoleName"];
 
-            ApplicationUser user = context.Users.Where(u => u.UserName.Equals(userName, StringComparison.CurrentCultureIgnoreCase)).FirstOrDefault();
+        //[HttpPost]
+        //public ActionResult AddMoney(FormCollection form)
+        //{
+        //    string userName = form["txtUserName"];
+        //    string money = form["txtMoney"];
 
-            var userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
+        //    ApplicationUser user = context.Users.Where(u => u.UserName.Equals(userName, StringComparison.CurrentCultureIgnoreCase)).FirstOrDefault();
 
-            userManager.AddToRole(user.Id, roleName);
+        //    var userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
 
-            return View("Index");
-        }
+        //    userManager.AddToRole(user.Id, roleName);
+
+        //    return View("Index");
+        //}
     }
 }

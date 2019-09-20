@@ -3,7 +3,7 @@ namespace TallybookServiceV2.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class initial : DbMigration
+    public partial class _09_20 : DbMigration
     {
         public override void Up()
         {

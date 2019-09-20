@@ -77,5 +77,23 @@ namespace WebApplication1.Controllers
 
             return View("Index");
         }
+        public ActionResult AddMoney()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult AddMoney(FormCollection form)
+        {
+            string userName = form["txtUserName"];
+            string roleName = form["RoleName"];
+
+            ApplicationUser user = context.Users.Where(u => u.UserName.Equals(userName, StringComparison.CurrentCultureIgnoreCase)).FirstOrDefault();
+
+            var userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
+
+            userManager.AddToRole(user.Id, roleName);
+
+            return View("Index");
+        }
     }
 }

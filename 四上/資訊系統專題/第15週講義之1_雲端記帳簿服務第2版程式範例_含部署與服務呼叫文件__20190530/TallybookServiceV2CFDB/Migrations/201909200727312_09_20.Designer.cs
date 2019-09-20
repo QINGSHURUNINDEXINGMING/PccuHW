@@ -7,13 +7,13 @@ namespace TallybookServiceV2.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class initial : IMigrationMetadata
+    public sealed partial class _09_20 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(initial));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(_09_20));
         
         string IMigrationMetadata.Id
         {
-            get { return "201907240736317_initial"; }
+            get { return "201909200727312_09_20"; }
         }
         
         string IMigrationMetadata.Source

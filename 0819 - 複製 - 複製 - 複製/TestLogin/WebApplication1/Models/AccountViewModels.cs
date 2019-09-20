@@ -70,8 +70,7 @@ namespace WebApplication1.Models
 
         [Display(Name = "Wallet")]
         public string Wallet { get; set; }
-
-
+        
         [Required]
         [Display(Name = "UserName")]
         public string UserName { get; set; }

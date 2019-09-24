@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@if (TempData["創建訊息"] != null)
+{
+    <script type="text/javascript">
+                var message =@Html.Raw(Json.Encode(TempData["創建訊息"]));
+                alert(message);
+    </script>
+}
+
+<ul>
+    <li>@Html.ActionLink("Create User", "CreateUser", "Admin")</li>
+    <li>@Html.ActionLink("Create Role", "CreateRole", "Admin")</li>
+    <li>@Html.ActionLink("Assign Role", "AssignRole", "Admin")</li>
+</ul>

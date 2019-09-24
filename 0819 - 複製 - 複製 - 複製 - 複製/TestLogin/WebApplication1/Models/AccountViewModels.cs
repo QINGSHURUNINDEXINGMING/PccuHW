@@ -65,6 +65,10 @@ namespace WebApplication1.Models
     public class RegisterViewModel
     {
         [Required]
+        [Display(Name = "UID")]
+        public string UID { get; set; }
+
+        [Required]
         [Display(Name = "FullName")]
         public string FullName { get; set; }
 

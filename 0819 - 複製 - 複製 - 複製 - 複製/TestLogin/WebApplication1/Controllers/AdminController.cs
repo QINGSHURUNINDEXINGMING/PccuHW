@@ -109,7 +109,15 @@ namespace WebApplication1.Controllers
             if (count != 0)
             {
                 TempData["創建訊息"] = "儲存成功";
-                user.Wallet = money;
+
+                int addMoney = Convert.ToInt32(money);
+                int userOrignalWallet= Convert.ToInt32(user.Wallet);
+
+                int userTotalMoney = addMoney + userOrignalWallet;
+
+                user.Wallet = Convert.ToString(userTotalMoney);
+
+                context.SaveChanges();
             }
             else
             {

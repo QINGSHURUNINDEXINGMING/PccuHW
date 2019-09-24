@@ -11,6 +11,7 @@ namespace WebApplication1.Models
     {
         public string FullName { get; set; }
         public string Wallet { get; set; }
+        public string UID { get; set; }
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {

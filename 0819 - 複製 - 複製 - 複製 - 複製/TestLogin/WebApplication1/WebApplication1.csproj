@@ -260,6 +260,7 @@
     <Content Include="Views\COSTOMERs\Index.cshtml" />
     <Content Include="Views\COSTOMERs\InitialWallet.cshtml" />
     <Content Include="Views\Admin\AddMoney.cshtml" />
+    <Content Include="Views\Home\DeductMoney.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

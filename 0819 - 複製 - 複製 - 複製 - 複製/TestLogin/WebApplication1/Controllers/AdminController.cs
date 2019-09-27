@@ -124,7 +124,9 @@ namespace WebApplication1.Controllers
                 TempData["創建訊息"] = "儲存失敗，沒有此UserName";
             }
 
-            return View("Index");
+            return RedirectToAction("Index");
         }
+
+       
     }
 }

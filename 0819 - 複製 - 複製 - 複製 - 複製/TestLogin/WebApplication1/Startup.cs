@@ -30,6 +30,7 @@ namespace WebApplication1
                 user.UserName = "A6409001";
                 user.FullName = "Admin";
                 user.Email = "A6409001@g.pccu.edu.tw";
+                user.Wallet = "0";
                 string pwd = "A32254748a@";
 
                 var newuser = userManager.Create(user, pwd);

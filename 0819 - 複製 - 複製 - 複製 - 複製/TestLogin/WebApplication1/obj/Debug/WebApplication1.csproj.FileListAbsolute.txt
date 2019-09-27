@@ -643,8 +643,6 @@ C:\Users\E901\Desktop\PccuHW\0819 - 複製 - 複製 - 複製 - 複製\TestLogin\
 C:\Users\E901\Desktop\PccuHW\0819 - 複製 - 複製 - 複製 - 複製\TestLogin\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
 C:\Users\E901\Desktop\PccuHW\0819 - 複製 - 複製 - 複製 - 複製\TestLogin\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\E901\Desktop\PccuHW\0819 - 複製 - 複製 - 複製 - 複製\TestLogin\WebApplication1\obj\Debug\WebApplication1.pdb
-C:\Users\E901\Desktop\PccuHW\0819 - 複製 - 複製 - 複製 - 複製\TestLogin\WebApplication1\obj\Debug\WebApplication1.Migrations._0924.resources
-C:\Users\E901\Desktop\PccuHW\0819 - 複製 - 複製 - 複製 - 複製\TestLogin\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.Cache
 I:\PccuHW\0819 - 複製 - 複製 - 複製 - 複製\TestLogin\WebApplication1\bin\WebApplication1.dll.config
 I:\PccuHW\0819 - 複製 - 複製 - 複製 - 複製\TestLogin\WebApplication1\bin\WebApplication1.dll
 I:\PccuHW\0819 - 複製 - 複製 - 複製 - 複製\TestLogin\WebApplication1\bin\WebApplication1.pdb
@@ -859,3 +857,5 @@ C:\Users\Sasuke\Desktop\PccuHW\0819 - 複製 - 複製 - 複製 - 複製\TestLogi
 C:\Users\Sasuke\Desktop\PccuHW\0819 - 複製 - 複製 - 複製 - 複製\TestLogin\WebApplication1\obj\Debug\WebApplication1.Migrations._0925.resources
 C:\Users\Sasuke\Desktop\PccuHW\0819 - 複製 - 複製 - 複製 - 複製\TestLogin\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.cache
 C:\Users\Sasuke\Desktop\PccuHW\0819 - 複製 - 複製 - 複製 - 複製\TestLogin\WebApplication1\obj\Debug\WebApplication1.Migrations._0925_1.resources
+C:\Users\E901\Desktop\PccuHW\0819 - 複製 - 複製 - 複製 - 複製\TestLogin\WebApplication1\obj\Debug\WebApplication1.Migrations._0927.resources
+C:\Users\E901\Desktop\PccuHW\0819 - 複製 - 複製 - 複製 - 複製\TestLogin\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.Cache

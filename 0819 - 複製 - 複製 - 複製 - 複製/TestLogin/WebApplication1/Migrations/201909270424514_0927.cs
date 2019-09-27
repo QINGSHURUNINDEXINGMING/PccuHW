@@ -3,7 +3,7 @@ namespace WebApplication1.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class _0925 : DbMigration
+    public partial class _0927 : DbMigration
     {
         public override void Up()
         {

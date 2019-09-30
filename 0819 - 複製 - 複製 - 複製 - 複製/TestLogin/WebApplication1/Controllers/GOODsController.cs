@@ -94,7 +94,9 @@ namespace WebApplication1.Controllers
                 var text = from m in db.GOODs
                            select m;
 
-                return RedirectToAction("Index");
+                //return RedirectToAction("Index");
+                return View(gOOD);
+
 
             }
 

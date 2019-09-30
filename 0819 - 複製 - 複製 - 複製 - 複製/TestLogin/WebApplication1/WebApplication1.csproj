@@ -47,6 +47,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -176,9 +177,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201909270424514_0927.cs" />
-    <Compile Include="Migrations\201909270424514_0927.Designer.cs">
-      <DependentUpon>201909270424514_0927.cs</DependentUpon>
+    <Compile Include="Migrations\201909290732585_0929.cs" />
+    <Compile Include="Migrations\201909290732585_0929.Designer.cs">
+      <DependentUpon>201909290732585_0929.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -279,8 +280,8 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201909270424514_0927.resx">
-      <DependentUpon>201909270424514_0927.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201909290732585_0929.resx">
+      <DependentUpon>201909290732585_0929.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

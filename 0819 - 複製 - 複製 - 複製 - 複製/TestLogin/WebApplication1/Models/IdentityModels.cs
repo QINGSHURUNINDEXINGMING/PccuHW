@@ -1,14 +1,21 @@
 ﻿using System.Data.Entity;
+using System.Net;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using System.Web;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.AspNet.Identity.Owin;
+using Microsoft.Owin.Security;
+using Microsoft.VisualBasic.ApplicationServices;
+using Newtonsoft.Json.Linq;
 
 namespace WebApplication1.Models
 {
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit https://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
     {
+        // GET: Admin
         public string FullName { get; set; }
         public string Wallet { get; set; }
         public string UID { get; set; }
@@ -22,8 +29,10 @@ namespace WebApplication1.Models
             userIdentity.AddClaim(new Claim("Wallet", this.Wallet));
 
             return userIdentity;
+
         }
     }
+    
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {

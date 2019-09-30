@@ -42,29 +42,28 @@ namespace WebApplication1.Controllers
         {
             string userName = form["txtUserName"];
             string goodUID = form["txtGoodUID"];
-            string deductMoney = form["txtMoney"];
+
 
             ApplicationUser user = context.Users.Where(u => u.UserName.Equals(userName, StringComparison.CurrentCultureIgnoreCase)).FirstOrDefault();
-            ApplicationUser user1;
-
+            GOOD gOOD = context.GOODs.Where(u => u.UID.Equals(goodUID, StringComparison.CurrentCultureIgnoreCase)).FirstOrDefault();
 
             var userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
 
-            var query1 = context.Users.Where(u => u.UserName == userName);
-            var query2 = context.GOODs.Where(u => u.UID == goodUID);
+            var queryUser = context.Users.Where(u => u.UserName == userName);
+            var queryGood = context.GOODs.Where(u => u.UID == goodUID);
 
-            int count1 = query1.Count();
-            int count2 = query2.Count();
+            int countUser = queryUser.Count();
+            int countGood = queryGood.Count();
 
 
-            if (count1 == 1 && count2 == 1)
+            if (countUser == 1 && countGood == 1)
             {
-                
 
-                int DMoney = Convert.ToInt32(deductMoney);
+                int deductMoney = gOOD.discount_price;
+
                 int userOrignalWallet = Convert.ToInt32(user.Wallet);
 
-                int userTotalMoney = userOrignalWallet - DMoney;
+                int userTotalMoney = userOrignalWallet - deductMoney;
 
                 if (userTotalMoney < 0)
                 {
@@ -72,19 +71,23 @@ namespace WebApplication1.Controllers
                 }
                 else
                 {
-                    user.Wallet = Convert.ToString(userTotalMoney);
+                    TempData["創建訊息"] = "扣款成功";
 
+                    user.Wallet = Convert.ToString(userTotalMoney);
                     context.SaveChanges();
                 }
-
-                
+            }
+            else if (countUser == 0)
+            {
+                TempData["創建訊息"] = "扣款失敗，沒有此UserName";
             }
             else
             {
-                TempData["創建訊息"] = "儲存失敗，沒有此UserName";
+                TempData["創建訊息"] = "扣款失敗，沒有此商品";
             }
 
-            return RedirectToAction("Index");
+
+            return View("Index");
         }
     }
 }

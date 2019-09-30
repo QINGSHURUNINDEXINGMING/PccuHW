@@ -1,5 +1,6 @@
 ﻿@using Microsoft.AspNet.Identity
 @using System.Security.Claims;
+@model IEnumerable<WebApplication1.Models.RegisterViewModel>
 
 
 @if (Request.IsAuthenticated)
@@ -9,12 +10,12 @@
         @Html.AntiForgeryToken()
         <ul class="nav navbar-nav navbar-right">
             <li>
-                @Html.ActionLink("Hello ~  " + (((ClaimsIdentity)User.Identity).FindFirst("FullName").Value) + ", 您的帳戶名為：" + User.Identity.GetUserName() + ", 錢包餘額為: " + (((ClaimsIdentity)User.Identity).FindFirst("Wallet").Value) + " !", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
-                @*@Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })*@
+                @*@Html.ActionLink("Hello ~  " + (((ClaimsIdentity)User.Identity).FindFirst("FullName").Value) + ", 您的帳戶名為：" + User.Identity.GetUserName() + ", 錢包餘額為: " + (((ClaimsIdentity)User.Identity).FindFirst("Wallet").Value) + " !", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })*@
+                @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
             </li>
             <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
         </ul>
-        
+
     }
 }
 else
@@ -24,3 +25,5 @@ else
         <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
     </ul>
 }
+
+

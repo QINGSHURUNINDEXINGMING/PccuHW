@@ -5,10 +5,7 @@ using System.Threading.Tasks;
 using System.Web;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
-using Microsoft.AspNet.Identity.Owin;
-using Microsoft.Owin.Security;
-using Microsoft.VisualBasic.ApplicationServices;
-using Newtonsoft.Json.Linq;
+
 
 namespace WebApplication1.Models
 {

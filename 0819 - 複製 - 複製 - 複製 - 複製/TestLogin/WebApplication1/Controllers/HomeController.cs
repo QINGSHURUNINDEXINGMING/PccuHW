@@ -87,7 +87,7 @@ namespace WebApplication1.Controllers
             }
 
 
-            return View("Index");
+            return RedirectToAction("Index");
         }
     }
 }

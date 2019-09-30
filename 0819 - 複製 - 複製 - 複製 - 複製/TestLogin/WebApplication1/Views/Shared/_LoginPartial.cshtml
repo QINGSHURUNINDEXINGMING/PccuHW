@@ -1,5 +1,6 @@
 ﻿@using Microsoft.AspNet.Identity
 @using System.Security.Claims;
+@using WebApplication1.Models;
 
 
 @if (Request.IsAuthenticated)
@@ -9,7 +10,17 @@
         @Html.AntiForgeryToken()
         <ul class="nav navbar-nav navbar-right">
             <li>
-                @Html.ActionLink("Hello ~  " + (((ClaimsIdentity)User.Identity).FindFirst("FullName").Value) + ", 您的帳戶名為：" + User.Identity.GetUserName() + ", 錢包餘額為: " + (((ClaimsIdentity)User.Identity).FindFirst("Wallet").Value) + " !", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+                @{
+                    ApplicationDbContext context = new ApplicationDbContext();
+                    ApplicationUser user =context.Users.Where(u => u.UserName.Equals(User.Identity.Name, StringComparison.CurrentCultureIgnoreCase)).FirstOrDefault();
+                    var name = (((ClaimsIdentity)User.Identity).FindFirst("FullName").Value);
+                    var money = (((ClaimsIdentity)User.Identity).FindFirst("Wallet").Value);
+                    var money2 = user.Wallet;
+                    var account = User.Identity.GetUserName();
+                    var info = "Hello ~ " + name + ", 您的帳戶名為：" + account + ", 錢包餘額為: " + money + " !"+money2;
+                }
+                @Html.ActionLink(info, "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+                @*@Html.ActionLink("Hello ~  " + (((ClaimsIdentity)User.Identity).FindFirst("FullName").Value) + ", 您的帳戶名為：" + User.Identity.GetUserName() + ", 錢包餘額為: " + (((ClaimsIdentity)User.Identity).FindFirst("Wallet").Value) + " !", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })*@
                 @*@Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })*@
             </li>
             <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>

@@ -89,14 +89,11 @@ namespace WebApplication1.Controllers
                 else
                 {
                     TempData["創建訊息"] = "已有相同UID名稱";
+                    return View(gOOD);
                 }
 
-                var text = from m in db.GOODs
-                           select m;
-
-                //return RedirectToAction("Index");
-                return View(gOOD);
-
+                return RedirectToAction("Index");
+                //return View(gOOD);
 
             }
 

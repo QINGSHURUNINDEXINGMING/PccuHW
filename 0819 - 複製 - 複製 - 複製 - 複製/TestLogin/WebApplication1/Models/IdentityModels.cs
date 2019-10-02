@@ -23,7 +23,7 @@ namespace WebApplication1.Models
             var userIdentity = await manager.CreateIdentityAsync(this, DefaultAuthenticationTypes.ApplicationCookie);
             // Add custom user claims here
             userIdentity.AddClaim(new Claim("FullName", this.FullName));
-            userIdentity.AddClaim(new Claim("Wallet", this.Wallet));
+            //userIdentity.AddClaim(new Claim("Wallet", this.Wallet));
 
             return userIdentity;
 
@@ -43,8 +43,6 @@ namespace WebApplication1.Models
             return new ApplicationDbContext();
         }
         public DbSet<GOOD> GOODs { get; set; }
-
-        public DbSet<COSTOMER> COSTOMERs { get; set; }
 
         //public System.Data.Entity.DbSet<WebApplication1.Models.GOOD> GOODs { get; set; }
     }

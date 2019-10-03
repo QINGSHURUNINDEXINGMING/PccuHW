@@ -1,30 +1,30 @@
 #0926
 
-print("""You can't improve your past,
-but you can improve your future.
-Once time is wasted, life is wasted.\n""")
+#print("""You can't improve your past,
+#but you can improve your future.
+#Once time is wasted, life is wasted.\n""")
 
 
-print('''I'm a "rich" man.\n''')
+#print('''I'm a "rich" man.\n''')
 
 
-print("""'''I'm a "rich" man.'''\n""")
+#print("""'''I'm a "rich" man.'''\n""")
 
 
 #print(y=a=5+6)
 #print(a=5+6)
 
-print(print(6))
+#print(print(6))
 
-y=4.3
-print(y)
+#y=4.3
+#print(y)
 
-int(y)
-print(y)
+#int(y)
+#print(y)
 
 
-print(type(round(2.01*100)))
-print(type(round(2.013*100, 2)))
+#print(type(round(2.01*100)))
+#print(type(round(2.013*100, 2)))
 
 
 #inputNum=int(input("Enter the nuumber:　"))
@@ -43,12 +43,13 @@ tenDollar=inputNum%100//10
 
 print('oneThousand=', oneThousand, 'oneHundred=', oneHundred, 'tenDollar=', tenDollar)
 
-s='he is a good man.'
+s="777788uy8tgi8"
 
 print(s[1:9:3])
 print(s[1:17:3])
 
 print(s[-1:-18:-3])
+print(s[-1:-3:-1])
 
 print(len(s))
 

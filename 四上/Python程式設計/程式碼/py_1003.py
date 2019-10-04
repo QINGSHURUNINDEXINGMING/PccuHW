@@ -22,14 +22,12 @@ space = fullname.find(" ");
 
 name = (fullname[0:space], fullname[space+1:len(fullname)])
 
-print((name[1][0:2]+name[0][-1:-3]).capitalize())
-print((name[0][-1:3]))
-a=(name[0])
-print(type(a))
-print(a[-1:-3])
-
-scrept="rennlrn6548"
-print(scrept[-1:-3])
+print(
+      name[1][len(fullname[space + 1:len(fullname)])-2:len(fullname[space+1:len(fullname)])].capitalize() +
+      name[0][0:2], 
+      name[1][0:2].capitalize() + 
+      name[0][len(fullname[0:space])-2:len(fullname[0:space])]
+     )
 
 
 

@@ -1,0 +1,17 @@
+C:\Users\User\Desktop\test\test\bin\Debug\test.exe.config
+C:\Users\User\Desktop\test\test\bin\Debug\test.exe
+C:\Users\User\Desktop\test\test\bin\Debug\test.pdb
+C:\Users\User\Desktop\test\test\bin\Debug\log4net.dll
+C:\Users\User\Desktop\test\test\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\Desktop\test\test\bin\Debug\SuperSocket.Common.dll
+C:\Users\User\Desktop\test\test\bin\Debug\SuperSocket.Facility.dll
+C:\Users\User\Desktop\test\test\bin\Debug\SuperSocket.SocketBase.dll
+C:\Users\User\Desktop\test\test\bin\Debug\SuperSocket.SocketEngine.dll
+C:\Users\User\Desktop\test\test\bin\Debug\SuperWebSocket.dll
+C:\Users\User\Desktop\test\test\bin\Debug\log4net.xml
+C:\Users\User\Desktop\test\test\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\Desktop\test\test\obj\Debug\test.csprojAssemblyReference.cache
+C:\Users\User\Desktop\test\test\obj\Debug\test.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\test\test\obj\Debug\test.csproj.CopyComplete
+C:\Users\User\Desktop\test\test\obj\Debug\test.exe
+C:\Users\User\Desktop\test\test\obj\Debug\test.pdb

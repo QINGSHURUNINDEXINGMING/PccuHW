@@ -1,0 +1,125 @@
+﻿
+@{
+    ViewBag.Title = "Grid2";
+}
+
+
+<h2>Grid2</h2>
+
+<style>
+    .row {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    div#columnheader div {
+        border-radius: 0px !important;
+        background-color: lightgray !important;
+        text-align: center;
+    }
+
+    .row div {
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+    div#columnheader div, .row div {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+        .row div:nth-child(1) {
+            background-color: pink;
+        }
+
+        .row div:nth-child(2) {
+            background-color: lightgreen;
+        }
+
+        .row div:nth-child(3) {
+            background-color: orange;
+        }
+
+        .row div:nth-child(4) {
+            background-color: orchid;
+        }
+</style>
+
+
+
+<div class="alert alert-info">
+    Grid System中的欄位配置
+</div>
+<div class="container">
+    <div class="row" id="columnheader">
+        <div class="col-md-1">欄位1</div>
+        <div class="col-md-1">欄位2</div>
+        <div class="col-md-1">欄位3</div>
+        <div class="col-md-1">欄位4</div>
+        <div class="col-md-1">欄位5</div>
+        <div class="col-md-1">欄位6</div>
+        <div class="col-md-1">欄位7</div>
+        <div class="col-md-1">欄位8</div>
+        <div class="col-md-1">欄位9</div>
+        <div class="col-md-1">欄位10</div>
+        <div class="col-md-1">欄位11</div>
+        <div class="col-md-1">欄位12</div>
+    </div>
+
+    <div class="alert alert-info">
+        Grid System中的欄位配置, 套用.col-md-1, .col-md-2 ~ .col-md-12
+    </div>
+    <div class="row"><div class="col-lg-1">col-md-1</div></div>
+    <div class="row"><div class="col-lg-2">col-md-2</div></div>
+    <div class="row"><div class="col-lg-4">col-md-4 ( 佔1個欄位寬度 )</div></div>
+    <div class="row"><div class="col-lg-6">col-md-6 ( 佔1個欄位寬度 )</div></div>
+    <div class="row"><div class="col-lg-8">col-md-8 ( 佔1個欄位寬度 )</div></div>
+    <div class="row"><div class="col-lg-12">col-md-12 ( 佔1個欄位寬度 )</div></div>
+
+    <div class="row"><div class="col-md-1">col-md-1</div></div>
+    <div class="row"><div class="col-md-2">col-md-2</div></div>
+    <div class="row"><div class="col-md-4">col-md-4 ( 佔1個欄位寬度 )</div></div>
+    <div class="row"><div class="col-md-6">col-md-6 ( 佔1個欄位寬度 )</div></div>
+    <div class="row"><div class="col-md-8">col-md-8 ( 佔1個欄位寬度 )</div></div>
+    <div class="row"><div class="col-md-12">col-md-12 ( 佔1個欄位寬度 )</div></div>
+
+    <div class="alert alert-info">
+        Columns欄位組合自由配，一個row中可由數個不同寬度的欄位組成
+    </div>
+
+    <div class="row">
+        <div class="col-lg-1">.col-lg-1</div>
+        <div class="col-lg-3">.col-lg-3</div>
+        <div class="col-lg-4">.col-lg-4</div>
+        <div class="col-lg-2">.col-lg-2</div>
+        <div class="col-lg-2">.col-lg-2</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-1">.col-lg-1</div>
+        <div class="col-md-3">.col-lg-3</div>
+        <div class="col-md-4">.col-lg-4</div>
+        <div class="col-md-2">.col-lg-2</div>
+        <div class="col-md-2">.col-lg-2</div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-2">.col-lg-2</div>
+        <div class="col-lg-2">.col-lg-2</div>
+        <div class="col-lg-2">.col-lg-2</div>
+        <div class="col-lg-2">.col-lg-2</div>
+        <div class="col-lg-2">.col-lg-2</div>
+
+    </div>
+
+    <div class="alert alert-info">
+        col-md-* 欄位的位移, col-md-offset-1, col-md-offset-2, ...col-md-offset-12
+    </div>
+    <div class="row">
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-5 col-md-offset-2">col-md-5 col-md-offset-2</div>
+        <div class="col-md-3 col-md-offset-1">col-md-3 col-md-offset-1</div>
+
+    </div>
+
+</div>

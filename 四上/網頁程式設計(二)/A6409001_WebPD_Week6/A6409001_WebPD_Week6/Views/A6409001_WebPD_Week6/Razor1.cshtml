@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "Razor1";
+}
+
+<h2>Razor1</h2>
+
+@{ 
+    string ID = "A6409001";
+    string Name = "王曉明";
+    var Height = 170;
+    var Weight = 70;
+}
+
+
+@{ 
+    var Leapyear = DateTime.IsLeapYear(DateTime.Now.Year);
+        <p>今年是否為閏年：@Leapyear</p>
+}
+
+<h3>個人資料</h3>
+<p>學號: @ID</p>
+<p>姓名: @Name</p>
+<p>身高: @Height</p>
+<p>體重: @Weight</p>
+<p>BMI:@(Weight / ((Height / 100) * (Height / 100)))</p>
+<p>兩周前的日期：@((DateTime.Now - TimeSpan.FromDays(14)).ToShortDateString())</p>
+
+<p>
+    @@_@@
+</p>
+<p>
+    Email: smallLight@pccu.edu.tw
+</p>
+<br/>
+<a herf="mailto:smallLight@pccu.edu.tw">
+    smallLight@pccu.edu.tw
+</a>
+@{ 
+    var word = @"子曰：三人行，必有我師焉。。。";
+}
+<p>@word</p>
+
+@{ var msg = @"<button type='button' onclick='alert(""HI 王小明"")'》Raw String}</button>";
+}
+<p>@(msg)</p>
+@("<span>Hello 王小明</span>")<br>
+<p>@Html.Raw(msg)</p>
+<p>
+    <button type="button" onclick='alert("Hello 王小明")'>Raw String</button>
+</p>
+
+

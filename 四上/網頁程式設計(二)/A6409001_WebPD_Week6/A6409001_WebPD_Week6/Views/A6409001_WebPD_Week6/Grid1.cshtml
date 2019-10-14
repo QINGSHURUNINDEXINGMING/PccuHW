@@ -1,0 +1,119 @@
+﻿@using System.Text
+@{
+    ViewBag.Title = "Grid1";
+}
+
+@{
+    StringBuilder sb = new StringBuilder();
+
+    sb.Append("天地玄黃 宇宙洪荒 日月盈昃 辰宿列張 寒來暑往 ");
+    sb.Append("秋收冬藏 閏餘成歲 律呂調陽 雲騰致雨 露結為霜 ");
+    sb.Append("金生麗水 玉出崑岡 劍號巨闕 珠稱夜光 果珍李柰 ");
+    sb.Append("菜重芥薑 海鹹河淡 麟潛羽翔 龍獅火帝 鳥官人皇 ");
+    sb.Append("始制文字 乃服衣裳 推位讓國 有虞陶唐 弔民伐罪 ");
+    sb.Append("周發商湯 坐朝問道 垂拱平章 愛育黎首 臣伏戎羌 ");
+    sb.Append("遐邇壹體 率賓歸王 鳴鳳在竹 白駒食場 化被草木 ");
+    sb.Append("賴及萬方 蓋此身髮 四大五常 恭惟鞠養 豈敢毀傷 ");
+    sb.Append("女慕貞烈 男效才良 知過必改 得能莫忘 罔談彼短 ");
+    sb.Append("靡恃己長 信使可復 器欲難量 莫悲絲染 詩讚羔羊 ");
+
+    string article = sb.ToString();
+}
+
+<h2>Grid1</h2>
+
+<div class="container">
+    <h3>
+        將版面等分為三欄Panel元件
+    </h3>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading"><h4>神力女超</h4></div>
+                <div class="panel-body">
+                    <img src="~/Assets/images/wonderwoman.jpg" />
+                    <p class="text-success">
+                        《神力女超人》是由美國漫畫大廠DC Comics推出的年度大作，由
+                        蓋兒加朵飾演亞馬遜族的公主戴安娜，自幼生長在與世隔絕的天堂島，
+                        當她得知世界正經歷一場大戰，她決定挺身而出為正義而戰。
+                    </p>
+                </div>
+                <div class="panel-footer alert-danger">蓋兒·加朵主演</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-success">
+                <div class="panel-heading"><h4>冰與火之歌</h4></div>
+                <div class="panel-body">
+                    <img src="~/Assets/images/game.jpg" />
+                    <p class="text-success">
+                        該劇以美國作家喬治·R·R·馬丁的奇幻巨作《冰與火之歌》系列為基礎改編創作，
+                        《冰與火之歌》不同於古典奇幻作品中常有的善惡分明、充滿魔法、並有許多
+                        非人種族參與故事的情節。
+                    </p>
+                </div>
+                <div class="panel-footer alert-danger">艾米莉亞·克拉克主演</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-danger">
+                <div class="panel-heading"><h4>雷神索爾</h4></div>
+                <div class="panel-body">
+                    <img src="~/Assets/images/thor.jpg" />
+                    <p class="text-success">
+                        在大戰結束之後，帶著洛基回到自己的世界，並開始進行宇宙秩序的重建。
+                        不料，被詛咒的梅爾吉斯為了報仇，引領一神秘古老的種族「黑暗精靈」來到
+                        人類世界，打算征服全宇宙。
+                    </p>
+                </div>
+                <div class="panel-footer alert-danger">克里斯·漢斯沃主演</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="alert alert-info">
+        將版面等分為兩欄
+    </div>
+    <div class="row">
+        <div class="col-md-6">@article</div>
+        <div class="col-md-6">@article</div>
+    </div>
+
+    <div class="alert alert-info">
+        將版面分為三欄
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">@article</div>
+        <div class="col-md-4">@article</div>
+        <div class="col-md-4">@article</div>
+    </div>
+
+
+
+    <div class="alert alert-info">
+        將版面分為四欄
+    </div>
+    <div class="row">
+        <div class="col-md-3">@article</div>
+        <div class="col-md-3">@article</div>
+        <div class="col-md-3">@article</div>
+        <div class="col-md-3">@article</div>
+    </div>
+
+    <div class="alert alert-info">
+        將版面分為三欄,但每欄寬度不等
+    </div>
+    <div class="row">
+        <div class="col-md-6"><pre>@article</pre></div>
+        <div class="col-md-4"><pre>@article</pre></div>
+        <div class="col-md-2"><pre>@article</pre></div>
+    </div>
+
+
+</div>
+
+
+
+
+

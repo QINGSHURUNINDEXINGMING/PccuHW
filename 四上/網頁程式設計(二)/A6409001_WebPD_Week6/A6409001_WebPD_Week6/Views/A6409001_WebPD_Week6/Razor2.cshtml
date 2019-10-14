@@ -1,0 +1,90 @@
+﻿
+@{
+    ViewBag.Title = "Razor2";
+}
+
+<h2>Razor2</h2>
+
+@{var score = 96;}
+@if (score < 60)
+{
+    <p>@score  分，不及格</p>}
+else if (score < 85)
+{
+    <p>@score  分，成績及格</p>
+}
+else
+{
+    <p>@score 分，成績優異</p>
+}
+
+<h3>Switch</h3>
+@{ var port = 1111;}
+@switch (port)
+{
+    case 111:
+        <p>@port:是111</p>
+        break;
+    default:
+        <p>@port:沒有符合</p>
+        break;
+}
+
+
+@{
+    var person = new[]
+    {
+new { ID="A6409001_1", Name="王小明1"},
+new { ID="A6409001_2", Name="王小明2"},
+new { ID="A6409001_3", Name="王小明3"},
+new { ID="A6409001_4", Name="王小明4"}
+
+};
+}
+
+<h3>For Loop</h3>
+<table class="table table-bordered table-striped">
+    <tr><th>學號</th><th>姓名</th></tr>
+    @for (int i = 0; i < person.Length; i++)
+    {
+        <tr>
+            <td>@person[i].ID</td>
+            <td>@person[i].Name</td>
+        </tr>
+    }
+</table>
+
+<h3>Razor Helper</h3>
+@helper DetermineScore(int score)
+{
+    if (score < 60)
+    {
+        <p>@score  分，不及格</p>}
+    else if (score < 85)
+    {
+        <p>@score  分，成績及格</p>
+    }
+    else
+    {
+        <p>@score 分，成績優異</p>
+    }
+}
+@DetermineScore(30)
+@DetermineScore(50)
+@DetermineScore(70)
+@DetermineScore(80)
+@DetermineScore(90)
+
+
+
+
+
+
+
+
+
+
+
+
+
+

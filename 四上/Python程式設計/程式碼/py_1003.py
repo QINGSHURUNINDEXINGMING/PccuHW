@@ -16,6 +16,9 @@
 # print("ABC")
 # print("***")
 
+
+
+
 fullname = input("Please enter your fullname: ");
 
 space = fullname.find(" ");

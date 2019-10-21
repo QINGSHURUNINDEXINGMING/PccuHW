@@ -1,0 +1,126 @@
+﻿@using A6409001_WebPD_Week7.Models;
+@model IEnumerable<A6409001_WebPD_Week7.Models.Student>
+@helper DisplayScore(int score)
+{
+    if (score >= 90)
+    {
+        <td class="excellent">@score</td>
+    }
+    else if (score < 60)
+    {
+        <td class="poor">@score</td>
+    }
+    else
+    {
+        <td>@score</td>
+    }
+}
+@{ 
+    var student =from s in Model
+                select new Student
+                {
+                    Total = s.Chinese + s.English + s.Math
+                };
+    int topScore = student.Max(s => s.Total);
+}
+
+@{
+    ViewBag.Title = "期中考成績";
+}
+
+<h2>期中考成績</h2>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(m => m.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(m => m.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(m => m.Chinese)
+            </th>
+            <th>
+                @Html.DisplayNameFor(m => m.English)
+            </th>
+            <th>
+                @Html.DisplayNameFor(m => m.Math)
+            </th>
+            <th>
+                @Html.DisplayNameFor(m => m.Total)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var m in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => m.ID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => m.Name)
+                </td>
+                @DisplayScore(m.Chinese)
+                @DisplayScore(m.English)
+                @DisplayScore(m.Math)
+                @{ 
+                    var total = m.Chinese + m.English + m.Math;
+                }
+                @if (topScore == total)
+                {
+                    <td class="top1">@total</td>
+
+                }
+                else
+                {
+                    <td>@total</td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>
+
+<style type="text/css">
+    /*設定Table欄位標題顏色*/
+    th {
+        color: white;
+        background-color: black;
+        text-align: center;
+    }
+
+    /*設定Table資料列Hover時的光棒效果*/
+    .table > tbody > tr:hover {
+        background-color: antiquewhite !important;
+    }
+
+    /*成績不及格之CSS*/
+    .poor {
+        color: white !important;
+        background-color: red !important;
+    }
+
+    /*成績優秀之CSS*/
+    .excellent {
+        background-color: aqua !important;
+    }
+
+    /*總分第一名之CSS*/
+    .top1 {
+        background-color: yellow !important;
+        border: 2px dashed black !important;
+        font-weight: 900;
+        font-size: 1.2em;
+    }
+
+        .top1::after {
+            content: ' (總分排名第一)';
+        }
+</style>
+
+
+
+
+

@@ -1,0 +1,24 @@
+﻿@model IEnumerable<A6409001_WebPD_Week7.Models.Card>
+
+@{
+    ViewBag.Title = "ManCard";
+}
+
+<h2>ManCard</h2>
+
+<div class="jumbotron">
+    <h2>動態產生部分檢視</h2>
+</div>
+
+
+<div class="row">
+    @foreach(var man in Model)
+    {
+        @Html.Partial("CardPartial", man);
+    }
+</div>
+
+@section topCSS
+{
+    <link href="~/Assets/css/card.css"rel="stylesheet"/>
+}

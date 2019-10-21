@@ -1,0 +1,52 @@
+Razor
+
+ScoresRazor
+   <style type="text/css">
+        /*設定Table欄位標題顏色*/
+        th {
+            color: white;
+            background-color: black;
+            text-align: center;
+        }
+
+        /*設定Table資料列Hover時的光棒效果*/
+        .table > tbody > tr:hover {
+            background-color: antiquewhite !important;
+        }
+
+        /*成績不及格之CSS*/
+        .poor {
+            color: white !important;
+            background-color: red !important;
+        }
+
+        /*成績優秀之CSS*/
+        .excellent {
+            background-color: aqua !important;
+        }
+
+        /*總分第一名之CSS*/
+        .top1 {
+            background-color: yellow !important;
+            border: 2px dashed black !important;
+            font-weight:900;
+            font-size:1.2em;
+        }
+
+        .top1::after {
+            content: ' (總分排名第一)';
+        }
+    </style>
+
+
+
+List<Card> cards = new List<Card>
+            {
+                new Card{ Name = "Elon Musk", Brief="特斯拉創辦人 伊隆·馬斯克", Photo="ElonMusk.jpg", WikiUrl="https://goo.gl/46xeXx" },
+                new Card{ Name = "Mark Zuckerberg", Brief="Facebook創辦人 馬克·祖伯克", Photo="MarkZuckerberg.jpg", WikiUrl="https://goo.gl/BktGGA" },
+                new Card{ Name = "Steve Jobs", Brief="蘋果創辦人 史提夫·賈伯斯", Photo="SteveJobs.jpg", WikiUrl="https://goo.gl/nAiX0y" },
+                new Card{ Name = "Vader", Brief="帝國元帥  維達", Photo="Vader.jpg", WikiUrl="https://en.wikipedia.org/wiki/Darth_Vader" },
+                new Card{ Name = "Darth Mual", Brief="星際大戰 達斯摩", Photo="DarthMual.jpg", WikiUrl="https://goo.gl/5obLhX"},
+                new Card{ Name = "White Twilek", Brief="星際大戰 女絕地武士Twilek", Photo="WhiteTwilek.jpg", WikiUrl="https://goo.gl/reKzAu" 
+},
+            };

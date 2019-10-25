@@ -39,3 +39,7 @@ header.pad {
 small { 
   font-size: smaller;
 }
+table
+  {
+  table-layout:fixed;
+  }

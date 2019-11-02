@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "ChartBasic";
+}
+
+<h2>ChartBasic</h2>
+
+<canvas id="lineChart"></canvas>
+
+<script>
+    var ctx = document.getElementById("lineChart");
+    var chart = new Chart(ctx, {
+        type: "line",
+        data: {
+            labels: ['1月', '2月', '3月', '4月', '5月', '6月'],
+            datasets: [{
+                label: "台北",
+                data: [16, 15, 18, 21, 25, 27],
+                fill: false,
+                backgroundColor: '(255,165,0,0,3)',
+                borderColor: 'rgb(255,165,0)',
+                pointStyle: 'circle',
+                pointBackgroundColor: 'rgb(0,255,0)',
+                pointRadius: 5,
+                pointHoverRadius:10,
+            }]
+        },
+        options: {
+            responsive: true,
+            title: {
+                display: true,
+                fontSize: 26,
+                text:'1-6月氣溫平均值'
+            },
+            tooltips: {
+                mode: 'point',
+                interseet:true
+            },
+            legend: {
+                position: "bottom",
+                labels: {
+                    fontColor:'black'
+                }
+
+            }
+        }
+    });
+</script>
+
+
+
+

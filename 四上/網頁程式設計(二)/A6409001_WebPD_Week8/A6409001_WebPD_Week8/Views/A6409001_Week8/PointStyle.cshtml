@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "PointStyle";
+}
+
+<h2>PointStyle</h2>
+
+<div row>
+    <div class="col-md-12">
+        <canvas id="chart1"></canvas>
+    </div>
+</div>
+
+<script>
+    var ctx = document.getElementById("chart1");
+    var pStyle = ['circle', 'cross', 'crossRot', 'dash', 'line', 'rect', 'rectRounded', 'rectRot', 'star', 'triangle'];
+
+    var chart = new Chart(ctx, {
+        type:"line",
+        data: {
+            labels:pStyle,
+            datasets: [{
+                label: "pointStyle點樣式",
+                data: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
+                pointStyle: pStyle,
+                fill: false,
+                showLine: false,
+                pointRadius: 15,
+                pointHoverRadius: 30,
+                pointBackgroundColor: 'red',
+                pointBorderColor: 'green',
+                pointHoverBackgroundColor:'yellow',
+            }]
+        },
+        options: {}
+    });
+</script>
+
+
+
+
+

@@ -1,0 +1,94 @@
+﻿@model IEnumerable<WebApplication1.Models.HISTORY>
+
+@{
+    ViewBag.Title = "History";
+}
+
+<h2>歷史紀錄</h2>
+<form asp-controller="GOODs" asp-action="Index">
+    <p>
+        標題: <input type="text" name="SearchString">
+        <input type="submit" value="搜尋" />
+    </p>
+</form>
+
+<table class="table table-bordered table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.GUID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.price)
+        </th>
+        <th></th>
+        
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.GUID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.price)
+            </td>
+            <td>
+                @Html.ActionLink("編輯", "Edit", new { id = item.id }) |
+                @Html.ActionLink("詳細資料", "Details", new { id = item.id }) |
+                @Html.ActionLink("刪除", "Delete", new { id = item.id })
+            </td>
+        </tr>
+    }
+
+</table>
+
+<style type="text/css">
+    /*設定Table欄位標題顏色*/
+    th {
+        color: white;
+        background-color: midnightblue;
+        text-align: center;
+    }
+
+    /*設定Table資料列Hover時的光棒效果*/
+    .table > tbody > tr:hover {
+        background-color: antiquewhite !important;
+    }
+
+    input[type=button], input[type=submit], input[type=reset] {
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 0.8%;
+  text-decoration: none;
+
+  cursor: pointer;
+}
+    input[type=text] {
+  width: 50px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  padding: 0.5%;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 30%;
+}
+
+</style>

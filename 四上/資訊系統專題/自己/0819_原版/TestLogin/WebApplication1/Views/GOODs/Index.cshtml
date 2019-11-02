@@ -1,0 +1,113 @@
+﻿@model IEnumerable<WebApplication1.Models.GOOD>
+
+@{
+    ViewBag.Title = "首頁";
+}
+
+<h2>首頁</h2>
+
+<p>
+    @Html.ActionLink("創建商品", "Create")
+</p>
+
+<form asp-controller="GOODs" asp-action="Index">
+    <p>
+        標題: <input type="text" name="SearchString">
+        <input type="submit" value="搜尋" />
+    </p>
+</form>
+
+@*@if (TempData["創建訊息"] != null)
+{
+    <script type="text/javascript">
+                var message =@Html.Raw(Json.Encode(TempData["創建訊息"]));
+                alert(message);
+    </script>
+}*@
+
+<table class="table table-bordered table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.discount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.discount_price)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.discount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.discount_price)
+            </td>
+            <td>
+                @Html.ActionLink("編輯", "Edit", new { id = item.id }) |
+                @Html.ActionLink("詳細資料", "Details", new { id = item.id }) |
+                @Html.ActionLink("刪除", "Delete", new { id = item.id })
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+<style type="text/css">
+    /*設定Table欄位標題顏色*/
+    th {
+        color: white;
+        background-color: darkred;
+        text-align: center;
+    }
+
+    /*設定Table資料列Hover時的光棒效果*/
+    .table > tbody > tr:hover {
+        background-color: antiquewhite !important;
+    }
+
+
+    input[type=button], input[type=submit], input[type=reset] {
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 0.8%;
+  text-decoration: none;
+
+  cursor: pointer;
+}
+    input[type=text] {
+  width: 50px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  padding: 0.5%;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 30%;
+}
+</style>

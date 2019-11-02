@@ -1,0 +1,72 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>首頁</h2>
+
+@if (TempData["創建訊息"] != null)
+{
+    <script type="text/javascript">
+                var message =@Html.Raw(Json.Encode(TempData["創建訊息"]));
+                alert(message);
+    </script>
+}
+
+<div class="">
+    <h3>管理內容</h3>
+    <ul class="nav nav-pills  nav-stacked">
+        <hr />
+        <li class="nav-item nav-link">@Html.ActionLink("創建使用者", "CreateUser", "Admin")</li>
+        <li>@Html.ActionLink("創建權限", "CreateRole", "Admin")</li>
+        <li>@Html.ActionLink("指定使用者權限", "AssignRole", "Admin")</li>
+        <li>@Html.ActionLink("儲值", "AddMoney", "Admin")</li>
+    </ul>
+</div>
+
+<hr />
+    <style>
+        .icon {
+            max-width: 150px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .services section {
+            text-align: center;
+        }
+
+        header.pad {
+            padding-top: 70px;
+        }
+
+        .pad {
+            padding-top: 30px;
+        }
+
+        .bgc {
+            background-color: white;
+        }
+
+        .bgimage {
+            background-image: url("../img/programLanguage1.jpg");
+            background-size: cover;
+            width: cennter;
+            height: 250px;
+        }
+
+            .bgimage h1 {
+                padding-top: 2%;
+                padding-left: 75%;
+                font-weight: bold;
+                color: white;
+            }
+
+        small {
+            font-size: smaller;
+        }
+
+        table {
+            table-layout: fixed;
+        }
+    </style>

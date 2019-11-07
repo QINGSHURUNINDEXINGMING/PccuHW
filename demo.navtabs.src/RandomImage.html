@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>A6409001_邱郁涵_HW04</title>
+    <title>A6409001_邱郁涵_HW06-1</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,35 +39,22 @@
 
                 <ol class="breadcrumb">
                     <li><a href="index.html">Times Table</a> <span
-                            class="glyphicon glyphicon-circle-arrow-right"></span>
-                    </li>
+                            class="glyphicon glyphicon-circle-arrow-right"></span></li>
                     <li><a href="RandomImage.html">Random Image</a></li>
                 </ol>
 
                 <h1>Random Image</h1>
 
-                <h4>&nbsp&nbspShow random image from array in javascript</h4>
+                <h4>&nbsp&nbspShow random image in javascript</h4>
                 <br>
-                <!-- <div class="center">
-                    <div class="col-md-3">
-                        <img class="icon" width="150" height="120" src="img/images/0.png" alt="Icon">
-                    </div>
-                    <div class="col-md-3">
-                        <img class="icon" width="150" height="120" src="img/images/1.png" alt="Icon">
-                    </div>
-                    <div class="col-md-3">
-                        <img class="icon" width="150" height="120" src="img/images/2.png" alt="Icon">
-                    </div>
-                    <div class="col-md-3">
-                        <img class="icon" width="150" height="120" src="img/images/0.png" alt="Icon">
-                    </div>
-                </div> -->
+
                 <script>
                     var classId = new Array(4);
-                    for(i=0;i<4;i++){
-                        document.write("<div class=\"col-md-3\">")
-                            document.write("<img class=\"icon\" width=\"130\" height=\"120\" src=\"img/images/"+Math.floor(Math.random() * 10)+".png\" alt=\"Icon\">")
-                        document.write("</div>")
+                    for (i = 0; i < 4; i++) {
+                        //document.write("<div class=\"col-md-3\">")
+                        //document.write("<div class=\"col-md-3\"><img class=\"icon\" width=\"130\" height=\"120\" src=\"img/images/"+Math.floor(Math.random() * 10)+".png\" alt=\"Icon\"></div>")
+                        document.write("<div class=\"col-md-3\"><img class=\"img-thumbnail\" src=\"img/images/" + Math.floor(Math.random() * 10) + ".png\" alt=\"Icon\"></div>")
+                        //document.write("</div>")
                     }
                 </script>
 

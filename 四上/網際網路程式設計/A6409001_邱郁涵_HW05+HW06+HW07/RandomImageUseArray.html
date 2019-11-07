@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>A6409001_邱郁涵_HW05</title>
+    <title>A6409001_邱郁涵_HW06-2</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,13 +19,12 @@
     <div class="container">
 
         <ul class="nav nav-tabs navbar-fixed-top bgc">
-            <li class="active"><a href="index.html">Times Table</a></li>
+            <li><a href="index.html">Times Table</a></li>
             <li><a href="RandomImage.html">Random Image</a></li>
-            <li><a href="history.html">History</a></li>
+            <li class="active"><a href="RandomImageUseArray.html">Random Image(Use Array)</a></li>
             <li><a href="elements.html">Elements</a></li>
             <li><a href="design and implementation.html">Design and implementation</a></li>
         </ul>
-        </nav>
 
         <!-- row 2: header -->
         <header class="row pad bgimage">
@@ -39,51 +38,60 @@
             <article class="col-lg-offset-1 col-sm-offset-1 col-lg-8 col-sm-7 col-lg-push-3 col-sm-push-4">
 
                 <ol class="breadcrumb">
-                    <li><a href="index.html">Times Table</a></li>
+                    <li><a href="index.html">Times Table</a><span class="glyphicon glyphicon-circle-arrow-right"></span>
+                    </li>
+                    <li><a href="RandomImage.html">Random Image</a><span
+                            class="glyphicon glyphicon-circle-arrow-right"></span></li>
+                    <li><a href="RandomImageUseArray.html">Random Image(Use Array)</a></li>
                 </ol>
 
-                <h1>Times Table</h1>
+                <h1>Random Image</h1>
 
-                <h4>&nbsp&nbspMultiplication Tables</h4>
+                <h4>&nbsp&nbspShow random image from array in javascript</h4>
 
-                <table class="table table-striped table-bordered table-hover">
+                <script>
+                    var str = "";
+                    var classId = new Array(4);
 
-                    <script>
-
-                        var i, j
-
-                        for (i = 0; i <= 9; i++) {
-                            document.write("<tr>");
-
-                            if (i == 0) {
-                                document.write("<th scope=\"col\" class=\"text-center\">#</th>");
-                            } else {
-                                document.write("<th scope=\"row\" class=\"text-center\">", i, "</th>");
-                            }
-
-                            for (j = 1; j <= 9; j++) {
-                                if (i == 0) {
-                                    document.write("<th scope=\"col\" class=\"text-center\">", j, "</th>");
-                                }
-                                else {
-                                    document.write("<td align=\"center\">", j * i, "</td>");
-                                }
-                            }
-                            document.write("</tr>");
+                    function randomPictureProduce() {
+                        document.write("<div class=\"row pad\">")
+                        for (i = 0; i < 4; i++) {
+                            classId[i] = Math.floor(Math.random() * 10);
+                            document.write("<div class=\"col-md-3\"><img class=\"img-thumbnail\" src=\"img/images/" + classId[i] + ".png\" alt=\"Icon\"></div>")
+                            str += classId[i];
                         }
-                    </script>
-                    </tbody>
-                </table>
+                        document.write("</div>")
+                    }
 
+                    function check(f) {
+                        if (f.passwd.value != str) {
+                            alert("Error");
+                        } else {
+                            alert("Correct");
+                        }
+                    }
+
+                    randomPictureProduce();
+
+                </script>
+                <br>
                 <!-- nested row 3a: callouts -->
 
+                <div class="row  pad">
+                    <Form>請輸入上圖的數字
+                        <input type=text name="passwd">
+                        <input type=button value="確定" onclick="check(this.form)">
+                    </Form>
+                </div>
+
             </article>
+
             <aside class="col-lg-3 col-sm-4 col-lg-pull-9 col-sm-pull-8">
                 <h3>Contents</h3>
                 <ul class="nav nav-pills  nav-stacked">
-                    <li class="active"><a href="index.html">Times Table</a></li>
+                    <li><a href="index.html">Times Table</a></li>
                     <li><a href="RandomImage.html">Random Image</a></li>
-                    <li><a href="history.html">History</a></li>
+                    <li class="active"><a href="RandomImageUseArray.html">Random Image(Use Array)</a></li>
                     <li><a href="elements.html">Elements</a></li>
                     <li><a href="design and implementation.html">Design and implementation</a></li>
                 </ul>
@@ -93,10 +101,13 @@
         </div><!-- end row 3 -->
 
         <!-- row 4 -->
-
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <br />
         <hr />
-
         <footer class="row">
             <p><small>This not a real veterinary medicine site, and is not meant to diagnose or offer treatment. Please
                     see your veterinarian for all matters related to your pet's health.</small></p>

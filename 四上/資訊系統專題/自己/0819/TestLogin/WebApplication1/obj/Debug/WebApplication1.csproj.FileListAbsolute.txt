@@ -1388,8 +1388,6 @@ C:\Users\User\Desktop\PccuHW\四上\資訊系統專題\自己\0819\TestLogin\Web
 C:\Users\User\Desktop\PccuHW\四上\資訊系統專題\自己\0819\TestLogin\WebApplication1\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\User\Desktop\PccuHW\四上\資訊系統專題\自己\0819\TestLogin\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\User\Desktop\PccuHW\四上\資訊系統專題\自己\0819\TestLogin\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache
-C:\Users\User\Desktop\PccuHW\四上\資訊系統專題\自己\0819\TestLogin\WebApplication1\obj\Debug\WebApplication1.Migrations._1010.resources
-C:\Users\User\Desktop\PccuHW\四上\資訊系統專題\自己\0819\TestLogin\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.cache
 C:\Users\User\Desktop\PccuHW\四上\資訊系統專題\自己\0819\TestLogin\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\PccuHW\四上\資訊系統專題\自己\0819\TestLogin\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
 C:\Users\User\Desktop\PccuHW\四上\資訊系統專題\自己\0819\TestLogin\WebApplication1\obj\Debug\WebApplication1.dll

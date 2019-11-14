@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="css/styles.css">
 
     <script src="js/respond.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript"></script>
+
 </head>
 
 <body>
@@ -57,64 +60,111 @@
                     <div class="form-group">
                         <label for="result" class="col-sm-2 control-label">輸入結果</label>
                         <div class="col-sm-8">
-                            <input type="text" class="form-control" id="result" placeholder="結果" disabled>
+                            <input type="text" class="form-control" id="result" value="" placeholder="結果" disabled>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="name" class="col-sm-2 control-label">姓名</label>
+                        <label class="col-sm-2 control-label">姓名</label>
                         <div class="col-sm-8">
-                            <input type="text" class="form-control" id="name" placeholder="請輸入姓名">
+                            <input type="text" class="form-control" id="name" placeholder="請輸入姓名" onkeyup="allResult()">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="sex" class="col-sm-2 control-label">性別</label>
+                        <label name="sex" class="col-sm-2 control-label">性別</label>
                         <div class="col-sm-8 ">
                             <label class="radio-inline">
-                                <input type="radio" name="inlineRadioOptions" id="male" value="male"> 男
+                                <input type="radio" name="inlineRadioOptions" id="sex" value="male"
+                                    onclick="allResult()"> 男
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="inlineRadioOptions" id="female" value="female"> 女
+                                <input type="radio" name="inlineRadioOptions" id="sex" value="female"
+                                    onclick="allResult()"> 女
                             </label>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="age" class="col-sm-2 control-label">年齡</label>
                         <div class="col-sm-8">
-                            <input type="number" class="form-control" id="age" placeholder="請輸入年齡">
+                            <input type="number" class="form-control" id="age" placeholder="請輸入年齡"
+                                onkeyup="allResult()">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="password" class="col-sm-2 control-label">輸入密碼</label>
                         <div class="col-sm-8">
-                            <input type="password" class="form-control" id="password" placeholder="請輸入密碼">
+                            <input type="password" class="form-control" id="password" placeholder="請輸入密碼" onkeyup="allResult()">
                         </div>
+
                     </div>
                     <div class="form-group">
                         <label for="confirmPassword" class="col-sm-2 control-label">重新輸入</label>
                         <div class="col-sm-8">
-                            <input type="password" class="form-control" id="confirmPassword" placeholder="再次確認密碼">
+                            <input type="password" class="form-control" id="confirmPassword" placeholder="再次確認密碼"
+                                onkeyup="check(),allResult()">
+                            <input type="checkbox" onclick="showPsd()">Show Password
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="class" class="col-sm-2 control-label">班級</label>
                         <div class="col-sm-8">
-                            <select class="form-control">
+                            <select class="form-control" id="studyClass" onchange="allResult()">
                                 <option>請選擇班級</option>
                                 <option>1A</option>
                                 <option>1B</option>
-
                             </select>
                             <!-- <input type="text" class="form-control" id="class" placeholder="班級"> -->
                         </div>
                     </div>
 
-
-
                 </form>
 
+                <script>
+                    var checkStr = "";
 
-             
-              
+
+                    function check() {
+                        if (document.getElementById('password').value == document.getElementById('confirmPassword').value) {
+                            checkStr = 'matching';
+                        } else {
+                            checkStr = 'not matching';
+                        }
+                        return checkStr;
+                    }
+
+                    function showPsd() {
+                        var x = document.getElementById("password");
+                        var y = document.getElementById("confirmPassword");
+
+                        if (x.type == "password") {
+                            x.type = "text";
+                            y.type = "text";
+                        } else {
+                            x.type = "password";
+                            y.type = "password";
+                        }
+                    }
+                    function allResult() {
+
+                        //var str2 = $("#sex:checked").val()
+
+                        document.getElementById("result").value =
+                            document.getElementsByTagName('label')[1].firstChild.data + ": " +
+                            document.getElementById("name").value + " " +
+                            document.getElementsByTagName('label')[2].firstChild.data + ": " +
+                            $("#sex:checked").val() + " " +
+                            document.getElementsByTagName('label')[5].firstChild.data + ": " +
+                            document.getElementById("age").value + " " +
+                            check() + " " +
+                            document.getElementsByTagName('label')[8].firstChild.data + ": "+
+                            $("#studyClass").val() + " " ;
+
+
+                    }
+
+                </script>
+
+
+
 
                 <!-- nested row 3a: callouts -->
 

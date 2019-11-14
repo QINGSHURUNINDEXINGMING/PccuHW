@@ -51,43 +51,70 @@
                 </ol>
 
                 <h1>Design and implementations</h1>
-                <script>
-                    function pickapic() {
-                        var picname = new Array()
-                        picname[0] = "img/images/0.png"; picname[1] = "img/images/1.png";
-                        picname[2] = "img/images/2.png"; picname[3] = "img/images/3.png";
-                        picname[4] = "img/images/4.png"; picname[5] = "img/images/5.png";
-                        picname[6] = "img/images/6.png"; picname[7] = "img/images/7.png";
-                        var which = Math.floor(Math.random() * 8);
-                        random_pic1.src = picname[which];
-                        random_pic2.src = picname[which];
+                <br>
 
-                    }
-                </script>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="result" class="col-sm-2 control-label">輸入結果</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="result" placeholder="結果" disabled>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="name" class="col-sm-2 control-label">姓名</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="name" placeholder="請輸入姓名">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="sex" class="col-sm-2 control-label">性別</label>
+                        <div class="col-sm-8 ">
+                            <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="male" value="male"> 男
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="female" value="female"> 女
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="age" class="col-sm-2 control-label">年齡</label>
+                        <div class="col-sm-8">
+                            <input type="number" class="form-control" id="age" placeholder="請輸入年齡">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="col-sm-2 control-label">輸入密碼</label>
+                        <div class="col-sm-8">
+                            <input type="password" class="form-control" id="password" placeholder="請輸入密碼">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword" class="col-sm-2 control-label">重新輸入</label>
+                        <div class="col-sm-8">
+                            <input type="password" class="form-control" id="confirmPassword" placeholder="再次確認密碼">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="class" class="col-sm-2 control-label">班級</label>
+                        <div class="col-sm-8">
+                            <select class="form-control">
+                                <option>請選擇班級</option>
+                                <option>1A</option>
+                                <option>1B</option>
 
-                <body onload="pickapic()">
-                    <img name="random_pic1">
-                    <img name="random_pic2">
+                            </select>
+                            <!-- <input type="text" class="form-control" id="class" placeholder="班級"> -->
+                        </div>
+                    </div>
 
-                </body>
 
-                <H1>short</H1>
-                <FORM NAME="form1">
-                    <INPUT TYPE="button" VALUE="請按我...">
-                </FORM>
-                <Script>
-                    function sayHello() {
-                        alert("Hello! World")
-                    }
-                    document.form1.onclick = sayHello
-                </Script>
 
-<Form onReset ="alert('你按了Reset')"
-onSubmit="alert('你按了Submit')">
-<input type=reset>
-<input type=submit>
-<input type=button value="按鈕" onClick="alert('你按了button')">
-</Form>
+                </form>
+
+
+             
+              
 
                 <!-- nested row 3a: callouts -->
 

@@ -92,7 +92,8 @@
                     <div class="form-group">
                         <label for="password" class="col-sm-2 control-label">輸入密碼</label>
                         <div class="col-sm-8">
-                            <input type="password" class="form-control" id="password" placeholder="請輸入密碼" onkeyup="allResult()">
+                            <input type="password" pattern=".{6,9}" title="Six or more characters" class="form-control"
+                                id="password" placeholder="請輸入密碼" onkeyup="check(),allResult()">
                         </div>
 
                     </div>
@@ -111,6 +112,10 @@
                                 <option>請選擇班級</option>
                                 <option>1A</option>
                                 <option>1B</option>
+                                <option>1C</option>
+                                <option>1D</option> 
+                                <option>1E</option>
+                                <option>1F</option>
                             </select>
                             <!-- <input type="text" class="form-control" id="class" placeholder="班級"> -->
                         </div>
@@ -123,10 +128,15 @@
 
 
                     function check() {
-                        if (document.getElementById('password').value == document.getElementById('confirmPassword').value) {
-                            checkStr = 'matching';
+                        if (document.getElementById('password').value.length < 6) {
+                            checkStr = "please enter at least 6 characters";
                         } else {
-                            checkStr = 'not matching';
+
+                            if (document.getElementById('password').value == document.getElementById('confirmPassword').value) {
+                                checkStr = 'matching';
+                            } else {
+                                checkStr = 'not matching';
+                            }
                         }
                         return checkStr;
                     }
@@ -149,14 +159,14 @@
 
                         document.getElementById("result").value =
                             document.getElementsByTagName('label')[1].firstChild.data + ": " +
-                            document.getElementById("name").value + " " +
+                            document.getElementById("name").value + ", " +
                             document.getElementsByTagName('label')[2].firstChild.data + ": " +
-                            $("#sex:checked").val() + " " +
+                            $("#sex:checked").val() + ", " +
                             document.getElementsByTagName('label')[5].firstChild.data + ": " +
-                            document.getElementById("age").value + " " +
-                            check() + " " +
-                            document.getElementsByTagName('label')[8].firstChild.data + ": "+
-                            $("#studyClass").val() + " " ;
+                            document.getElementById("age").value + ", " +
+                            check() + ", " +
+                            document.getElementsByTagName('label')[8].firstChild.data + ": " +
+                            $("#studyClass").val() + " ";
 
 
                     }

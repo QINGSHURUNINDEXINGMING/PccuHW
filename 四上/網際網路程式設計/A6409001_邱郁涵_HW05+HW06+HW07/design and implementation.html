@@ -64,22 +64,18 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-2 control-label">姓名</label>
+                        <label for="name" class="col-sm-2 control-label">姓名</label>
                         <div class="col-sm-8">
                             <input type="text" class="form-control" id="name" placeholder="請輸入姓名" onkeyup="allResult()">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label name="sex" class="col-sm-2 control-label">性別</label>
-                        <div class="col-sm-8 ">
-                            <label class="radio-inline">
-                                <input type="radio" name="inlineRadioOptions" id="sex" value="male"
-                                    onclick="allResult()"> 男
-                            </label>
-                            <label class="radio-inline">
-                                <input type="radio" name="inlineRadioOptions" id="sex" value="female"
-                                    onclick="allResult()"> 女
-                            </label>
+                        <label for="sex" class="col-sm-2 control-label">性別</label>
+                        <div class="col-sm-8">
+                            <input class="radio-inline" type="radio" name="inlineRadioOptions" id="sex" value="male"
+                                onclick="allResult()"> 男
+                            <input class="radio-inline" type="radio" name="inlineRadioOptions" id="sex" value="female"
+                                onclick="allResult()"> 女
                         </div>
                     </div>
                     <div class="form-group">
@@ -95,7 +91,6 @@
                             <input type="password" pattern=".{6,9}" title="Six or more characters" class="form-control"
                                 id="password" placeholder="請輸入密碼" onkeyup="check(),allResult()">
                         </div>
-
                     </div>
                     <div class="form-group">
                         <label for="confirmPassword" class="col-sm-2 control-label">重新輸入</label>
@@ -106,26 +101,23 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="class" class="col-sm-2 control-label">班級</label>
+                        <label for="studyClass" class="col-sm-2 control-label">班級</label>
                         <div class="col-sm-8">
                             <select class="form-control" id="studyClass" onchange="allResult()">
                                 <option>請選擇班級</option>
                                 <option>1A</option>
                                 <option>1B</option>
                                 <option>1C</option>
-                                <option>1D</option> 
+                                <option>1D</option>
                                 <option>1E</option>
                                 <option>1F</option>
                             </select>
-                            <!-- <input type="text" class="form-control" id="class" placeholder="班級"> -->
                         </div>
                     </div>
-
                 </form>
 
                 <script>
                     var checkStr = "";
-
 
                     function check() {
                         if (document.getElementById('password').value.length < 6) {
@@ -155,26 +147,30 @@
                     }
                     function allResult() {
 
+                        $("#result").val(
+                            $("label[for='name']").text() + ": " + $("#name").val() + "  " +
+                            $("label[for='sex']").text() + ": " + $("#sex:checked").val() + "  " +
+                            $("label[for='age']").text() + ": " + $("#age").val() + "  " +
+                            check() + "  " +
+                            $("label[for='studyClass']").text() + ": " + $("#studyClass").val()
+                        );
+
                         //var str2 = $("#sex:checked").val()
+                        //$("#result").val()="1234XXXX5";
 
-                        document.getElementById("result").value =
-                            document.getElementsByTagName('label')[1].firstChild.data + ": " +
-                            document.getElementById("name").value + ", " +
-                            document.getElementsByTagName('label')[2].firstChild.data + ": " +
-                            $("#sex:checked").val() + ", " +
-                            document.getElementsByTagName('label')[5].firstChild.data + ": " +
-                            document.getElementById("age").value + ", " +
-                            check() + ", " +
-                            document.getElementsByTagName('label')[8].firstChild.data + ": " +
-                            $("#studyClass").val() + " ";
-
-
+                        //document.getElementById("result").value =
+                        //    document.getElementsByTagName('label')[1].firstChild.data + ": " +
+                        //    document.getElementById("name").value + ", " +
+                        //    document.getElementsByTagName('label')[2].firstChild.data + ": " +
+                        //    $("#sex:checked").val() + ", " +
+                        //    document.getElementsByTagName('label')[5].firstChild.data + ": " +
+                        //    document.getElementById("age").value + ", " +
+                        //   check() + ", " +
+                        //    document.getElementsByTagName('label')[8].firstChild.data + ": " +
+                        //    $("#studyClass").val() + " ";  
                     }
 
                 </script>
-
-
-
 
                 <!-- nested row 3a: callouts -->
 
@@ -189,7 +185,6 @@
                     <li class="active"><a href="design and implementation.html">Design and implementation</a></li>
                 </ul>
             </aside>
-
 
         </div><!-- end row 3 -->
 
@@ -210,5 +205,4 @@
     <script src="js/bootstrap.min.js"></script>
 
 </body>
-
 </html>

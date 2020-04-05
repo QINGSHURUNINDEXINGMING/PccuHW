@@ -13,7 +13,6 @@ int main()
 
 	cin.ignore(1000, '\n');
 	//http://www.cplusplus.com/forum/beginner/111268/
-	// aaa
 
 	cout << "Please enter the string(Plaintext with lowercase and ciphertext with uppercase): ", getline(cin, s1);
 

@@ -1,0 +1,8 @@
+﻿  test.cpp
+C:\Users\User\Desktop\test\test\test.cpp(26,20): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\User\Desktop\test\test\test.cpp(28,21): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\User\Desktop\test\test\test.cpp(30,22): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\User\Desktop\test\test\test.cpp(56,21): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\User\Desktop\test\test\test.cpp(66,20): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\User\Desktop\test\test\test.cpp(68,21): warning C4018:  '<': signed/unsigned mismatch
+  test.vcxproj -> C:\Users\User\Desktop\test\Debug\test.exe

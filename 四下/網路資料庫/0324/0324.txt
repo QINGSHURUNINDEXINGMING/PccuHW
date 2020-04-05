@@ -1,0 +1,35 @@
+    1  pwd
+    2  cd desktop
+    3  mkdir AAA
+    4  cd AAA
+    5  init AAA
+    6  git init AAA
+    7  vi AAA.txt
+    8  cat AAA.txt
+    9  git commit -m "0324"
+   10  git init 
+   11  git commit -m "0324"
+   12   git config --global user.email "A6409001@g.pccu.edu.tw"
+   13   git config --global user.name "QINGSHURUNINDEXINGMING"
+   14  git commit -m "0324"
+   15  git add AAA.txt
+   16  git commit -m "0324"
+   17  git branch BBB
+   18  git branch 
+   19  git checkout BBB
+   20  git add AAA.txt
+   21  git commit -m "0324-BBB"
+   22  vi AAA.txt
+   23  git add AAA.txt
+   24  vi AAA.txt
+   25  git commit -m "0324-BBB-1321"
+   26  git branch master
+   27  git checkout master
+   28  vi AAA.txt
+   29  git checkout BBB
+   30  vi AAA.txt
+   31  vi AAA.txt
+   32  git add AAA.txt
+   33  git commit -m "0324-BBB-1324"
+   34* 
+   35  history > 0324.txt

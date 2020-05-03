@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script>
+
+    function fillData(mvArr) {
+      for (var i = 0; i < mvArr.length; i++) {
+        var mv = mvArr[i];
+        var img = $("<img>").attr("src", "https://images.weserv.nl/?url=" +
+          mv["images"]["small"].substr(8));
+        //var img = $("<img>").attr("src", mv["images"]["medium"]);
+        var sp = $("<span>").addClass("ui-li-count").text(mv["rating"]["average"]);
+        var a = $("<a>").attr("href", mv["alt"]).append(img)
+          .append($("<h1>").text(mv["title"]))
+          .append($("<p>").text(mv["original_title"] + "-" + mv["year"]))
+        var l = $("<li>").append(a).append(sp);
+        $("#mvlist").append(l);
+      }
+      $("ol li a").css("padding-left", "60px");
+      $(".ui-li-count").css("right", "4em");
+      $("#mvlist").listview("refresh");
+    }
+
+    $(document).ready(function () {
+      $.getJSON('http://140.137.41.79:3000/top250', function (data) {
+        fillData(data["subjects"]);
+      });
+    });
+
+  </script>
+  <title>mv</title>
+</head>
+
+<body>
+
+  <div data-role="page" id="home">
+    <div data-role="header">
+      <h1>豆瓣電影</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <ul data-role="listview">
+
+        <li data-role="collapsible" data- iconpos="right" data-theme="b">
+
+          <h1>Top 20</h1>
+          <ol data-role="listview" id="mvlist" data-theme="b" data-count-theme="a" data-filter="true"></ol>
+        </li>
+      </ul>
+    </div>
+
+</body>
+
+</html>

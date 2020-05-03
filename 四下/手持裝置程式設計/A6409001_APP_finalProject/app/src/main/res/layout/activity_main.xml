@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/breadImg"
+            android:layout_width="125dp"
+            android:layout_height="93.75dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/bread" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/breadTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:text="燒餅夾蛋 30 元"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/breadVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:hint="數量"
+                    android:gravity="center"
+                    android:textSize="20dp" />
+
+                <SeekBar
+                    android:id="@+id/breadSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="3dp"
+                    android:max="100"
+                    android:min="0"
+                    android:progressDrawable="@drawable/seek_bar"
+                    android:thumb="@drawable/seek_thumb" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/meatImg"
+            android:layout_width="125dp"
+            android:layout_height="93.75dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/meat" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/meatTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:text="鮮蚵油條 90 元"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/meatVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:hint="數量"
+                    android:gravity="center"
+                    android:textSize="20dp" />
+
+                <SeekBar
+                    android:id="@+id/meatSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="3dp"
+                    android:max="100"
+                    android:min="0"
+                    android:progressDrawable="@drawable/seek_bar"
+                    android:thumb="@drawable/seek_thumb" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/drinkImg"
+            android:layout_width="125dp"
+            android:layout_height="93.75dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/drink" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/drinkTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:text="大碗混漿 20 元"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/drinkVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:hint="數量"
+                    android:gravity="center"
+                    android:textSize="20dp" />
+
+                <SeekBar
+                    android:id="@+id/drinkSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="3dp"
+                    android:max="100"
+                    android:min="0"
+                    android:progressDrawable="@drawable/seek_bar"
+                    android:thumb="@drawable/seek_thumb" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/discountTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="外帶打9折"
+            android:textSize="30sp" />
+
+        <Switch
+            android:id="@+id/discountSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:checked="true"
+            android:layoutDirection="ltr"
+            android:showText="true"
+            android:switchTextAppearance="@style/SwitchTextAppearance"
+            android:textOff="NO"
+            android:textOn="YES"
+            android:textSize="30sp"
+            android:thumb="@drawable/rounded_button" />
+
+        <View
+            android:id="@+id/hr"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/priceTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="總價："
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="價格"
+                android:inputType="textPersonName"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

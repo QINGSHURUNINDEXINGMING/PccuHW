@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div data-role="page" id="index" style="text-align: center">
+    <div data-role="main">
+      <img src="fujian.jpg" style="width:80%;height:auto;">
+      <p>歡迎使用福建省APP，要登入嗎?</p>
+    </div>
+    <a href="#home" class="ui-btn ui-btn-inline ui-icon-plus ui-shadow ui-btn-icon-right ui-corner-all ui-btn-b">確定</a>
+    <a href="#home" class="ui-btn ui-btn-inline ui-icon-delete ui-shadow ui-btn-icon-left ui-corner-all">刪除</a>
+  </div>
+
+
+  <div data-role="page" id="home">
+    <div data-role="header">
+      <h1>豆瓣電影</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+      <ol data-role="listview" data-inset="false">
+        <li>這個殺手不太冷</li>
+        <li>霸王別姬</li>
+        <li>阿甘正傳</li>
+        <li>美麗人生</li>
+        <li>千與千尋</li>
+        <li>辛德勒的名單</li>
+        <li>泰坦尼克號</li>
+        <li>海上鋼琴師</li>
+        <li>機器人總動員</li>
+        <li>盜夢空間</li>
+        <li>三傻大鬧寶萊塢</li>
+        <li>放牛班的春天</li>
+        <li>忠犬八公的故事</li>
+        <li>大話西遊之大聖娶親</li>
+        <li>龍貓</li>
+        <li>教父</li>
+        <li>亂世佳人</li>
+        <li>天堂電影院</li>
+        <li>楚門的世界</li>
+        <li>當幸福來敲門</li>
+      </ol>
+    </div>
+    <div data-role="footer" data-position="fixed" data-id="main-footer" data-theme="b">
+      <div data-role="navbar" data-iconpos="bottom">
+        <ul>
+          <li><a href="#home" class="ui-btn-active ui-state-persist" data-icon="home" data-transition="slideup">首頁</a>
+          </li>
+          <li><a href="#author" data-icon="info" data-transition="slide" data-direction="reverse">關於作者</a></li>
+          <li><a href="3333.html" data-icon="lock">關於AAAA</a></li>
+          <li><a href="#myList" data-icon="bullets">福建省-清單</a></li>
+          <li> <a href="#map" data-icon="location">地圖</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div data-role="page" data-dialog="true" id="map">
+    <div data-role="header" data-add-back-btn="true">
+      <h1>地圖</h1>
+    </div>
+    <div data-role="main">
+      <img src="map.png" style="width:100%;height:auto;">
+    </div>
+    <div data-role="footer" data-id="main-footer">
+      <h1>谷哥地圖</h1>
+    </div>
+  </div>
+
+  <div data-role="page" id="author">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="上一頁">
+      <h1>關於作者</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+      <p>你好</p>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-id="main-footer" data-theme="b">
+      <div data-role="navbar" data-iconpos="bottom">
+        <ul>
+          <li><a href="#home" data-icon="home" data-transition="slideup">首頁</a></li>
+          <li><a href="#author" class="ui-btn-active ui-state-persist" data-icon="info" data-transition="slide"
+              data-direction="reverse">關於作者</a></li>
+          <li><a href="3333.html" data-icon="lock">關於AAAA</a></li>
+          <li><a href="#myList" data-icon="bullets">福建省-清單</a></li>
+          <li> <a href="#map" data-icon="location">地圖</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div data-role="page" id="myList">
+
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="上一頁">
+      <a href="#jqm" data-rel="popup" class="ui-btn ui-btn-right ui-icon-star ui-btn-icon-gear">關於</a>
+      <h1>詳細介紹</h1>
+      <div data-role="popup" id="jqm" class="ui-content">
+        <p>資料來源 - 維基百科</p>
+      </div>
+    </div>
+    <div data-role="main" class="ui-content">
+      <div data-role="collapsible-set">
+        <div data-role="collapsible">
+          <h3>名稱</h3>
+          <p>
+            唐開元二十一年（733年），設福建經略使才開始出現「福建」一詞[3]。「閩」最早見於《山海經》中的《海內南經·卷十》：「閩在海中，其西北有山，一曰閩中山在海中」[4]。漢代《說文解字》中說：「閩，東南越，蛇種」，定義閩人是崇蛇的族群；可以作為佐證的是「閩」字的寫法，而古人稱蛇為長蟲，可解釋為「閩為山地，多出蛇蟲之類，故門下增蟲字，以示其特性」，但此解釋並未得到史學界的證實
+          </p>
+        </div>
+        <div data-role="collapsible">
+          <h3>歷史</h3>
+          <p>出土文物證實，福建一如中國大陸其他省區，存在過舊石器時期文化，目前已知年代最早的舊石器時代文化遺址在晉江市深滬灣海濱發現，年代距今五十萬年至八十萬年.
+            福建在上古時代原為越族人的屬地。越人善於駕舟行筏、有「斷髮紋身」的習俗。秦在福建設置閩中郡是第一個在福建設立行政機構的中國政權，但福建政權近於藩屬國。</p>
+        </div>
+        <div data-role="collapsible">
+          <h3>行政區劃</h3>
+          <p>福建省現轄9個地級市，其中廈門市的行政級別為副省級，全省合共有29個市轄區、12個縣級市、43個縣。</p>
+        </div>
+      </div>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-id="main-footer" data-theme="b">
+      <div data-role="navbar" data-iconpos="bottom">
+        <ul>
+          <li><a href="#home" data-icon="home" data-transition="slideup">首頁</a></li>
+          <li><a href="#author" data-icon="info" data-transition="slide" data-direction="reverse">關於作者</a></li>
+          <li><a href="3333.html" data-icon="lock">關於AAAA</a></li>
+          <li><a href="#myList" data-icon="bullets" class="ui-btn-active ui-state-persist">福建省-清單</a></li>
+          <li> <a href="#map" data-icon="location">地圖</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+</body>
+
+</html>

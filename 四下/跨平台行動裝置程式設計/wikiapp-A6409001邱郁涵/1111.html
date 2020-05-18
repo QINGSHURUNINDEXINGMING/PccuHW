@@ -68,7 +68,7 @@
         var bread = $('#bread').val();
         var meat = $('#meat').val();
         var drink = $('#drink').val();
-        ($('#discount').is(':checked')) ? $('#price').val((((30 * bread) + (90 * meat) + (20 * drink)) * 0.9).toFixed(2)) : $('#price').val(((30 * bread) + (90 * meat) + (20 * drink)));
+        $('#price').val(($('#discount').is(':checked')) ? (((30 * bread) + (90 * meat) + (20 * drink)) * 0.9).toFixed(2) : ((30 * bread) + (90 * meat) + (20 * drink)));
       });
     });
   </script>
@@ -88,7 +88,7 @@
         <div class="ui-block-b">
           <div class="ui-field-contain">
             <label for="bread">燒餅夾蛋 30 元</label>
-            <input type="range" name="bread" id="bread" value="0" min="0" max="100" step="1" data-theme="a"
+            <input type="range" name="bread" id="bread" value="0" min="0" max="10" step="1" data-theme="a"
               data-track-theme="b" />
           </div>
         </div>
@@ -100,7 +100,7 @@
         <div class="ui-block-b">
           <div class="ui-field-contain">
             <label for="meat">鮮蚵油條 90 元</label>
-            <input type="range" name="meat" id="meat" value="0" min="0" max="100" step="1" data-theme="a"
+            <input type="range" name="meat" id="meat" value="0" min="0" max="10" step="1" data-theme="a"
               data-track-theme="b" />
           </div>
         </div>
@@ -112,7 +112,7 @@
         <div class="ui-block-b">
           <div class="ui-field-contain">
             <label for="drink">大碗混漿 20 元</label>
-            <input type="range" name="drink" id="drink" value="0" min="0" max="100" step="1" data-theme="a"
+            <input type="range" name="drink" id="drink" value="0" min="0" max="10" step="1" data-theme="a"
               data-track-theme="b" />
           </div>
         </div>
@@ -128,7 +128,6 @@
         </div>
       </div>
     </div>
-
     <div data-role="footer" id="foot">
       <h1>早餐計算機-
         <span id="time"></span>
@@ -136,7 +135,6 @@
     </div>
 
   </div>
-
 </body>
 
 </html>

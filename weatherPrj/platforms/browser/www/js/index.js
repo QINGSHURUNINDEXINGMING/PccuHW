@@ -30,7 +30,7 @@ var app = {
     insertStockName: function () {
         app.trailerData.forEach((item) => {
             Object.keys(item).forEach((key) => {
-                if (key === "拖吊責任區" && item[key] !== "") $('<option/>', { 'value': item[key], 'text': item[key] }).appendTo('#area')
+                if (key === "拖吊責任區" && item[key] !== "") $('<option/>', { 'value': item[key], 'text': item[key].slice(3, 10) }).appendTo('#area')
             });
         });
         $("#area").selectmenu("refresh", true);

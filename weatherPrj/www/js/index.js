@@ -30,18 +30,11 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     insertStockName: function () {
-        // Object.values(app.trailerData).forEach((value) => {
-        //     console.log(value) // key - value
-        // })
-    
-        for (var i = 0; i < 8; i++) {
-            var attrs = { 'value': app.trailerData[i].拖吊責任區, 'text':app.trailerData[i].拖吊責任區 };
-            $('<option/>', attrs).appendTo('#area');
-            console.log(app.trailerData[i].拖吊責任區);
-        }
-        // $.each(app.trailerData, function(key, value) {
-        //     console.log(key, value);
-        //   });
+        app.trailerData.forEach((item) => {
+            Object.keys(item).forEach((key) => {
+                if (key === "拖吊責任區" && item[key] !== "") $('<option/>', { 'value': item[key], 'text': item[key] }).appendTo('#area')
+            });
+        });
         $("#area").selectmenu("refresh", true);
     },
     onDeviceReady: function () {

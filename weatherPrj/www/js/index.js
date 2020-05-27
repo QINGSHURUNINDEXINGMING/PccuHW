@@ -16,11 +16,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-
-console.log(this);
 var app = {
     trailerData: "",
-
+    weatherData: "",
     // Application Constructor
     initialize: function () {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
@@ -38,24 +36,18 @@ var app = {
         $("#area").selectmenu("refresh", true);
     },
     onDeviceReady: function () {
-        console.log(this);//app
-        var appthis = this;
-        this.checkConnection();
-        var url = "https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-063?Authorization=rdec-key-123-45678-011121314";
-
+        app.checkConnection();
         var trailerUrl = "https://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=24045907-b7c3-4351-b0b8-b93a54b55367";
 
+        var url = "https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-063?Authorization=rdec-key-123-45678-011121314";
         $.getJSON(url, function (response) {
-            appthis.weatherData = response.records.locations[0].location[2].weatherElement;
-            appthis.updateWeather();
-            console.log(response);//api
-            console.log(appthis.weatherData);
+            app.weatherData = response.records.locations[0].location[2].weatherElement;
+            app.updateWeather();
         })
+
         $.getJSON(trailerUrl, function (response) {
             app.trailerData = response.result.results;
             app.updateaApi();
-            console.log(response);//api
-            console.log(app.trailerData);
             // console.log(app.trailerData[2]['拖吊責任區']);
             app.insertStockName();
         })
@@ -70,7 +62,6 @@ var app = {
         }
     },
 
-    weatherData: "",
 
     updateWeather: function () {
         //console.log(this);//app

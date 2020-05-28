@@ -38,18 +38,14 @@ var app = {
     },
     onDeviceReady: function () {
         app.checkConnection();
+
         var trailerUrl = "https://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=24045907-b7c3-4351-b0b8-b93a54b55367";
 
-        var url = "https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-063?Authorization=rdec-key-123-45678-011121314";
-        $.getJSON(url, function (response) {
-            app.weatherData = response.records.locations[0].location[2].weatherElement;
-            app.updateWeather();
-        })
 
         $.getJSON(trailerUrl, function (response) {
             app.trailerData = response.result.results;
             app.updateaApi();
-            // console.log(app.trailerData[2]['拖吊責任區']);
+            console.log(app.trailerData);
             app.insertStockName();
         })
 
@@ -63,46 +59,55 @@ var app = {
         }
     },
 
-
-    updateWeather: function () {
-        //console.log(this);//app
-
-        var minTArray = this.weatherData[8].time;
-        var maxTArray = this.weatherData[12].time;
-        for (var i = 0; i < minTArray.length; i++) {
-            var startTime = this.weatherData[8].time[i].startTime;
-            var endTime = this.weatherData[8].time[i].endTime;
-            var li = $("<li>");
-            li.append($("<h1>").text(this.processTime(startTime, endTime)));
-            var minT = this.weatherData[8].time[i].elementValue[0].value;
-            var maxT = this.weatherData[12].time[i].elementValue[0].value
-            $("<span>").addClass("ui-li-count").text(minT + " ~ " + maxT).appendTo(li);
-
-
-            $("#weatherList").append(li);
-        }
-        $("#weatherList").listview("refresh");
-    },
-    processTime: function (startstr, endstr) {
-        var idx1 = startstr.indexOf('-');
-        var idx2 = startstr.indexOf(' ');
-
-        if (startstr.substr(idx2 + 1, 2) == "06") {
-            return startstr.substring(idx1 + 1, idx2) + " 白天";
-        } else if (startstr.substr(idx2 + 1, 2) == "18") {
-            return startstr.substring(idx1 + 1, idx2) + " 晚上";
-        } else {
-            return "現在";
-        }
-    },
-
     updateaApi: function () {
-        for (var i = 0; i < app.trailerData.length; i++) {
-            var li = $("<li>");
-            li.append($("<h1>").text(app.trailerData[i].拖吊責任區));
-            $("<span>").addClass("ui-li-count").text(app.trailerData[i].拖吊保管場名稱).appendTo(li);
-            $("#apiData").append(li);
-        }
+        // var li = $("<li>");
+    
+      
+        // $.each(app.trailerData, (index, value) => {
+        //     $.each(value, (key, value) => {
+        //         li.append($("<p>").text(key + ": " + value).css("font-weight", "Bold"));
+        //     });
+        //     $("#apiData").append(li);
+        // });
+        var li = $("<li>");
+    
+      
+        $.each(app.trailerData, (index, value) => {
+            $("#apiData").append('<li>');
+            $("#apiData").css("font-weight", "Bold");
+            $.each(value, (key, value) => {
+                $("#apiData").append( key + " : " + value).append('<br>')
+            });
+            $("#apiData").append('</li>');
+            // $("#apiData").append(li);
+        });
+    
+        // $.each(data.result, function(i, item) {
+        //     alert(data.result[i].PageName);
+        // });
+        // var fakeArray = { "length": 2, 0: "Addy", 1: "Subtracty" };
+
+        // // Therefore, convert it to a real array
+        // var realArray = $.makeArray(fakeArray)
+
+        // // Now it can be used reliably with $.map()
+        // $.map(realArray, function (val, i) {
+        //     // Do something
+        // });
+
+        // app.trailerData.forEach((item) => {
+        //     Object.keys(item).forEach((key) => {
+        //         li.append($("<p>").text(key + ": " + item[key]).css("font-weight", "Bold"));
+        //         console.log(key, item[key])
+        //     });
+        //     $("#apiData").append(li);
+        // });
+        // for (var i = 0; i < app.trailerData.length; i++) {
+        //     var li = $("<li>");
+        //     li.append($("<h1>").text(app.trailerData[i].拖吊責任區));
+        //     $("<span>").addClass("ui-li-count").text(app.trailerData[i].拖吊保管場名稱).appendTo(li);
+        //     $("#apiData").append(li);
+        // }
         $("#apiData").listview("refresh");
     },
 };

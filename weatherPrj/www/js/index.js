@@ -27,12 +27,14 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     insertArea: function () {
+        $('#guide').hide();
         $.each(app.trailerData, (index, js) => {
             $.each(js, (key, value) => {
                 if (key === "拖吊責任區" && value !== "")
                     $('<option/>', { 'value': value.slice(3, 10), 'text': value.slice(3, 10) }).appendTo('#area')
             })
         });
+        $('<option/>', { 'value': "", 'text': "其他" }).appendTo('#area')
         $("#area").selectmenu("refresh", true);
     },
 
@@ -40,27 +42,14 @@ var app = {
         app.checkConnection();
 
         var trailerUrl = "https://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=24045907-b7c3-4351-b0b8-b93a54b55367";
-
-
         $.getJSON(trailerUrl, function (response) {
             app.trailerData = response.result.results;
             app.insertArea();
-            $('#search').click(() => {
-                $('ul').empty();
-                var search = $('#area option:selected').val()
-                $.mobile.loading("show");
-                app.updateaApi(search);
-                $.mobile.loading("hide");
-            });
             $('#area').change(() => {
                 $('ul').empty();
                 var search = $('#area option:selected').val()
-                $.mobile.loading("show");
                 app.updateaApi(search);
-                $.mobile.loading("hide");
-
             });
-            console.log(app.trailerData);
         })
     },
 
@@ -73,20 +62,19 @@ var app = {
     },
 
     updateaApi: (search) => {
-
-        $("#apiData").append('<li>');
         $.each(app.trailerData, (index, value) => {
+            var li = "";
+            li += "<li>";
             if (app.trailerData[index].拖吊責任區.slice(3, 10) == search) {
-                console.log(app.trailerData[index].拖吊責任區.slice(3, 10))
                 $.each(value, (key, value) => {
-                    $("#apiData").append("<p><span>" + key + "</span>" + " : " + value + "</p>").append('<br>')
-                    $("span").css("font-weight", "Bold");
+                    li += "<span>" + key + "</span>" + " : " + value + "<br>";
                 });
+                li += "</li>";
+                $("#apiData").append(li)
+                $("span").css("font-weight", "Bold");
             }
         });
-        $("#apiData").append('</li>');
         $("#apiData").listview("refresh");
-
     },
 };
 

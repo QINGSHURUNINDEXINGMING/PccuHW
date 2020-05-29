@@ -47,8 +47,7 @@ var app = {
             app.insertArea();
             $('#area').change(() => {
                 $('ul').empty();
-                var search = $('#area option:selected').val()
-                app.updateaApi(search);
+                app.updateaApi($('#area option:selected').val());
             });
         })
     },
@@ -67,7 +66,7 @@ var app = {
             li += "<li>";
             if (app.trailerData[index].拖吊責任區.slice(3, 10) == search) {
                 $.each(value, (key, value) => {
-                    li += "<span>" + key + "</span>" + " : " + value + "<br>";
+                    li += (key === "_id") ? "" : "<span>" + key + "</span>" + " : " + ((value === "") ? "其它" : value) + "<br>";
                 });
                 li += "</li>";
                 $("#apiData").append(li)

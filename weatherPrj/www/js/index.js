@@ -71,9 +71,10 @@ var app = {
                 });
                 li += "</li>";
                 $("#apiData").append(li)
-                $("span").css("font-weight", "Bold");
             }
         });
+        $("li").css("white-space", "normal");
+        $("span").css("font-weight", "Bold");
         $("#apiData").listview("refresh");
     },
 };

@@ -12,6 +12,9 @@
     },
     "cordova-plugin-network-information": {
       "PACKAGE_NAME": "com.pccu.w"
+    },
+    "cordova-plugin-googlemaps": {
+      "PACKAGE_NAME": "com.pccu.w"
     }
   },
   "dependent_plugins": {}

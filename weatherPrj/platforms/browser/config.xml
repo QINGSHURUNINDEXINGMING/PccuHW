@@ -15,4 +15,6 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <preference name="phonegap-version" value="cli-8.1.1" />
+    <preference name="GOOGLE_MAPS_ANDROID_API_KEY" value="AIzaSyBAlgI7QVaE51UD6jkgib0tSpxwK-z4bXg" />
 </widget>

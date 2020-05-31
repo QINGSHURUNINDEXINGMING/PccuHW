@@ -16,11 +16,8 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-
-console.log(this);
 var app = {
     trailerData: "",
-
     // Application Constructor
     initialize: function () {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
@@ -29,28 +26,39 @@ var app = {
     //
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
-    onDeviceReady: function () {
-        console.log(this);//app
-        var appthis = this;
-        this.checkConnection();
-        var url = "https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-063?Authorization=rdec-key-123-45678-011121314";
-
-        var trailerUrl = "https://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=24045907-b7c3-4351-b0b8-b93a54b55367";
-
-        $.getJSON(url, function (response) {
-            appthis.weatherData = response.records.locations[0].location[2].weatherElement;
-            appthis.updateWeather();
-            console.log(response);//api
-            console.log(appthis.weatherData);
-        })
-        $.getJSON(trailerUrl, function (response) {
-            app.trailerData = response.result.results;
-            console.log(response);//api
-            console.log(app.trailerData);
-        })
+    insertArea: () => {
+        $('#guide').hide();
+        $.each(app.trailerData, (index, js) => {
+            $.each(js, (key, value) => {
+                if (key === "拖吊責任區" && value !== "")
+                    $('<option/>', { 'value': value.slice(3, 10), 'text': value.slice(3, 10) }).appendTo('#area')
+            })
+        });
+        $('<option/>', { 'value': "", 'text': "其他" }).appendTo('#area')
+        $("#area").selectmenu("refresh", true);
     },
 
-    checkConnection: function () {
+    onDeviceReady: function () {
+        app.checkConnection();
+        var trailerUrl = "https://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=24045907-b7c3-4351-b0b8-b93a54b55367";
+        $.getJSON(trailerUrl, (response) => {
+            app.trailerData = response.result.results;
+            app.insertArea();
+            $('#area').change(() => {
+                $('ul').empty();
+                app.updateaApi($('#area option:selected').val());
+            });
+            $('#test').click(() => {
+                window.open('tel:123456', '_system');
+            });
+            // app.initMap($('#map'));
+        })
+    },
+    // initMap: (mapI) => {
+    //     map = new google.maps.Map(mapI, { center: { lat: -34.397, lng: 150.644 }, zoom: 8 });
+    // },
+
+    checkConnection: () => {
         var networkState = navigator.connection.type;
         if (networkState === Connection.NONE) {
             alert("沒有網路連線...");
@@ -58,38 +66,21 @@ var app = {
         }
     },
 
-    weatherData: "",
-
-    updateWeather: function () {
-        console.log(this);//app
-
-        var minTArray = this.weatherData[8].time;
-        var maxTArray = this.weatherData[12].time;
-        for (var i = 0; i < minTArray.length; i++) {
-            var startTime = this.weatherData[8].time[i].startTime;
-            var endTime = this.weatherData[8].time[i].endTime;
-            var li = $("<li>");
-            li.append($("<h1>").text(this.processTime(startTime, endTime)));
-            var minT = this.weatherData[8].time[i].elementValue[0].value;
-            var maxT = this.weatherData[12].time[i].elementValue[0].value
-            $("<span>").addClass("ui-li-count").text(minT + " ~ " + maxT).appendTo(li);
-
-
-            $("#weatherList").append(li);
-        }
-        $("#weatherList").listview("refresh");
-    },
-    processTime: function (startstr, endstr) {
-        var idx1 = startstr.indexOf('-');
-        var idx2 = startstr.indexOf(' ');
-
-        if (startstr.substr(idx2 + 1, 2) == "06") {
-            return startstr.substring(idx1 + 1, idx2) + " 白天";
-        } else if (startstr.substr(idx2 + 1, 2) == "18") {
-            return startstr.substring(idx1 + 1, idx2) + " 晚上";
-        } else {
-            return "現在";
-        }
+    updateaApi: (search) => {
+        $.each(app.trailerData, (index, value) => {
+            var li = "";
+            li += "<li>";
+            if (app.trailerData[index].拖吊責任區.slice(3, 10) == search) {
+                $.each(value, (key, value) => {
+                    li += (key === "_id") ? "" : "<span>" + key + "</span>" + " : " + ((value === "") ? "其它" : (key === "電話" ? "<button id='" + index + "'>Click me!</button>" : value)) + "<br>";
+                });
+                li += "</li>";
+                $("#apiData").append(li)
+            }
+        });
+        $("li").css("white-space", "normal");
+        $("span").css("font-weight", "Bold");
+        $("#apiData").listview("refresh");
     },
 };
 

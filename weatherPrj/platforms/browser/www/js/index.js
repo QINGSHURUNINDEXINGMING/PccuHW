@@ -26,7 +26,7 @@ var app = {
     //
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
-    insertArea: function () {
+    insertArea: () => {
         $('#guide').hide();
         $.each(app.trailerData, (index, js) => {
             $.each(js, (key, value) => {
@@ -40,19 +40,37 @@ var app = {
 
     onDeviceReady: function () {
         app.checkConnection();
-
         var trailerUrl = "https://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=24045907-b7c3-4351-b0b8-b93a54b55367";
-        $.getJSON(trailerUrl, function (response) {
+        $.getJSON(trailerUrl, (response) => {
             app.trailerData = response.result.results;
             app.insertArea();
             $('#area').change(() => {
                 $('ul').empty();
                 app.updateaApi($('#area option:selected').val());
+                app.speedDial($('#area option:selected').val());
             });
         })
     },
+    speedDial: (search) => {
+        console.log(search)
+        $.each(app.trailerData, (index, value) => {
+            if (app.trailerData[index].拖吊責任區.slice(3, 10) == search) {
+                $.each(value, (key, value) => {
+                    if (key == "電話") {
+                        $("#" + index).click(() => {
+                            window.open("tel:"+value.slice(0, 12), '_system');
+                        })
+                    }
+                });
 
-    checkConnection: function () {
+            }
+        });
+    },
+    // initMap: (mapI) => {
+    //     map = new google.maps.Map(mapI, { center: { lat: -34.397, lng: 150.644 }, zoom: 8 });
+    // },
+
+    checkConnection: () => {
         var networkState = navigator.connection.type;
         if (networkState === Connection.NONE) {
             alert("沒有網路連線...");
@@ -66,7 +84,7 @@ var app = {
             li += "<li>";
             if (app.trailerData[index].拖吊責任區.slice(3, 10) == search) {
                 $.each(value, (key, value) => {
-                    li += (key === "_id") ? "" : "<span>" + key + "</span>" + " : " + ((value === "") ? "其它" : value) + "<br>";
+                    li += (key === "_id") ? "" : "<span>" + key + "</span>" + " : " + ((value === "") ? "其它" : (key === "電話" ? value.slice(0, 12) + "<button id='" + index + "'>撥號</button>" : value)) + "<br>";
                 });
                 li += "</li>";
                 $("#apiData").append(li)

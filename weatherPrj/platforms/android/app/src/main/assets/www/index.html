@@ -18,8 +18,9 @@
     under the License.
 -->
 <html>
-    <head>
-        <!--
+
+<head>
+    <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
             https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
         Some notes:
@@ -28,27 +29,110 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
-        <script src="js/jquery-2.1.4.min.js"></script>
-        <script src="js/jquery.mobile-1.4.5.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div data-role="page" id="home">
-            <div data-role="header">
-                <h1>士林區未來一周天氣</h1>
-            </div>
-            <div data-role="main" class="ui-content">
-                <ul id="weatherList" data-role="listview" data-inset="true">
-                </ul>
-            </div>    
+    <!-- <meta http-equiv="Content-Security-Policy"
+        content="default-src * data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript">
+        document.addEventListener("deviceready", function () {
+            var div = document.getElementById("map_canvas");
+            plugin.google.maps.environment.setEnv({
+                'API_KEY_FOR_BROWSER_RELEASE': 'AIzaSyBAlgI7QVaE51UD6jkgib0tSpxwK-z4bXg',
+                'API_KEY_FOR_BROWSER_DEBUG': ''  // optional
+            });
+            // Create a Google Maps native view under the map_canvas div.
+            var map = plugin.google.maps.Map.getMap(div);
+
+            // If you click the button, do something...
+            var button = document.getElementById("button");
+            button.addEventListener("click", function () {
+
+                // Move to the position with animation
+                map.animateCamera({
+                    target: { lat: 37.422359, lng: -122.084344 },
+                    zoom: 17,
+                    tilt: 60,
+                    bearing: 140,
+                    duration: 5000
+                });
+
+                // Add a maker
+                var marker = map.addMarker({
+                    position: { lat: 37.422359, lng: -122.084344 },
+                    title: "Welecome to \n" +
+                        "Cordova GoogleMaps plugin for iOS and Android",
+                    snippet: "This plugin is awesome!",
+                    animation: plugin.google.maps.Animation.BOUNCE
+                });
+                // Show the info window
+                marker.showInfoWindow();
+
+
+            });
+
+        }, false);
+
+    </script>
+    <style type="text/css">
+        #map_canvas {
+            /* Must bigger size than 100x100 pixels */
+            width: 100%;
+            height: 500px;
+        }
+
+        button {
+            padding: .5em;
+            margin: .5em;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>你需要拖吊服務嗎</title>
+</head>
+
+<body>
+
+    <div data-role="page" id="api">
+        <div data-role="header">
+            <h1>拖吊責任區</h1>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-    </body>
+        <div class="ui-field-contain">
+            <label for="area">區域: </label>
+            <select name="area" id="area">
+                <option id=guide>請選擇區域</option>
+                
+            </select>
+        </div>
+        <div class="ui-field-contain">
+            <ul id="apiData" data-role="listview" data-inset="true"></ul>
+            <button id="test">Click me!</button>
+        </div>
+        <div class="ui-field-contain">
+            <div id="map"></div>
+            <div id="map_canvas">
+                <button id="button">Click me!</button>
+            </div>
+        </div>
+
+    </div>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAlgI7QVaE51UD6jkgib0tSpxwK-z4bXg&callback=initMap"></script>
+    <script>
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: -34.397, lng: 150.644 },
+                zoom: 8
+            });
+        }
+    </script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
 </html>

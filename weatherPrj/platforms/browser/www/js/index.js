@@ -35,7 +35,7 @@ var app = {
             })
         });
         $('<option/>', { 'value': "", 'text': "其他" }).appendTo('#area')
-        $("#area").selectmenu("refresh", true);
+        $('#area').selectmenu().selectmenu('refresh', true);
     },
 
     onDeviceReady: function () {
@@ -48,9 +48,39 @@ var app = {
                 $('ul').empty();
                 app.updateaApi($('#area option:selected').val());
                 app.speedDial($('#area option:selected').val());
+                // $("#api").on("pageshow", () => {
+                plugin.google.maps.environment.setEnv({
+                    'API_KEY_FOR_BROWSER_RELEASE': 'AIzaSyBAlgI7QVaE51UD6jkgib0tSpxwK-z4bXg',
+                    'API_KEY_FOR_BROWSER_DEBUG': ''  // optional
+                });
+                // Create a Google Maps native view under the map_canvas div.
+                var map = plugin.google.maps.Map.getMap($("#map_canvas").get(0));
+                // If you click the button, do something...
+                // $("#button").get(0).addEventListener("click", () => {
+                // Move to the position with animation
+                map.animateCamera({
+                    target: { lat: 25.0487187, lng: 121.5857417 },
+                    zoom: 17,
+                    tilt: 60,
+                    bearing: 140,
+                    duration: 5000
+                });
+                // Add a maker
+                var marker = map.addMarker({
+                    position: { lat: 25.0487187, lng: 121.5857417 },
+                    title: "勝倫國際有限公司",
+                    snippet: "地址: 臺北市士林區基河路328號旁空地 (基河二停車場內)",
+                    animation: plugin.google.maps.Animation.BOUNCE
+                });
+                // Show the info window
+                marker.showInfoWindow();
+                // });
+                // });
+
             });
         })
     },
+
     speedDial: (search) => {
         console.log(search)
         $.each(app.trailerData, (index, value) => {
@@ -58,17 +88,13 @@ var app = {
                 $.each(value, (key, value) => {
                     if (key == "電話") {
                         $("#" + index).click(() => {
-                            window.open("tel:"+value.slice(0, 12), '_system');
+                            window.open("tel:" + value.slice(0, 12), '_system');
                         })
                     }
                 });
-
             }
         });
     },
-    // initMap: (mapI) => {
-    //     map = new google.maps.Map(mapI, { center: { lat: -34.397, lng: 150.644 }, zoom: 8 });
-    // },
 
     checkConnection: () => {
         var networkState = navigator.connection.type;

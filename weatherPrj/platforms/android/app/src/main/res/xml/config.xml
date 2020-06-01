@@ -51,7 +51,7 @@
     <feature name="PluginStreetViewPanorama">
         <param name="android-package" value="plugin.google.maps.PluginStreetViewPanorama" />
     </feature>
-    <name>Weather</name>
+    <name>拖吊達人</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
@@ -66,7 +66,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <icon src="www/img/icon.png" />
+    <icon src="www/img/trailer.png" />
     <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
     <preference name="xwalkZOrderOnTop" value="true" />
